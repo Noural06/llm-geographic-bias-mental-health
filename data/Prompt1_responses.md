@@ -1,4 +1,4 @@
-Promote 1 example : 
+Prompt 1 example : 
 ## Gemini — London
 
 ### Prompt
