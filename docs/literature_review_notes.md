@@ -1,4 +1,4 @@
-# Literature Review and Meeting Notes
+# Literature Review 
 
 ## Research Focus
 
