@@ -124,12 +124,103 @@
 * Begin drafting the Methodology chapter.
   
 # week 3 
-### Progress Update
+## Week 3
 
-The pilot study has now expanded to two mental health scenarios (anxiety/depression and panic attacks) across two geographic locations (London and Lagos) using three large language models (GPT-4o, Gemini, and Claude), resulting in a total of 12 collected responses.
+### Work Completed
 
-Initial findings suggest that all models adapt recommendations according to geographic context. However, the degree of localization and the style of support vary substantially between models. Emerging themes include institutional healthcare navigation, support under resource constraints, localized resource referral, behavioural self-management, and crisis escalation.
+#### Data Collection
 
-The next phase of data collection will focus on loneliness and social isolation to determine whether these patterns remain consistent across different mental health scenarios.
+Expanded the pilot dataset by collecting responses for a third mental health scenario:
+
+3. Loneliness and Social Isolation
+
+Models tested:
+
+* GPT-4o
+* Gemini
+* Claude
+
+Locations tested:
+
+* London, UK
+* Lagos, Nigeria
+
+Total responses collected to date:
+
+* 18 responses
+* 3 prompts
+* 2 locations
+* 3 models
+
+#### Comparative Analysis
+
+Completed comparisons for:
+
+* Prompt 1 (Anxiety and Depression)
+* Prompt 2 (Panic Attacks)
+* Prompt 3 (Loneliness and Social Isolation)
+
+Cross-model comparisons were documented and organised within the GitHub repository.
+
+#### Thematic Analysis
+
+Refined and expanded thematic coding.
+
+Current themes:
+
+1. Institutional Healthcare Navigation
+2. Support Under Resource Constraints
+3. Behavioural Self-Management
+4. Localised Resource Referral
+5. Professional Mental Health Referral
+6. Community Integration and Belonging
+
+A new theme emerged during Prompt 3 relating to social belonging, friendship formation, and community integration.
+
+### Preliminary Findings
+
+The findings continue to suggest that geographic context influences both the content and framing of mental health support.
+
+London responses generally emphasised:
+
+* NHS pathways
+* Structured social activities
+* Formal support services
+
+Lagos responses generally emphasised:
+
+* Community networks
+* Religious and cultural groups
+* Local organisations and specialist hospitals
+
+Model-specific patterns remain consistent:
+
+* Gemini: strongest localisation and resource-specific recommendations.
+* GPT-4o: strongest behavioural and action-oriented focus.
+* Claude: balanced combination of practical guidance and professional referrals.
+
+### Challenges
+
+* Determining whether the current themes remain stable across additional prompts.
+* Distinguishing geographic adaptation from broader model behaviour.
+* Refining coding definitions before large-scale data collection.
+
+### Questions for Supervision
+
+1. Are the current themes sufficiently robust for continued coding?
+
+2. Is the current pilot dataset adequate before expanding to additional locations?
+
+3. Should any themes be merged, renamed, or further refined at this stage?
+
+### Next Steps
+
+* Complete Prompt 4.
+* Continue thematic coding.
+* Expand literature review.
+* Draft the Methodology chapter.
+* Refine codebook definitions for thematic analysis.
+* Prepare pilot findings summary for discussion.
+
 
 
