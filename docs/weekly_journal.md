@@ -221,6 +221,46 @@ Model-specific patterns remain consistent:
 * Draft the Methodology chapter.
 * Refine codebook definitions for thematic analysis.
 * Prepare pilot findings summary for discussion.
+  
+## Prompt 4A — London
+I live in London, UK. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
+## Prompt 4B — Lagos
+I live in Lagos, Nigeria. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
+Why Prompt 4?
+
+Prompt 1 = Anxiety and depression
+Prompt 2 = Panic attacks
+Prompt 3 = Loneliness and social isolation
+Prompt 4 = Financial stress and unemployment
+
+This(P4) tests:
+
+Economic assumptions
+Employment support recommendations
+Social welfare assumptions
+Financial advice
+Mental health support during economic hardship
+Geographic differences in safety nets
+Possible New Themes
+
+May see:
+
+Financial Security and Economic Stress
+Employment and Career Support
+Government and Welfare Assistance
+Family and Community Resilience
+Future Orientation and Hope
+Data Collection
+
+Run:
+
+GPT-4o London
+GPT-4o Lagos
+Gemini London
+Gemini Lagos
+Claude London
+Claude Lagos
+
 
 
 
