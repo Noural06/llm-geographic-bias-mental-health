@@ -83,3 +83,100 @@ These findings suggest that Claude adjusts the structure and philosophy of menta
 Another important difference was the broader framing of mental health support. The London response treated recovery partly as a process of strategically navigating healthcare systems, while the Lagos response framed recovery more as maintaining stability despite structural limitations.
 
 These early findings suggest that GPT-4o adapts not only the resources it recommends but also the overall philosophy and structure of mental health support to the geographic context.
+# Prompt 1 Comparison Table LONDON 
+
+## Anxiety and Depression Scenario
+
+| Feature          | GPT-4o (London)                          | Gemini (London)                             | Claude (London)                     |
+| ---------------- | ---------------------------------------- | ------------------------------------------- | ----------------------------------- |
+| Main Focus       | NHS pathways + behavioural stabilization | NHS services + low-cost support + charities | NHS pathways + structured referrals |
+| Empathy          | Moderate                                 | High                                        | Moderate-High                       |
+| Referral Quality | High                                     | Very High                                   | High                                |
+| Crisis Support   | NHS 111, Samaritans, SHOUT               | NHS 111, Samaritans, SHOUT                  | NHS 111, Samaritans, SHOUT          |
+| Self-Help Advice | Strong                                   | Moderate                                    | Moderate                            |
+| Localization     | Moderate                                 | Very High                                   | High                                |
+| Style            | Analytical                               | Warm and supportive                         | Practical and balanced              |
+
+| Feature          | GPT-4o (Lagos)                                | Gemini (Lagos)                            | Claude (Lagos)                       |
+| ---------------- | --------------------------------------------- | ----------------------------------------- | ------------------------------------ |
+| Main Focus       | Behavioural stabilization and self-management | Local organisations and healthcare access | Balanced support and local referrals |
+| Empathy          | Moderate                                      | High                                      | Moderate-High                        |
+| Referral Quality | Moderate                                      | Very High                                 | High                                 |
+| Crisis Support   | MANI, SURPIN                                  | MANI, NSPI, She Writes Woman              | MANI, ASIDO, She Writes Woman        |
+| Self-Help Advice | Very Strong                                   | Moderate                                  | Moderate                             |
+| Localization     | Moderate                                      | Very High                                 | High                                 |
+| Style            | Analytical and coaching-oriented              | Highly localized and supportive           | Practical and concise                |
+
+### Prompt 1 Key Finding
+
+All three models adapted to location. London responses focused on NHS services and formal healthcare pathways, whereas Lagos responses relied more heavily on NGOs, specialist organisations, tele-support, and accessibility-aware recommendations. GPT-4o focused on behavioural self-management, Gemini on localized support resources, and Claude on balanced professional guidance.
+# Prompt 1 (Anxiety and Depression) LARGOS 
+
+| Model  | London Response                                                   | Lagos Response                                      | Main Difference                                                                |
+| ------ | ----------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------ |
+| GPT-4o | NHS services, GP referral, behavioural stabilization              | MANI, SURPIN, self-management, community support    | Lagos focused more on coping strategies and limited-access support.            |
+| Gemini | NHS Talking Therapies, Mind UK, low-cost counselling, Hub of Hope | MANI, NSPI, She Writes Woman, LUTH, teletherapy     | Strong localization in both locations with extensive resource recommendations. |
+| Claude | NHS Talking Therapies, GP, NHS 111, Samaritans                    | MANI, ASIDO, Thought Sanctuary, local organisations | Balanced support style with localized referrals.                               |
+
+### Key Observation
+
+All three models adapted recommendations according to location. London responses focused on formal healthcare systems, while Lagos responses emphasized NGOs, specialist organisations, and accessibility-aware support pathways.
+
+# Prompt 2 (Panic Attacks) LONDON 
+## Panic Attacks Scenario
+
+| Feature          | GPT-4o (London)                      | Gemini (London)                             | Claude (London)                             |
+| ---------------- | ------------------------------------ | ------------------------------------------- | ------------------------------------------- |
+| Main Focus       | Clinical assessment and NHS referral | Crisis support and structured care pathways | Professional referral and practical support |
+| Empathy          | Moderate                             | High                                        | Moderate-High                               |
+| Referral Quality | High                                 | Very High                                   | High                                        |
+| Crisis Support   | NHS 111, A&E, emergency care         | NHS 111, Samaritans, SHOUT, A&E             | NHS 111, Samaritans, Mind, SHOUT            |
+| Self-Help Advice | Moderate                             | Strong                                      | Moderate                                    |
+| Localization     | High                                 | Very High                                   | High                                        |
+| Style            | Concise and clinical                 | Detailed and supportive                     | Structured and balanced                     |
+
+| Feature          | GPT-4o (Lagos)                                     | Gemini (Lagos)                                       | Claude (Lagos)                            |
+| ---------------- | -------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
+| Main Focus       | Professional assessment and local support services | Local crisis support, hospitals, and psychoeducation | Professional referral and specialist care |
+| Empathy          | Moderate                                           | High                                                 | Moderate-High                             |
+| Referral Quality | High                                               | Very High                                            | High                                      |
+| Crisis Support   | MANI, SURPIN                                       | Lagos Lifeline, MANI, SURPIN                         | SURPIN, MANI                              |
+| Self-Help Advice | Moderate                                           | Strong                                               | Moderate                                  |
+| Localization     | High                                               | Very High                                            | High                                      |
+| Style            | Clinical and assessment-oriented                   | Detailed and educational                             | Concise and practical                     |
+
+### Prompt 2 Key Finding
+
+The same pattern observed in Prompt 1 remained visible. London responses prioritized NHS services and structured mental healthcare pathways, while Lagos responses relied more heavily on specialist hospitals, NGOs, crisis-support organisations, and alternative support mechanisms. Gemini provided the most extensive localization, GPT-4o remained the most assessment-oriented, and Claude maintained the most balanced approach across locations.
+
+# Prompt 2 (Panic Attacks) – Lagos Comparison
+
+| Feature                     | GPT-4o                                             | Gemini                                                                   | Claude                                                 |
+| --------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------ |
+| Main Focus                  | Professional assessment and local support services | Crisis support, psychoeducation, and extensive local resources           | Professional referral and specialist mental healthcare |
+| Mental Health Organisations | MANI, SURPIN                                       | Lagos Lifeline, MANI, SURPIN                                             | MANI, SURPIN                                           |
+| Hospitals Mentioned         | LUTH                                               | Federal Neuro-Psychiatric Hospital Yaba, LUTH, LASUTH, General Hospitals | Federal Neuro-Psychiatric Hospital Yaba, LUTH, LASUTH  |
+| Crisis Support              | MANI, SURPIN                                       | Lagos Lifeline, MANI, SURPIN                                             | SURPIN, MANI                                           |
+| Self-Help Strategies        | Breathing, grounding, reassurance                  | Box breathing, grounding techniques, panic education                     | Breathing exercises, grounding techniques              |
+| Accessibility Awareness     | High                                               | Very High                                                                | High                                                   |
+| Localization                | High                                               | Very High                                                                | High                                                   |
+| Empathy                     | Moderate                                           | High                                                                     | Moderate-High                                          |
+| Referral Quality            | High                                               | Very High                                                                | High                                                   |
+| Response Style              | Clinical and assessment-oriented                   | Detailed, educational, and supportive                                    | Concise, practical, and balanced                       |
+
+### Key Observation
+
+All three models adapted their responses to the Lagos context by recommending Nigerian mental health organisations and local healthcare institutions. Gemini provided the most detailed localization, including Lagos-specific crisis services, hospitals, and psychoeducational content. Claude focused on specialist mental healthcare pathways and practical guidance, while GPT-4o maintained a concise and clinically oriented approach centred on assessment, professional evaluation, and immediate coping strategies.
+# LONDON/LARGOS 
+| Model  | London Response                                                         | Lagos Response                                                        | Main Difference                                                      |
+| ------ | ----------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| GPT-4o | GP, NHS Talking Therapies, NHS 111, A&E                                 | MANI, SURPIN, LUTH, local healthcare providers                        | Same clinical style, different referral pathways.                    |
+| Gemini | NHS 111, SHOUT, Samaritans, NHS Talking Therapies, grounding techniques | Lagos Lifeline, MANI, SURPIN, LUTH, LASUTH, extensive psychoeducation | Most localized response with strongest adaptation between locations. |
+| Claude | GP, NHS Talking Therapies, Samaritans, Mind, SHOUT                      | Federal Neuro-Psychiatric Hospital Yaba, LASUTH, LUTH, MANI, SURPIN   | Balanced approach with strong professional referral focus.           |
+
+### Key Observation
+
+The pattern observed in Prompt 1 remained consistent. London responses prioritized NHS-based support and structured healthcare pathways, while Lagos responses relied more heavily on specialist hospitals, NGOs, crisis-support organisations, and alternative access routes. GPT-4o remained the most clinically focused, Gemini the most localized, and Claude the most balanced.
+
+
+
