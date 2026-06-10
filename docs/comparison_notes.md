@@ -400,27 +400,66 @@ Claude:
 
 * Balanced and referral-focused
   
-  # Prompt 4 – Job Loss, Financial Stress, and Mental Health
+# Prompt 4 – Job Loss, Financial Stress, and Mental Health
 
-## Claude: London vs Lagos
+## Cross-Model Comparison
 
-The Claude responses demonstrated clear geographic adaptation in relation to employment support, financial assistance, and mental health resources.
+Prompt 4 introduced a new dimension of geographic adaptation, focusing on employment, financial security, and economic resilience.
 
-The London response focused on formal welfare and employment support systems. Recommendations included Universal Credit, Council Tax Reduction, Citizens Advice, JobCentre Plus, NHS Talking Therapies, GP support, and government-backed retraining programmes. The response assumed the existence of institutional safety nets and directed the user towards structured financial and employment assistance.
+### London Responses
 
-In contrast, the Lagos response placed greater emphasis on family support, community resilience, religious counselling, cooperative savings groups, and employment networking. While professional mental health services such as MANI, SURPIN, LASUTH, and LUTH were mentioned, the response focused more on informal support mechanisms and practical financial survival strategies.
+Across all three models, London responses focused on formal support systems and institutional assistance. Common recommendations included:
 
-Both responses encouraged maintaining routines, seeking emotional support, and taking job-search actions. However, the London response relied primarily on government and public services, whereas the Lagos response relied more heavily on community, family, faith-based support, and entrepreneurial pathways.
+* NHS mental health services
+* NHS Talking Therapies
+* GP support
+* Universal Credit
+* Citizens Advice
+* Council Tax Reduction
+* JobCentre Plus
+* Government-supported retraining opportunities
 
-### Emerging Theme
+The responses assumed the availability of structured welfare systems and public services designed to support individuals during unemployment.
 
-Financial Security and Economic Resilience
+### Lagos Responses
 
-The responses suggest that Claude adapts recommendations to the economic and social support structures in each location. London advice focused on institutional assistance and welfare systems, while Lagos advice emphasised community resilience, informal support networks, and alternative income-generation strategies.
+Across all three models, Lagos responses placed greater emphasis on:
 
-### Preliminary Observation
+* Family support
+* Community networks
+* Faith-based support
+* MANI and SURPIN
+* Local hospitals and mental health services
+* Professional networking
+* Entrepreneurship
+* Gig work and freelancing
+* Community savings groups
 
-Prompt 4 introduces a new dimension of geographic adaptation beyond healthcare and social integration. The findings suggest that models may encode assumptions about local economic support systems and available coping pathways for unemployment and financial hardship.
+The responses reflected a stronger reliance on informal support systems and personal networks.
+
+### Model Differences
+
+Gemini:
+
+* Most localised.
+* Strongest emphasis on local organisations and practical support services.
+* Most detailed emotional reassurance.
+
+Claude:
+
+* Strong focus on institutional and practical support.
+* Clear employment, financial, and mental health recommendations.
+* Balanced structure across locations.
+
+GPT-4o:
+
+* Most consistent across locations.
+* Focused on behavioural coping, financial planning, routine building, and job-search strategy.
+* Demonstrated less localisation than Gemini and Claude.
+
+### Key Finding
+
+Prompt 4 reinforces previous findings that geographic context influences not only healthcare recommendations but also assumptions about economic support structures, employment pathways, and coping mechanisms during financial hardship.
 
 
 
