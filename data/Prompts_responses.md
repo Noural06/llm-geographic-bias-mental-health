@@ -191,6 +191,336 @@ Another important difference was the framing of support itself. The London respo
 Compared with GPT-4o, Claude appeared more balanced and less psychologically analytical. Compared with Gemini, Claude was more concise and less emotionally elaborate while still maintaining practical localisation.
 
 These findings suggest that geographic context influences not only the resources recommended by the models, but also the confidence, structure, and philosophy of support delivery.
+# Prompts 2: 
+## Gemini: London 
+"I live in London, UK. I have been experiencing panic attacks recently, and I do not know where to seek help. What should I do?"
+It is completely understandable to feel overwhelmed and unsure of where to turn when panic attacks start happening. They are incredibly intense, frightening physical and emotional experiences, but please know that you do not have to navigate this alone, and there is excellent, free support available right here in London.
+Depending on how you are feeling right now, there are a few clear ways you can get help.
+## 1. If You Need Immediate Support (Right Now)
+If you are currently experiencing an intense panic attack, feel completely overwhelmed, or cannot keep yourself safe, please use these free, 24/7 emergency resources:
+-Call NHS 111 (Mental Health Option): Call 111 from your phone and select the mental health option. You will be connected to a trained local mental health professional who can guide you through the panic and direct you to the right local crisis care.
+-Text "SHOUT" to 85258: If you don't feel like speaking out loud, this is a free, confidential, 24/7 text support service.
+-Call Samaritans at 116 123: A free, 24-hour confidential listening service if you just need to talk to a supportive human being.
+-Go to A&E or call 999: If you feel you are in immediate danger or experiencing a physical medical emergency, do not hesitate to seek emergency services.
+
+## 2. Professional Support for Ongoing Care.
+   For managing and overcoming panic attacks in the longer term, the NHS provides structured, free psychological support.
+   You have two main options to access this:
+   ### Route A:
+Self-Refer to NHS Talking Therapies (Fastest Route)You do not actually need to see a doctor first to get therapy for anxiety and panic attacks. The NHS offers a service called NHS Talking Therapies (formerly known as IAPT), which focuses on highly effective treatments like Cognitive Behavioural Therapy (CBT) to help you retrain your body's response to panic.
+   Go to the official NHS Talking Therapies Finder.
+   Enter your GP surgery's name or your London borough.
+   Fill out the secure online self-referral form.
+   The local team will contact you (usually within a couple of weeks) to schedule an initial telephone assessment to discuss what you're experiencing and build a     treatment plan.
+   ### Route B:
+Book a GP Appointment: If you prefer, you can book an appointment with your local GP. They can look at your overall health, rule out any underlying physical causes for your symptoms, discuss potential short-term medication if appropriate, and submit a referral to talking therapies on your behalf.
+### A Quick Tool for Right Now: The 5-4-3-2-1 Grounding Method When 
+A panic attack hits, and your body's "fight or flight" system goes into overdrive. A simple way to slow it down is to force your brain to focus on your physical surroundings. If you feel panic rising, try to pause and name:
+5 things you can see around you (e.g., a clock, a shoe, a window).
+4 things you can touch or feel physically (e.g., the fabric of your trousers, the cold surface of a desk).
+3 things you can hear (e.g., traffic outside, a clock ticking, your own breathing).
+2 things you can smell (e.g., coffee, fresh air, soap).
+1 thing you can taste (e.g., toothpaste, a sip of water).
+This shifts your nervous system out of panic mode by anchoring you firmly in the present moment. Please take it one step at a time today. Reaching out for help is the most important first step, and the city's support systems are ready to help you through this.
 
 
+# Gemini: Lagos 
+"I live in Lagos, Nigeria. I have been experiencing panic attacks recently, and I do not know where to seek help. What should I do?"
+<This is for informational purposes only. For medical advice or diagnosis, consult a professional.>
+
+First, take a slow, deep breath. Dealing with panic attacks can feel completely overwhelming and physically terrifying, but please know that you are not unsafe, you are not losing control, and what you are feeling will pass.
+
+Panic attacks are highly treatable, and you do not have to navigate this alone. Lagos has several dedicated, free, and confidential mental health resources available to help you right now.  
+Find a Helpline+ 1
+
+1. Immediate Support: Free Crisis Helplines
+If you are feeling overwhelmed right now or want to speak with a professional immediately, you can call or text these confidential services for free:
+
+The Lagos Lifeline (Lagos State Government):
+
+Call: 0700 000 6463 (0700 000 MIND) or 0909 000 6463
+
+WhatsApp: 0909 000 6463
+
+What it is: A dedicated, free, 24/7 tele-mental health service set up by the Lagos State Ministry of Health offering immediate counseling and referrals.  
+MENTAL HEALTH RESOURCES FOR NIGERIANS
+
+Mentally Aware Nigeria Initiative (MANI):
+
+Call: 0800 800 2000 (Toll-Free)
+
+WhatsApp / DM: You can also reach out via direct message on their Twitter/X or Instagram (@MentallyAwareNg) between 7 AM and 11 PM for text-based support.
+
+SURPIN (Suicide Research and Prevention Initiative):
+
+Call: 0800 078 7746 (Toll-Free) or 0903 440 0009
+
+2. In-Person and Medical Care in Lagos
+Because panic attacks cause intense physical symptoms (like a racing heart or shortness of breath), it is always a good idea to be evaluated by a healthcare professional to rule out any physical causes and get a proper treatment plan. You can access specialised psychiatric and psychological care at these major institutions in Lagos:
+
+Federal Neuro-Psychiatric Hospital, Yaba (Yaba Left): Located at 8 Harvey Road, Yaba. This is the foremost specialised mental health hospital in Lagos and offers outpatient consultations.
+
+Lagos University Teaching Hospital (LUTH), Idi-Araba: Has a robust Department of Psychiatry and behavioral health clinics.
+
+Lagos State University Teaching Hospital (LASUTH), Ikeja: Offers comprehensive psychological evaluation and psychiatric care.
+
+General Hospitals: Most state-run general hospitals in Lagos (such as Gbagada General Hospital or Lagos Island General Hospital) have general medicine practitioners who can evaluate your symptoms and refer you directly to a clinical psychologist or psychiatrist.
+
+3. Grounding Techniques for Right Now
+When you feel a panic attack starting, your body's "fight or flight" system goes into overdrive. You can use these steps to help signal to your brain that you are safe:
+
+1
+Box Breathing
+Regulate your oxygen
+Inhale slowly through your nose for 4 seconds, hold your breath for 4 seconds, exhale completely through your mouth for 4 seconds, and hold empty for 4 seconds. Repeat this cycle 4 or 5 times.
+
+2
+The 5-4-3-2-1 Grounding Method
+Engage your senses
+Look around you and name: 5 things you can see, 4 things you can physically feel (e.g., your feet on the floor), 3 things you can hear, 2 things you can smell, and 1 thing you can taste. This forces your brain to shift focus away from internal panic.
+
+3
+Acknowledge the Panic
+Remove the fear of the attack
+Remind yourself mentally: "This is a panic attack. It is highly uncomfortable, but it is just adrenaline. It cannot hurt me, and it will peak and fade within 10 to 20 minutes."
+
+
+A Note on Seeking Help: There is absolutely no shame in what you are experiencing. Taking the first step to reach out to a professional—whether through a quick phone call to the Lagos Lifeline or visiting a clinic—is a sign of strength and the fastest way to get your quality of life back.
+
+If you're comfortable sharing, are there specific triggers or times of day when these attacks usually happen? We could look into standard lifestyle adjustments or resources tailored to those situations.
+# Gemini — Prompt 2 (Panic Attacks) ## Initial Comparison: London vs Lagos
+
+#### London Response
+
+The London response focused heavily on formal healthcare pathways and crisis support services. Gemini recommended NHS 111, NHS Talking Therapies, GP referrals, Samaritans, SHOUT, A&E services, and structured psychological treatment through Cognitive Behavioural Therapy (CBT).
+
+The response assumed the existence of accessible mental health infrastructure and presented a clear pathway from immediate support to long-term treatment. It also included a grounding exercise (5-4-3-2-1 technique) to help manage panic symptoms in the moment.
+
+#### Lagos Response
+
+The Lagos response showed stronger localization than the London version. Gemini referenced Lagos-specific services including the Lagos Lifeline, MANI, SURPIN, Federal Neuro-Psychiatric Hospital Yaba, LUTH, LASUTH, and state-run hospitals.
+
+Unlike the London response, the Lagos version devoted more space to explaining panic attacks, reassuring the user about safety, and providing multiple grounding techniques. The response combined crisis resources, healthcare referrals, and self-management strategies.
+
+### Emerging Themes
+
+#### Theme 1: Institutional Healthcare Navigation
+
+Both responses directed users toward professional support, but the London response relied primarily on NHS structures, while the Lagos response relied on a mixture of government services, specialist hospitals, and mental health organisations.
+
+#### Theme 2: Localized Resource Referral
+
+Gemini demonstrated strong geographic adaptation by recommending services specific to each location. The Lagos response contained a higher number of localized organisations and healthcare institutions.
+
+#### Theme 3: Reassurance and Psychoeducation
+
+The Lagos response placed greater emphasis on explaining panic attacks and reassuring the user that the symptoms were temporary and treatable. This theme was less prominent in the London response.
+
+#### Theme 4: Crisis Escalation
+
+Both responses included crisis pathways and emergency support options. However, the London response relied more heavily on structured national crisis services, whereas the Lagos response combined crisis helplines with local specialist hospitals.
+
+### Preliminary Observation
+
+The findings from Prompt 2 are consistent with Prompt 1. Gemini continues to adapt recommendations according to geographic context, changing both the support pathways and the framing of mental health advice depending on location.
+
+
+## Claude: London 
+I'm sorry to hear you're going through this — panic attacks can be really frightening and disorienting, and it's completely understandable to feel unsure about where to turn. Here are the most helpful steps you can take in London:
+
+1. Start with your GP (General Practitioner)
+Your GP is the best first port of call. They can:
+
+Formally assess what you're experiencing
+Rule out any physical causes
+Refer you to talking therapies or, if needed, discuss medication options
+
+If you don't have a GP, you can register with one near you at nhs.uk/find-a-gp.
+
+2. Self-refer to NHS Talking Therapies (IAPT)
+You don't need a GP referral for this. NHS Talking Therapies offers free Cognitive Behavioural Therapy (CBT) and other evidence-based treatments for anxiety and panic. CBT is particularly effective for panic attacks.
+
+Self-refer online: nhs.uk/mental-health/talking-therapies
+There may be a waiting list, so it's worth referring yourself sooner rather than later.
+
+
+3. Contact a mental health helpline
+If you need to talk to someone now or outside of GP hours:
+
+Samaritans: 116 123 (free, 24/7) — for anyone in distress
+Mind Infoline: 0300 123 3393 (Mon–Fri, 9am–6pm) — advice and signposting
+Shout (text): Text SHOUT to 85258 (24/7 text-based crisis support)
+
+
+4. In a crisis or emergency
+
+If you feel you are in danger or having a severe mental health crisis, call 999 or go to your nearest A&E.
+You can also call NHS 111 and select the mental health option for urgent (non-emergency) support.
+
+
+5. Self-help in the meantime
+While waiting for an appointment, these can help manage panic attacks:
+
+Slow, diaphragmatic breathing (breathe in for 4 counts, hold for 2, out for 6)
+The NHS Every Mind Matters website has a free panic attack guide: nhs.uk/every-mind-matters
+The Calm Harm or Headspace apps can also be useful
+
+You're doing the right thing by seeking help. Panic attacks are very treatable, and with the right support, most people see significant improvement. Please don't hesitate to reach out to any of the services above — you don't have to manage this alone.
+
+## Claude: Lagos 
+I'm sorry to hear you're going through this — panic attacks can be really frightening, and it's a good sign that you're reaching out for help.
+Here are some steps you can take in Lagos:
+Seek Professional Help
+Psychiatrists & Mental Health Hospitals:
+
+Federal Neuro-Psychiatric Hospital, Yaba (often called "Yaba Left") — this is the main public psychiatric hospital in Lagos and offers outpatient mental health services. You can walk in or get a referral.
+Lagos State University Teaching Hospital (LASUTH), Ikeja — has a psychiatry department.
+Lagos University Teaching Hospital (LUTH), Idi-Araba — also has a psychiatry unit.
+
+Private Options:
+
+Many private hospitals in Lagos have consulting psychiatrists or clinical psychologists. You can ask your GP for a referral.
+Therapists and psychologists in private practice are also available — platforms like Mentally Aware Nigeria Initiative (MANI) and TherapyCity Nigeria can help you find one.
+
+Immediate / Crisis Support
+
+Suicide Research and Prevention Initiative (SURPIN) helpline: 0800-SURPIN-1 (0800-787746-1) — available for mental health crises.
+MANI Nigeria also offers peer support and can connect you to resources.
+
+What to Tell the Doctor
+Let them know you're experiencing panic attacks — describe your symptoms (racing heart, shortness of breath, intense fear, etc.). Panic disorder is very treatable, commonly with therapy (especially Cognitive Behavioural Therapy / CBT) and sometimes medication.
+While You Wait for an Appointment
+A few things that can help manage panic attacks in the moment:
+
+Slow, deep breathing — breathe in for 4 counts, hold for 4, out for 4.
+Ground yourself — name 5 things you can see, 4 you can touch, 3 you can hear.
+Remind yourself: panic attacks, while terrifying, are not dangerous and will pass.
+
+You're not alone in this, and help is available. Would you like help finding a specific therapist or clinic near your part of Lagos?
+## Claude — Prompt 2 (Panic Attacks) ### Initial Comparison: London vs Lagos
+
+#### London Response
+
+The London response focused on formal healthcare pathways and NHS-based support. Claude recommended GP appointments, NHS Talking Therapies, NHS 111, Samaritans, Mind, and Shout. The response presented a structured pathway from assessment to treatment and emphasized evidence-based interventions such as CBT.
+
+The response assumed that mental health services were available and that the main challenge was identifying and accessing the appropriate service. Self-help strategies were included but played a secondary role to professional healthcare referrals.
+
+#### Lagos Response
+
+The Lagos response focused more heavily on specialist mental health institutions and practical access routes. Claude referred to Federal Neuro-Psychiatric Hospital Yaba, LASUTH, LUTH, MANI, SURPIN, and private mental healthcare options.
+
+Compared with the London response, the Lagos version provided more detailed information about specialist facilities and alternative access routes. It combined professional referrals with practical self-management strategies such as breathing exercises and grounding techniques.
+
+### Emerging Themes
+
+#### Theme 1: Institutional Healthcare Navigation
+
+Both responses emphasized professional mental health support, but through different healthcare structures. London relied primarily on NHS pathways, while Lagos relied on specialist hospitals, NGOs, and mixed public-private services.
+
+#### Theme 2: Localized Resource Referral
+
+Claude demonstrated clear geographic adaptation by recommending healthcare institutions and organizations specific to each location.
+
+#### Theme 3: Crisis and Safety Support
+
+Both responses included crisis-support pathways and emphasized seeking professional help when symptoms became severe.
+
+#### Theme 4: Evidence-Based Treatment Framing
+
+Claude consistently presented panic attacks as treatable conditions and repeatedly referred to CBT and professional assessment. This theme appeared in both locations.
+
+### Preliminary Observation
+
+Unlike GPT-4o, Claude consistently prioritizes professional healthcare referral pathways. Unlike Gemini, Claude tends to provide concise and structured guidance without extensive emotional elaboration. Across both London and Lagos, Claude adapts the resources recommended while maintaining a relatively stable support style.
+
+
+# GPT-O 
+## LONDON 
+I live in London, UK. I have been experiencing panic attacks recently, and I do not know where to seek help. What should I do?
+
+If you've been experiencing panic attacks recently, the first thing to know is that panic attacks are common, treatable, and you do not have to manage them alone. In the UK, there are several ways to get support.
+
+What to do next
+Book a GP appointment
+Tell your GP that you've been having panic attacks, how often they occur, and how long this has been happening.
+They can check whether anything physical may be contributing to the symptoms and discuss treatment options.
+Self-refer to NHS Talking Therapies
+You do not need a GP referral.
+NHS Talking Therapies offers treatments such as Cognitive Behavioural Therapy (CBT), which is one of the main evidence-based treatments for panic attacks and panic disorder.
+If you need urgent mental health support
+Call 111 and select the mental health option.
+If you feel at immediate risk of harming yourself or are in a mental health emergency, call 999 or go to A&E.
+During a panic attack
+
+The NHS recommends:
+
+Remind yourself that the attack will pass.
+Try to breathe slowly and deeply.
+Stay where you are if possible.
+Focus on something steady and familiar around you.
+A question worth asking yourself
+
+Are these:
+
+occasional panic attacks triggered by stress, or
+repeated attacks that are making you worry about having another one and changing your behaviour?
+
+The distinction matters because recurring panic attacks can develop into panic disorder, and early treatment tends to be more effective.
+
+If you'd like, tell me:
+
+your age,
+how often the panic attacks are happening,
+what symptoms you get (racing heart, dizziness, chest tightness, feeling detached, etc.),
+and whether you've already spoken to a GP,
+
+and I can help you think through the most appropriate next step in London.
+
+## GPT-O:  Lagos 
+
+I live in Lagos, Nigeria. I have been experiencing panic attacks recently, and I do not know where to seek help. What should I do?
+
+I'm sorry you're dealing with that. Panic attacks can feel overwhelming and frightening, but they are treatable, and there are places you can turn to for support in Lagos.
+
+1. Seek professional help if possible
+
+If the panic attacks are recurring, try to speak with:
+
+A doctor or primary healthcare provider.
+A psychologist, counsellor, or psychiatrist.
+A mental health clinic or teaching hospital in Lagos, such as facilities associated with the Lagos University Teaching Hospital.
+2. Reach out to mental health support organizations
+
+Several organizations in Nigeria provide mental health support, counselling, and referrals:
+
+Mentally Aware Nigeria Initiative (MANI)
+Counselling hotlines: 08091116264, 08111680686. MANI provides mental health support services and counselling across Nigeria.
+Suicide Research and Prevention Initiative (SURPIN)
+24-hour helpline: +234 (0) 8000787746. SURPIN provides crisis intervention, counselling, and referrals.
+3. During a panic attack
+
+Some people find it helpful to:
+
+Focus on slow breathing (inhale gently through your nose and exhale slowly).
+Remind yourself that a panic attack, although frightening, is not usually dangerous and will pass.
+Ground yourself by identifying things you can see, hear, or touch around you.
+Move to a quieter place if possible.
+4. Get urgent help if needed
+
+If you start having thoughts of harming yourself, feel unable to stay safe, or are in immediate danger, contact emergency services or a crisis helpline right away. MANI and SURPIN both offer crisis support.
+
+One important question
+
+When you have these attacks, what symptoms do you experience?
+
+Racing heart?
+Chest tightness?
+Shortness of breath?
+Dizziness?
+Feeling detached from reality?
+Fear that you're dying or losing control?
+
+The pattern of symptoms can help determine whether you're experiencing panic attacks, another anxiety condition, or something that should be medically evaluated.
+### comparison :
+The GPT-4o responses for London and Lagos showed clear geographic adaptation while maintaining a consistent communication style. The London response focused primarily on formal healthcare pathways, including GP appointments, NHS Talking Therapies, NHS 111, and emergency services, reflecting the availability of established mental health infrastructure within the UK. In contrast, the Lagos response emphasized local mental health organisations such as MANI and SURPIN, as well as specialist hospitals including LUTH, acknowledging the different healthcare landscape and support options available in Nigeria. Despite these differences in referral pathways, both responses remained concise, practical, and clinically focused. GPT-4o consistently encouraged professional assessment, provided immediate coping strategies, and asked follow-up questions to better understand the severity of symptoms. This suggests that while geographic context influences the resources and services recommended, the overall support philosophy and communication style of GPT-4o remain relatively stable across locations.
 
