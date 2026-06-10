@@ -199,67 +199,78 @@ Model-specific patterns remain consistent:
 * GPT-4o: strongest behavioural and action-oriented focus.
 * Claude: balanced combination of practical guidance and professional referrals.
 
-### Challenges
-
-* Determining whether the current themes remain stable across additional prompts.
-* Distinguishing geographic adaptation from broader model behaviour.
-* Refining coding definitions before large-scale data collection.
-
-### Questions for Supervision
-
-1. Are the current themes sufficiently robust for continued coding?
-
-2. Is the current pilot dataset adequate before expanding to additional locations?
-
-3. Should any themes be merged, renamed, or further refined at this stage?
-
 ### Next Steps
-
 * Complete Prompt 4.
 * Continue thematic coding.
-* Expand literature review.
-* Draft the Methodology chapter.
-* Refine codebook definitions for thematic analysis.
-* Prepare pilot findings summary for discussion.
-  
+* Expand literature review.  
 ## Prompt 4A — London
 I live in London, UK. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
 ## Prompt 4B — Lagos
 I live in Lagos, Nigeria. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
 Why Prompt 4?
+### Work Completed
+#### Data Collection
+Completed Prompt 4:
+4. Job Loss, Financial Stress, and Mental Health
+Models tested:
+* GPT-4o
+* Gemini
+* Claude
+Locations tested:
+* London, UK
+* Lagos, Nigeria
+Current dataset:
+* 4 prompts
+* 2 locations
+* 3 models
+* 24 responses
+#### Comparative Analysis
+Completed cross-model comparison for Prompt 4.
+Identified differences in:
+* Financial support recommendations
+* Employment guidance
+* Welfare assumptions
+* Community support structures
+* Mental health support pathways
+#### Thematic Analysis
+Refined and expanded coding framework.
+Current themes:
+1. Institutional Healthcare Navigation
+2. Support Under Resource Constraints
+3. Behavioural Self-Management
+4. Localised Resource Referral
+5. Professional Mental Health Referral
+6. Community Integration and Belonging
+7. Financial Security and Economic Resilience
+### Preliminary Findings
+Prompt 4 demonstrated that geographic adaptation extends beyond healthcare recommendations.
+London responses frequently relied on:
+* Welfare systems
+* Government support
+* Formal employment services
 
-Prompt 1 = Anxiety and depression
-Prompt 2 = Panic attacks
-Prompt 3 = Loneliness and social isolation
-Prompt 4 = Financial stress and unemployment
+Lagos responses frequently relied on:
 
-This(P4) tests:
+* Family support
+* Community resilience
+* Informal economic networks
+* Entrepreneurship and freelancing
 
-Economic assumptions
-Employment support recommendations
-Social welfare assumptions
-Financial advice
-Mental health support during economic hardship
-Geographic differences in safety nets
-Possible New Themes
+Model-specific patterns remained consistent:
 
-May see:
+* Gemini: strongest localisation.
+* GPT-4o: strongest behavioural focus.
+* Claude: strongest balance between practical and professional support.
+  
+### Next Steps
+* Complete Prompt 5.
+* Continue thematic coding.
+* Expand literature review.
+* Draft Methodology chapter.
+* Refine codebook definitions.
+* Prepare pilot findings summary.
 
-Financial Security and Economic Stress
-Employment and Career Support
-Government and Welfare Assistance
-Family and Community Resilience
-Future Orientation and Hope
-Data Collection
 
-Run:
-
-GPT-4o London
-GPT-4o Lagos
-Gemini London
-Gemini Lagos
-Claude London
-Claude Lagos
 
 
 
