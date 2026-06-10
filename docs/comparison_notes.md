@@ -177,6 +177,230 @@ All three models adapted their responses to the Lagos context by recommending Ni
 ### Key Observation
 
 The pattern observed in Prompt 1 remained consistent. London responses prioritized NHS-based support and structured healthcare pathways, while Lagos responses relied more heavily on specialist hospitals, NGOs, crisis-support organisations, and alternative access routes. GPT-4o remained the most clinically focused, Gemini the most localized, and Claude the most balanced.
+# Prompt 3 – Loneliness and Social Isolation
+
+## Claude: London vs Lagos
+
+The Claude responses demonstrated clear geographic adaptation while maintaining a consistent focus on social connection and community integration. Unlike Prompts 1 and 2, which centred on healthcare access and mental health services, Prompt 3 shifted attention toward building social networks and reducing loneliness.
+
+The London response emphasized structured social opportunities such as Meetup groups, Eventbrite events, volunteering, community centres, libraries, and friendship-focused applications including Bumble BFF and Nextdoor. The advice reflected the characteristics of a large urban environment where social connection often occurs through organised activities and interest-based groups.
+
+In contrast, the Lagos response focused more heavily on community-based and relationship-oriented approaches. Recommendations included faith communities, alumni networks, neighbourhood associations, estate communities, professional networks, WhatsApp groups, and local organisations. While formal mental health services were also mentioned, the response placed greater emphasis on existing social structures within the local culture.
+
+Both responses encouraged professional mental health support if loneliness was significantly affecting wellbeing. However, the primary difference was how social connection was framed. London advice focused on creating new social networks through organised activities, while Lagos advice focused more on integrating into existing community structures.
+
+### Emerging Theme
+
+Community Integration and Belonging
+
+Unlike the previous prompts, where healthcare systems dominated the responses, Prompt 3 revealed a new theme centred on social belonging. Claude adapted its recommendations according to the social and cultural structures associated with each location, suggesting that geographic context influences not only healthcare advice but also assumptions about how people form relationships and social support networks.
+
+# Prompt 3 – Loneliness and Social Isolation
+
+## Gemini: London vs Lagos
+
+The Gemini responses demonstrated strong geographic adaptation and extensive localization. Unlike the previous prompts, which focused on healthcare access and clinical support, Prompt 3 centred on social integration, community building, and reducing loneliness.
+
+The London response emphasized organised social opportunities such as Meetup groups, volunteering platforms, social sports leagues, friendship applications, libraries, and community events. The advice reflected assumptions about life in a large metropolitan city where social connections are often built through structured activities and interest-based communities.
+
+In contrast, the Lagos response placed greater emphasis on existing community structures and culturally embedded support networks. Recommendations included faith communities, fitness groups, cultural centres, professional networks, social media communities, volunteering initiatives, and neighbourhood-based social connections. The response also referenced Lagos-specific organisations, venues, and events.
+
+Both responses included mental health support services and professional resources. However, the primary difference lay in how social connection was framed. The London response focused on creating new networks through organised activities, whereas the Lagos response emphasized integration into existing communities and local social structures.
+
+### Emerging Theme
+
+Social Connection Through Local Community Structures
+
+The findings suggest that Gemini adapts not only healthcare recommendations but also assumptions about how people develop friendships and social support. The London response emphasized structured social opportunities, while the Lagos response relied more heavily on community-based and culturally embedded networks.
+
+### Preliminary Observation
+
+Compared with Prompts 1 and 2, Prompt 3 introduced new themes related to belonging, social identity, community integration, and informal support networks. This suggests that geographic bias may influence not only healthcare advice but also the social pathways that models recommend for improving mental wellbeing.
+
+# Prompt 3 – Loneliness and Social Isolation
+
+## GPT-4o: London vs Lagos
+
+The GPT-4o responses demonstrated geographic adaptation while maintaining a highly consistent support philosophy. Unlike the previous prompts, which focused primarily on healthcare access and mental health services, Prompt 3 centred on social connection, belonging, and community integration.
+
+The London response framed loneliness as a distinction between emotional loneliness and lack of social connection. The advice focused on building meaningful and recurring relationships through structured activities such as volunteering, sports clubs, book clubs, faith communities, networking groups, and evening classes. The model repeatedly emphasized consistency and repeated contact rather than attending large numbers of social events.
+
+The Lagos response shared many of the same underlying principles but adapted them to the local social environment. Greater emphasis was placed on family connections, religious communities, local organizations, professional networks, and maintaining relationships from previous communities. The response highlighted the role of existing social structures and long-term familiarity in developing friendships.
+
+A notable similarity across both locations was GPT-4o's focus on behavioural change and routine building. Rather than encouraging immediate friendship formation, the model advised creating regular social habits, maintaining contact with existing relationships, and gradually reducing isolation through repeated social exposure.
+
+### Emerging Theme
+
+Behavioural Social Integration
+
+Unlike Gemini and Claude, GPT-4o approached loneliness primarily as a behavioural and social process rather than a problem solved through services or referrals. Across both locations, the model focused on routines, repeated interaction, and gradual relationship building. Geographic adaptation influenced the examples provided, but the underlying support philosophy remained highly consistent.
+
+### Preliminary Observation
+
+Prompt 3 further supports the pattern observed in Prompts 1 and 2. GPT-4o changes recommended resources and examples according to location, but its overall communication style remains stable. The model consistently emphasizes structured action, behavioural change, and long-term habit formation regardless of geographic context.
+# Comparison Notes
+
+## Current Dataset
+
+* Prompts completed: 3
+* Locations: London (UK), Lagos (Nigeria)
+* Models: GPT-4o, Gemini, Claude
+* Total responses collected: 18
+
+---
+
+## Prompt 1 – Anxiety and Depression
+
+### Key Finding
+
+All three models adapted recommendations according to geographic location.
+
+London responses focused on:
+
+* NHS Talking Therapies
+* GP referrals
+* NHS 111
+* Samaritans
+* Formal healthcare pathways
+
+Lagos responses focused on:
+
+* MANI
+* SURPIN
+* Local hospitals
+* Teletherapy
+* Accessibility-aware support
+
+### Model Differences
+
+Gemini:
+
+* Most localized
+* Largest number of specific organisations
+
+GPT-4o:
+
+* Strong behavioural self-management focus
+* Less emphasis on institutional referrals
+
+Claude:
+
+* Balanced approach
+* Strong professional referral pathways
+
+---
+
+## Prompt 2 – Panic Attacks
+
+### Key Finding
+
+All models recognised panic attacks as requiring professional support and crisis awareness.
+
+London responses focused on:
+
+* NHS services
+* GP assessment
+* NHS 111
+* Crisis support
+
+Lagos responses focused on:
+
+* Specialist hospitals
+* MANI
+* SURPIN
+* Local mental health organisations
+
+### Model Differences
+
+Gemini:
+
+* Most detailed crisis guidance
+* Most extensive localization
+
+GPT-4o:
+
+* Most assessment-oriented
+* Strong focus on symptom evaluation
+
+Claude:
+
+* Most concise and structured
+* Consistent referral strategy
+
+---
+
+## Prompt 3 – Loneliness and Social Isolation
+
+### Key Finding
+
+Prompt 3 produced a different pattern from Prompts 1 and 2.
+
+Instead of healthcare navigation, responses focused on:
+
+* Social integration
+* Friendship building
+* Community belonging
+* Informal support networks
+
+London responses focused on:
+
+* Meetup
+* Eventbrite
+* Volunteering
+* Sports groups
+* Friendship apps
+
+Lagos responses focused on:
+
+* Religious communities
+* Alumni networks
+* Community groups
+* Professional networks
+* Neighbourhood connections
+
+### Model Differences
+
+Gemini:
+
+* Most detailed local social recommendations
+
+GPT-4o:
+
+* Behavioural social integration
+* Focus on repeated contact and routines
+
+Claude:
+
+* Strong emphasis on community belonging
+* Balanced mental health and social advice
+
+---
+
+## Overall Emerging Pattern
+
+Geographic context influences:
+
+* Referral pathways
+* Healthcare assumptions
+* Community recommendations
+* Crisis support recommendations
+* Social integration strategies
+
+Model differences remain visible across all prompts.
+
+Gemini:
+
+* Localization-focused
+
+GPT-4o:
+
+* Behaviour-focused
+
+Claude:
+
+* Balanced and referral-focused
+
+
 
 
 
