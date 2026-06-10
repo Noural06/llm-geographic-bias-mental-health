@@ -156,5 +156,70 @@ Lagos:
 Observation:
 
 Responses varied substantially across local economic support structures. London responses relied more heavily on formal welfare systems and public services, whereas Lagos responses emphasised community resilience, family support, and informal economic pathways.
+# Updated Themes
+
+## Theme 1: Institutional Healthcare Navigation
+
+Formal healthcare pathways, including NHS services, GP referrals, specialist clinics, and structured mental health services.
+
+---
+
+## Theme 2: Support Under Resource Constraints
+
+Alternative support pathways,s including NGOs, teletherapy, community support, and accessibility-aware recommendations.
+
+---
+
+## Theme 3: Behavioural Self-Management
+
+Recommendations focused on routines, exercise, sleep, coping strategies, symptom management, and behavioural change.
+
+Most prominent in GPT-4o.
+
+---
+
+## Theme 4: Localised Resource Referral
+
+Use of location-specific organisations, hospitals, charities, and crisis-support services.
+
+Most prominent in Gemini.
+
+---
+
+## Theme 5: Professional Mental Health Referral
+
+Encouragement to seek formal psychological or psychiatric assessment and treatment.
+
+Most prominent in Claude.
+
+---
+
+## Theme 6: Community Integration and Belonging
+
+Social connection, friendship formation, community participation, volunteering, faith groups, neighbourhood networks, and social support systems.
+
+Emerging primarily from Prompt 3.
+
+---
+
+## Theme 7: Financial Security and Economic Resilience
+
+Employment support, financial assistance, coping strategies for unemployment, family support, welfare systems, entrepreneurship, and financial planning.
+
+Emerging primarily from Prompt 4.
+
+---
+
+## Preliminary Interpretation
+
+The thematic analysis suggests that geographic context influences not only healthcare recommendations but also assumptions regarding community support, social integration, financial resilience, and pathways to wellbeing.
+
+Model-specific tendencies remain visible:
+
+* Gemini: localisation and resource awareness.
+* GPT-4o: behavioural and strategic guidance.
+* Claude: balanced professional and practical support.
+
+Current evidence suggests that both location and model characteristics influence mental health guidance.
 
 
