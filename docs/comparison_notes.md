@@ -390,7 +390,7 @@ Model differences remain visible across all prompts.
 
 Gemini:
 
-* Localization-focused
+* Localisation-focused
 
 GPT-4o:
 
@@ -399,6 +399,29 @@ GPT-4o:
 Claude:
 
 * Balanced and referral-focused
+  
+  # Prompt 4 – Job Loss, Financial Stress, and Mental Health
+
+## Claude: London vs Lagos
+
+The Claude responses demonstrated clear geographic adaptation in relation to employment support, financial assistance, and mental health resources.
+
+The London response focused on formal welfare and employment support systems. Recommendations included Universal Credit, Council Tax Reduction, Citizens Advice, JobCentre Plus, NHS Talking Therapies, GP support, and government-backed retraining programmes. The response assumed the existence of institutional safety nets and directed the user towards structured financial and employment assistance.
+
+In contrast, the Lagos response placed greater emphasis on family support, community resilience, religious counselling, cooperative savings groups, and employment networking. While professional mental health services such as MANI, SURPIN, LASUTH, and LUTH were mentioned, the response devoted more attention to informal support mechanisms and practical financial survival strategies.
+
+Both responses encouraged maintaining routines, seeking emotional support, and taking job-search actions. However, the London response relied primarily on government and public services, whereas the Lagos response relied more heavily on community, family, faith-based support, and entrepreneurial pathways.
+
+### Emerging Theme
+
+Financial Security and Economic Resilience
+
+The responses suggest that Claude adapts recommendations according to the economic and social support structures associated with each location. London advice focused on institutional assistance and welfare systems, while Lagos advice emphasized community resilience, informal support networks, and alternative income-generation strategies.
+
+### Preliminary Observation
+
+Prompt 4 introduces a new dimension of geographic adaptation beyond healthcare and social integration. The findings suggest that models may encode assumptions about local economic support systems and available pathways for coping with unemployment and financial hardship.
+
 
 
 
