@@ -131,4 +131,30 @@ Observed in:
 Thematic analysis suggests that geographic context influences both healthcare recommendations and assumptions about social support structures.
 
 Models adapt not only referral pathways but also their understanding of how individuals access support, build relationships, and engage with local communities.
+## Theme 7: Financial Security and Economic Resilience
+
+This theme emerged in Prompt 4 and concerns how models respond to financial hardship, unemployment, and economic uncertainty.
+
+Examples:
+
+London:
+
+* Universal Credit
+* Council Tax Reduction
+* Citizens Advice
+* JobCentre Plus
+* Government-supported retraining
+
+Lagos:
+
+* Family support networks
+* Religious counselling
+* Community savings groups (ajo/esusu)
+* Employment networking
+* Entrepreneurship and gig work
+
+Observation:
+
+Responses varied substantially across local economic support structures. London responses relied more heavily on formal welfare systems and public services, whereas Lagos responses emphasised community resilience, family support, and informal economic pathways.
+
 
