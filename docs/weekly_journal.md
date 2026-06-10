@@ -122,3 +122,14 @@
 * Continue collecting responses using additional prompts.
 * Refine coding framework.
 * Begin drafting the Methodology chapter.
+  
+# week 3 
+### Progress Update
+
+The pilot study has now expanded to two mental health scenarios (anxiety/depression and panic attacks) across two geographic locations (London and Lagos) using three large language models (GPT-4o, Gemini, and Claude), resulting in a total of 12 collected responses.
+
+Initial findings suggest that all models adapt recommendations according to geographic context. However, the degree of localization and the style of support vary substantially between models. Emerging themes include institutional healthcare navigation, support under resource constraints, localized resource referral, behavioural self-management, and crisis escalation.
+
+The next phase of data collection will focus on loneliness and social isolation to determine whether these patterns remain consistent across different mental health scenarios.
+
+
