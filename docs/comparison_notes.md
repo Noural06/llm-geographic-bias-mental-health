@@ -109,18 +109,18 @@ These early findings suggest that GPT-4o adapts not only the resources it recomm
 
 ### Prompt 1 Key Finding
 
-All three models adapted to location. London responses focused on NHS services and formal healthcare pathways, whereas Lagos responses relied more heavily on NGOs, specialist organisations, tele-support, and accessibility-aware recommendations. GPT-4o focused on behavioural self-management, Gemini on localized support resources, and Claude on balanced professional guidance.
+All three models are adapted to the location. London responses focused on NHS services and formal healthcare pathways, whereas Lagos responses relied more heavily on NGOs, specialist organisations, tele-support, and accessibility-aware recommendations. GPT-4o focused on behavioural self-management, Gemini on localised support resources, and Claude on balanced professional guidance.
 # Prompt 1 (Anxiety and Depression) LARGOS 
 
 | Model  | London Response                                                   | Lagos Response                                      | Main Difference                                                                |
 | ------ | ----------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------ |
 | GPT-4o | NHS services, GP referral, behavioural stabilization              | MANI, SURPIN, self-management, community support    | Lagos focused more on coping strategies and limited-access support.            |
 | Gemini | NHS Talking Therapies, Mind UK, low-cost counselling, Hub of Hope | MANI, NSPI, She Writes Woman, LUTH, teletherapy     | Strong localization in both locations with extensive resource recommendations. |
-| Claude | NHS Talking Therapies, GP, NHS 111, Samaritans                    | MANI, ASIDO, Thought Sanctuary, local organisations | Balanced support style with localized referrals.                               |
+| Claude | NHS Talking Therapies, GP, NHS 111, Samaritans                    | MANI, ASIDO, Thought Sanctuary, local organisations | Balanced support style with localised referrals.                               |
 
 ### Key Observation
 
-All three models adapted recommendations according to location. London responses focused on formal healthcare systems, while Lagos responses emphasized NGOs, specialist organisations, and accessibility-aware support pathways.
+All three models adapted their recommendations to the location. London responses focused on formal healthcare systems, while Lagos responses emphasised NGOs, specialist organisations, and accessibility-aware support pathways.
 
 # Prompt 2 (Panic Attacks) LONDON 
 ## Panic Attacks Scenario
@@ -166,52 +166,52 @@ The same pattern observed in Prompt 1 remained visible. London responses priorit
 
 ### Key Observation
 
-All three models adapted their responses to the Lagos context by recommending Nigerian mental health organisations and local healthcare institutions. Gemini provided the most detailed localization, including Lagos-specific crisis services, hospitals, and psychoeducational content. Claude focused on specialist mental healthcare pathways and practical guidance, while GPT-4o maintained a concise and clinically oriented approach centred on assessment, professional evaluation, and immediate coping strategies.
+All three models adapted their responses to the Lagos context by recommending Nigerian mental health organisations and local healthcare institutions. Gemini provided the most detailed localisation, including Lagos-specific crisis services, hospitals, and psychoeducational content. Claude focused on specialist mental healthcare pathways and practical guidance, while GPT-4o maintained a concise and clinically oriented approach centred on assessment, professional evaluation, and immediate coping strategies.
 # LONDON/LARGOS 
 | Model  | London Response                                                         | Lagos Response                                                        | Main Difference                                                      |
 | ------ | ----------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | GPT-4o | GP, NHS Talking Therapies, NHS 111, A&E                                 | MANI, SURPIN, LUTH, local healthcare providers                        | Same clinical style, different referral pathways.                    |
-| Gemini | NHS 111, SHOUT, Samaritans, NHS Talking Therapies, grounding techniques | Lagos Lifeline, MANI, SURPIN, LUTH, LASUTH, extensive psychoeducation | Most localized response with strongest adaptation between locations. |
+| Gemini | NHS 111, SHOUT, Samaritans, NHS Talking Therapies, grounding techniques | Lagos Lifeline, MANI, SURPIN, LUTH, LASUTH, extensive psychoeducation | Most localised response with strongest adaptation between locations. |
 | Claude | GP, NHS Talking Therapies, Samaritans, Mind, SHOUT                      | Federal Neuro-Psychiatric Hospital Yaba, LASUTH, LUTH, MANI, SURPIN   | Balanced approach with strong professional referral focus.           |
 
 ### Key Observation
 
-The pattern observed in Prompt 1 remained consistent. London responses prioritized NHS-based support and structured healthcare pathways, while Lagos responses relied more heavily on specialist hospitals, NGOs, crisis-support organisations, and alternative access routes. GPT-4o remained the most clinically focused, Gemini the most localized, and Claude the most balanced.
+The pattern observed in Prompt 1 remained consistent. London responses prioritised NHS-based support and structured healthcare pathways, while Lagos responses relied more on specialist hospitals, NGOs, crisis support organisations, and alternative access routes. GPT-4o remained the most clinically focused, Gemini the most localised, and Claude the most balanced.
 # Prompt 3 – Loneliness and Social Isolation
 
 ## Claude: London vs Lagos
 
 The Claude responses demonstrated clear geographic adaptation while maintaining a consistent focus on social connection and community integration. Unlike Prompts 1 and 2, which centred on healthcare access and mental health services, Prompt 3 shifted attention toward building social networks and reducing loneliness.
 
-The London response emphasized structured social opportunities such as Meetup groups, Eventbrite events, volunteering, community centres, libraries, and friendship-focused applications including Bumble BFF and Nextdoor. The advice reflected the characteristics of a large urban environment where social connection often occurs through organised activities and interest-based groups.
+The London response emphasised structured social opportunities such as Meetup groups, Eventbrite events, volunteering, community centres, libraries, and friendship-focused applications, including Bumble BFF and Nextdoor. The advice reflected the characteristics of a large urban environment where social connection often occurs through organised activities and interest-based groups.
 
 In contrast, the Lagos response focused more heavily on community-based and relationship-oriented approaches. Recommendations included faith communities, alumni networks, neighbourhood associations, estate communities, professional networks, WhatsApp groups, and local organisations. While formal mental health services were also mentioned, the response placed greater emphasis on existing social structures within the local culture.
 
-Both responses encouraged professional mental health support if loneliness was significantly affecting wellbeing. However, the primary difference was how social connection was framed. London advice focused on creating new social networks through organised activities, while Lagos advice focused more on integrating into existing community structures.
+Both responses encouraged professional mental health support if loneliness was significantly affecting well-being. However, the primary difference was how social connection was framed. London advice focused on creating new social networks through organised activities, while Lagos advice focused more on integrating into existing community structures.
 
 ### Emerging Theme
 
 Community Integration and Belonging
 
-Unlike the previous prompts, where healthcare systems dominated the responses, Prompt 3 revealed a new theme centred on social belonging. Claude adapted its recommendations according to the social and cultural structures associated with each location, suggesting that geographic context influences not only healthcare advice but also assumptions about how people form relationships and social support networks.
+Unlike the previous prompts, where healthcare systems dominated the responses, Prompt 3 revealed a new theme centred on social belonging. Claude adapted its recommendations to the social and cultural structures of each location, suggesting that geographic context influences not only healthcare advice but also assumptions about how people form relationships and build social support networks.
 
 # Prompt 3 – Loneliness and Social Isolation
 
 ## Gemini: London vs Lagos
 
-The Gemini responses demonstrated strong geographic adaptation and extensive localization. Unlike the previous prompts, which focused on healthcare access and clinical support, Prompt 3 centred on social integration, community building, and reducing loneliness.
+The Gemini responses demonstrated strong geographic adaptation and extensive localisation. Unlike the previous prompts, which focused on healthcare access and clinical support, Prompt 3 centred on social integration, community building, and reducing loneliness.
 
-The London response emphasized organised social opportunities such as Meetup groups, volunteering platforms, social sports leagues, friendship applications, libraries, and community events. The advice reflected assumptions about life in a large metropolitan city where social connections are often built through structured activities and interest-based communities.
+The London response emphasised organised social opportunities such as Meetup groups, volunteering platforms, social sports leagues, friendship applications, libraries, and community events. The advice reflected assumptions about life in a large metropolitan city where social connections are often built through structured activities and interest-based communities.
 
 In contrast, the Lagos response placed greater emphasis on existing community structures and culturally embedded support networks. Recommendations included faith communities, fitness groups, cultural centres, professional networks, social media communities, volunteering initiatives, and neighbourhood-based social connections. The response also referenced Lagos-specific organisations, venues, and events.
 
-Both responses included mental health support services and professional resources. However, the primary difference lay in how social connection was framed. The London response focused on creating new networks through organised activities, whereas the Lagos response emphasized integration into existing communities and local social structures.
+Both responses included mental health support services and professional resources. However, the primary difference lay in how social connection was framed. The London response focused on creating new networks through organised activities, whereas the Lagos response emphasised integration into existing communities and local social structures.
 
 ### Emerging Theme
 
 Social Connection Through Local Community Structures
 
-The findings suggest that Gemini adapts not only healthcare recommendations but also assumptions about how people develop friendships and social support. The London response emphasized structured social opportunities, while the Lagos response relied more heavily on community-based and culturally embedded networks.
+The findings suggest that Gemini adapts not only to healthcare recommendations but also to assumptions about how people form friendships and seek social support. The London response emphasised structured social opportunities, while the Lagos response relied more heavily on community-based and culturally embedded networks.
 
 ### Preliminary Observation
 
@@ -223,9 +223,9 @@ Compared with Prompts 1 and 2, Prompt 3 introduced new themes related to belongi
 
 The GPT-4o responses demonstrated geographic adaptation while maintaining a highly consistent support philosophy. Unlike the previous prompts, which focused primarily on healthcare access and mental health services, Prompt 3 centred on social connection, belonging, and community integration.
 
-The London response framed loneliness as a distinction between emotional loneliness and lack of social connection. The advice focused on building meaningful and recurring relationships through structured activities such as volunteering, sports clubs, book clubs, faith communities, networking groups, and evening classes. The model repeatedly emphasized consistency and repeated contact rather than attending large numbers of social events.
+The London response framed loneliness as a distinction between emotional loneliness and lack of social connection. The advice focused on building meaningful and recurring relationships through structured activities such as volunteering, sports clubs, book clubs, faith communities, networking groups, and evening classes. The model repeatedly emphasised consistency and repeated contact rather than attending large numbers of social events.
 
-The Lagos response shared many of the same underlying principles but adapted them to the local social environment. Greater emphasis was placed on family connections, religious communities, local organizations, professional networks, and maintaining relationships from previous communities. The response highlighted the role of existing social structures and long-term familiarity in developing friendships.
+The Lagos response shared many of the same underlying principles but adapted them to the local social environment. Greater emphasis was placed on family connections, religious communities, local organisations, professional networks, and maintaining relationships from previous communities. The response highlighted the role of existing social structures and long-term familiarity in developing friendships.
 
 A notable similarity across both locations was GPT-4o's focus on behavioural change and routine building. Rather than encouraging immediate friendship formation, the model advised creating regular social habits, maintaining contact with existing relationships, and gradually reducing isolation through repeated social exposure.
 
@@ -233,11 +233,11 @@ A notable similarity across both locations was GPT-4o's focus on behavioural cha
 
 Behavioural Social Integration
 
-Unlike Gemini and Claude, GPT-4o approached loneliness primarily as a behavioural and social process rather than a problem solved through services or referrals. Across both locations, the model focused on routines, repeated interaction, and gradual relationship building. Geographic adaptation influenced the examples provided, but the underlying support philosophy remained highly consistent.
+Unlike Gemini and Claude, GPT-4o approached loneliness primarily as a behavioural and social process rather than as a problem to be solved through services or referrals. Across both locations, the model focused on routines, repeated interaction, and gradual relationship building. Geographic adaptation influenced the examples provided, but the underlying support philosophy remained highly consistent.
 
 ### Preliminary Observation
 
-Prompt 3 further supports the pattern observed in Prompts 1 and 2. GPT-4o changes recommended resources and examples according to location, but its overall communication style remains stable. The model consistently emphasizes structured action, behavioural change, and long-term habit formation regardless of geographic context.
+Prompt 3 further supports the pattern observed in Prompts 1 and 2. GPT-4o changes the recommended resources and examples based on location, but its overall communication style remains stable. The model consistently emphasises structured action, behavioural change, and long-term habit formation regardless of geographic context.
 # Comparison Notes
 
 ## Current Dataset
@@ -294,7 +294,7 @@ Claude:
 
 ### Key Finding
 
-All models recognised panic attacks as requiring professional support and crisis awareness.
+All models recognised that panic attacks require professional support and crisis awareness.
 
 London responses focused on:
 
@@ -315,7 +315,7 @@ Lagos responses focused on:
 Gemini:
 
 * Most detailed crisis guidance
-* Most extensive localization
+* Most extensive localisation
 
 GPT-4o:
 
@@ -408,7 +408,7 @@ The Claude responses demonstrated clear geographic adaptation in relation to emp
 
 The London response focused on formal welfare and employment support systems. Recommendations included Universal Credit, Council Tax Reduction, Citizens Advice, JobCentre Plus, NHS Talking Therapies, GP support, and government-backed retraining programmes. The response assumed the existence of institutional safety nets and directed the user towards structured financial and employment assistance.
 
-In contrast, the Lagos response placed greater emphasis on family support, community resilience, religious counselling, cooperative savings groups, and employment networking. While professional mental health services such as MANI, SURPIN, LASUTH, and LUTH were mentioned, the response devoted more attention to informal support mechanisms and practical financial survival strategies.
+In contrast, the Lagos response placed greater emphasis on family support, community resilience, religious counselling, cooperative savings groups, and employment networking. While professional mental health services such as MANI, SURPIN, LASUTH, and LUTH were mentioned, the response focused more on informal support mechanisms and practical financial survival strategies.
 
 Both responses encouraged maintaining routines, seeking emotional support, and taking job-search actions. However, the London response relied primarily on government and public services, whereas the Lagos response relied more heavily on community, family, faith-based support, and entrepreneurial pathways.
 
@@ -416,11 +416,11 @@ Both responses encouraged maintaining routines, seeking emotional support, and t
 
 Financial Security and Economic Resilience
 
-The responses suggest that Claude adapts recommendations according to the economic and social support structures associated with each location. London advice focused on institutional assistance and welfare systems, while Lagos advice emphasized community resilience, informal support networks, and alternative income-generation strategies.
+The responses suggest that Claude adapts recommendations to the economic and social support structures in each location. London advice focused on institutional assistance and welfare systems, while Lagos advice emphasised community resilience, informal support networks, and alternative income-generation strategies.
 
 ### Preliminary Observation
 
-Prompt 4 introduces a new dimension of geographic adaptation beyond healthcare and social integration. The findings suggest that models may encode assumptions about local economic support systems and available pathways for coping with unemployment and financial hardship.
+Prompt 4 introduces a new dimension of geographic adaptation beyond healthcare and social integration. The findings suggest that models may encode assumptions about local economic support systems and available coping pathways for unemployment and financial hardship.
 
 
 
