@@ -75,7 +75,7 @@ Very little work has specifically examined mental health responses across cities
 
 ### Notes
 
-Mental healthcare access is not equal across countries or regions. Some areas have strong healthcare systems and professional support, while others face shortages, high costs, or social stigma around mental illness.
+Access to mental healthcare is not equal across countries or regions. Some areas have strong healthcare systems and professional support, while others face shortages, high costs, or social stigma around mental illness.
 
 This is important because LLMs may unintentionally assume that therapy, crisis services, or healthcare professionals are easily available everywhere.
 
@@ -178,15 +178,22 @@ This paper compares AI-written and human-written responses to mental health quer
 
 ### Golden and Aboujaoude (2024)
 This paper gives a framework for evaluating AI mental health tools. It may help me design my scoring criteria.
-##########
+######## 
 I am studying geographic variation in LLM responses to mental health.
 Why it matters: Mental health access varies globally, so AI advice should not assume the same services are available everywhere.
 I will test it: same prompts, different locations, compare responses using scoring and thematic analysis.
 I plan to evaluate responses using both scoring criteria and thematic analysis. Scoring will help compare models quantitatively across empathy, accessibility awareness, and crisis support. Thematic analysis will help identify recurring assumptions, cultural patterns, and differences in how mental health advice is framed across geographic contexts.
-## Questions for supervisor
 
-1. Should I reduce the number of cities to keep the project manageable?
-2. Should I focus more on crisis responses or general mental health support?
-3. Should the evaluation be mainly manual coding, NLP metrics, or both?
-4. Is it better to compare three models or focus deeply on one or two?
+# Thematic Analysis Literature
 
+Braun, V. & Clarke, V. (2006)
+Using thematic analysis in psychology.
+
+Braun, V. & Clarke, V. (2019)
+Reflecting on reflexive thematic analysis.
+
+De Paoli (2024)
+Inductive thematic analysis with LLMs.
+
+Dai et al. (2023)
+LLM-in-the-loop thematic analysis.
