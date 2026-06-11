@@ -264,6 +264,29 @@ Updated:
 * Draft Methodology chapter.
 * Begin formal thematic coding.
 
+### Work Completed
+
+- Completed six-prompt pilot dataset.
+- Collected responses from GPT-4o, Gemini, and Claude.
+- Completed London and Lagos comparisons.
+- Developed thematic analysis framework.
+- Created codebook containing ten preliminary themes.
+- Produced pilot findings summary.
+- Created coding matrix for formal thematic coding.
+
+### Key Findings
+
+- Geographic context consistently influenced recommendations.
+- London responses emphasised formal healthcare pathways.
+- Lagos responses emphasised NGOs, community support, and accessibility-aware guidance.
+- Model-specific response styles remained stable across prompts.
+
+### Next Steps
+
+- Complete formal coding of all 36 responses.
+- Generate theme frequency tables.
+- Draft Methodology chapter.
+- Expand literature review.
  
 
 
