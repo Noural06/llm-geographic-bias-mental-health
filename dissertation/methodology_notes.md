@@ -1,4 +1,4 @@
-# Methodology Notes
+ # Methodology Notes
 
 ## Research Design
 
@@ -6,23 +6,29 @@ Qualitative comparative study.
 
 ## Data Collection
 
-- 6 mental health prompts
-- 2 locations
-- 3 models
-- 36 responses
+Six mental health prompts were presented to GPT-4o, Gemini, and Claude.
 
-## Analysis Method
+Each prompt was repeated using two locations:
 
-Primary method:
+- London, UK
+- Lagos, Nigeria
+
+This produced 36 responses.
+
+## Data Analysis
+
+Primary analysis method:
 - Reflexive Thematic Analysis
 
-Secondary method:
-- Descriptive comparison of themes across models and locations
-
-## Coding Process
-
-- Initial familiarisation
-- Theme generation
-- Codebook development
-- Coding matrix creation
+Supporting analysis:
 - Cross-model comparison
+- Cross-location comparison
+
+## Coding Procedure
+
+1. Familiarisation with responses
+2. Initial theme generation
+3. Development of codebook
+4. Coding matrix creation
+5. Theme refinement
+6. Comparative analysis
