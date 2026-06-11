@@ -460,6 +460,155 @@ GPT-4o:
 ### Key Finding
 
 Prompt 4 reinforces previous findings that geographic context influences not only healthcare recommendations but also assumptions about economic support structures, employment pathways, and coping mechanisms during financial hardship.
+# Prompt 5 
+# Prompt 5 – Caregiver Burden and Emotional Exhaustion
+
+## Cross-Model Comparison
+
+Prompt 5 examined how language models respond to caregiver burnout, emotional exhaustion, and long-term caregiving responsibilities.
+
+### London Responses
+
+Across all three models, recommendations focused heavily on formal caregiver support systems, including:
+
+* GP support
+* NHS mental health services
+* Carer's Assessment
+* Carers UK
+* Carers Trust
+* Respite care services
+* Local council support
+
+The responses assumed the existence of formal social care infrastructure designed to support caregivers.
+
+### Lagos Responses
+
+Across all three models, recommendations focused more heavily on:
+
+* Family support
+* Extended family involvement
+* Religious communities
+* Community support networks
+* MANI
+* LUTH
+* LASUTH
+* Federal Neuro-Psychiatric Hospital Yaba
+
+The responses assumed that caregiving responsibilities are often shared informally through family and community structures.
+
+### Model Differences
+
+Gemini:
+
+* Most detailed caregiver-specific guidance.
+* Included legal rights, Carer's Assessments, and support networks.
+* Strongest localisation.
+
+Claude:
+
+* Most concise.
+* Focused on practical support options and caregiver wellbeing.
+* Balanced emotional and practical advice.
+
+GPT-4o:
+
+* Focused on sustainability of caregiving.
+* Emphasised emotional exhaustion, burnout prevention, and maintaining personal wellbeing.
+* Most behavioural approach.
+
+### Key Finding
+
+Prompt 5 revealed substantial geographic differences in how caregiver support is framed.
+
+London responses relied on formal social care systems and institutional support.
+
+Lagos responses relied more heavily on family networks, community structures, religious organisations, and informal caregiving arrangements.
+
+This suggests that geographic adaptation extends beyond healthcare access and reflects broader assumptions about family responsibilities and support systems.
+# Prompt 6 
+# Comparison Notes
+
+## Dataset Overview
+
+* Prompts: 6
+* Locations: London (UK), Lagos (Nigeria)
+* Models: GPT-4o, Gemini, Claude
+* Total Responses: 36
+
+---
+
+## Geographic Differences
+
+### London Responses
+
+Common characteristics:
+
+* NHS Talking Therapies
+* GP referrals
+* NHS 111
+* Samaritans
+* Formal healthcare pathways
+* Welfare and employment support
+* Carer support services
+* Specialist referrals
+
+### Lagos Responses
+
+Common characteristics:
+
+* MANI
+* SURPIN
+* Local hospitals
+* Family support networks
+* Religious communities
+* Community-based assistance
+* Informal economic support
+* Teletherapy and local organisations
+
+---
+
+## Model Differences
+
+### GPT-4o
+
+Characteristics:
+
+* Behavioural and strategic guidance.
+* Focus on routines, coping mechanisms, and practical action plans.
+* Less localisation than Gemini.
+* Consistent response style across locations.
+
+### Gemini
+
+Characteristics:
+
+* Strongest localisation.
+* Largest number of local organisations and services.
+* Most detailed responses.
+* Frequently provided step-by-step action plans.
+
+### Claude
+
+Characteristics:
+
+* Most concise.
+* Balanced between emotional support and practical advice.
+* Strong emphasis on referral pathways and professional services.
+
+---
+
+## Emerging Findings
+
+Geographic context influenced:
+
+* Healthcare recommendations.
+* Crisis support pathways.
+* Community support assumptions.
+* Employment and financial guidance.
+* Caregiving support.
+* Sleep and mental health pathways.
+
+Model characteristics remained consistent across all six prompts.
 
 
 
