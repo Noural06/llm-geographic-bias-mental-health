@@ -129,23 +129,30 @@ Models tested:
 * GPT-4o
 * Gemini
 * Claude
+  
 Locations tested:
 * London, UK
 * Lagos, Nigeria
+  
 Total responses collected to date:
 * 18 responses
 * 3 prompts
 * 2 locations
 * 3 models
+  
 #### Comparative Analysis
 Completed comparisons for:
+
 * Prompt 1 (Anxiety and Depression)
 * Prompt 2 (Panic Attacks)
 * Prompt 3 (Loneliness and Social Isolation)
 Cross-model comparisons were documented and organised within the GitHub repository.
+
 #### Thematic Analysis
+
 Refined and expanded thematic coding.
 Current themes:
+
 1. Institutional Healthcare Navigation
 2. Support Under Resource Constraints
 3. Behavioural Self-Management
@@ -153,6 +160,7 @@ Current themes:
 5. Professional Mental Health Referral
 6. Community Integration and Belonging
 A new theme emerged in Prompt 3 regarding social belonging, friendship formation, and community integration.
+
 ### Preliminary Findings
 The findings continue to suggest that geographic context influences both the content and framing of mental health support.
 #### London responses generally emphasised:
