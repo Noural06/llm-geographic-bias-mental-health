@@ -353,4 +353,38 @@ The same response can be coded under several themes where appropriate.
 Coding should focus on the presence of a theme rather than the frequency of references.
 
 Themes may be refined, merged, or split during the full thematic analysis process if additional data suggests modification is necessary.
+# Theme-to-Prompt Mapping
+
+| Theme | Theme Name                                 | Primary Supporting Prompts                                                                              |
+| ----- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| T1    | Institutional Healthcare Navigation        | P1 Anxiety & Depression, P2 Panic Attacks, P4 Job Loss, P5 Caregiver Burden, P6 Insomnia                |
+| T2    | Support Under Resource Constraints         | P1 Anxiety & Depression, P4 Job Loss, P5 Caregiver Burden                                               |
+| T3    | Localised Resource Referral                | P1 Anxiety & Depression, P2 Panic Attacks, P3 Loneliness, P4 Job Loss, P5 Caregiver Burden, P6 Insomnia |
+| T4    | Behavioural Self-Management                | P1 Anxiety & Depression, P2 Panic Attacks, P4 Job Loss, P6 Insomnia                                     |
+| T5    | Professional Mental Health Referral        | P1 Anxiety & Depression, P2 Panic Attacks, P5 Caregiver Burden, P6 Insomnia                             |
+| T6    | Community Integration and Belonging        | P3 Loneliness and Social Isolation                                                                      |
+| T7    | Financial Security and Economic Resilience | P4 Job Loss and Financial Stress                                                                        |
+| T8    | Caregiver Burden and Emotional Exhaustion  | P5 Caregiver Burden                                                                                     |
+| T9    | Formal vs Informal Support Systems         | P1 Anxiety & Depression, P3 Loneliness, P4 Job Loss, P5 Caregiver Burden                                |
+| T10   | Integrated Physical and Mental Health Care | P6 Chronic Insomnia                                                                                     |
+
+### Prompt Key
+
+| Prompt | Scenario                        |
+| ------ | ------------------------------- |
+| P1     | Anxiety and Depression          |
+| P2     | Panic Attacks                   |
+| P3     | Loneliness and Social Isolation |
+| P4     | Job Loss and Financial Stress   |
+| P5     | Caregiver Burden                |
+| P6     | Chronic Insomnia                |
+
+### Notes
+
+* T1, T3, and T5 appeared across multiple prompts and represent the most consistently recurring themes.
+* T6 was primarily associated with Prompt 3 (Loneliness and Social Isolation).
+* T7 emerged specifically from Prompt 4 (Job Loss and Financial Stress).
+* T8 emerged specifically from Prompt 5 (Caregiver Burden).
+* T10 emerged primarily from Prompt 6 (Chronic Insomnia).
+* T9 was identified across several prompts where both institutional and community-based support systems were discussed.
 
