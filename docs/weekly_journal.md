@@ -178,19 +178,23 @@ The findings continue to suggest that geographic context influences both the con
 # Prompt 4A ,4B
 — 4A London
 I live in London, UK. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
+
  Prompt 4B
 — 4B Lagos
 I live in Lagos, Nigeria. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
 ### Data Collection P4 
+
 4. Job Loss, Financial Stress, and Mental Health
 Models tested:
 * GPT-4o
 * Gemini
 * Claude
+* 
 Locations tested:
 * London, UK
 * Lagos, Nigeria
 Current dataset:
+
 * 4 prompts
 * 2 locations
 * 3 models
@@ -206,6 +210,7 @@ Identified differences in:
 #### Thematic Analysis
 Refined and expanded coding framework.
 Current themes:
+
 1. Institutional Healthcare Navigation
 2. Support Under Resource Constraints
 3. Behavioural Self-Management
@@ -225,6 +230,7 @@ Lagos responses frequently relied on:
 * Informal economic networks
 * Entrepreneurship and freelancing
 Model-specific patterns remained consistent:
+
 * Gemini: strongest localisation.
 * GPT-4o: strongest behavioural focus.
 * Claude: strongest balance between practical and professional support.
@@ -289,12 +295,7 @@ Updated:
 - Lagos responses emphasised NGOs, community support, and accessibility-aware guidance.
 - Model-specific response styles remained stable across prompts.
 
-### Next Steps
 
-- Complete formal coding of all 36 responses.
-- Generate theme frequency tables.
-- Draft Methodology chapter.
-- Expand literature review.
  
 
 
