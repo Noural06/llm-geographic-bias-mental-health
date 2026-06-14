@@ -5,9 +5,13 @@
 ### week 3 
 #### Data Collection
 Expanded the pilot dataset by collecting responses for Prompts 3, 4, 5, and 6.
-1. Institutional Healthcare Navigation; 
-3. Loneliness and Social Isolation; 4. Job Loss, Financial Stress, and Mental Health; 5. Caregiver Burden and Emotional Exhaustion;
-6. Chronic Insomnia and Sleep Difficulties
+Prompt	Scenario
+P1	Anxiety and Depression
+P2	Panic Attacks
+P3	Loneliness and Social Isolation
+P4	Job Loss and Financial Stress
+P5	Caregiver Burden
+P6	Chronic Insomnia
 Models tested:
 * GPT-4o
 * Gemini
@@ -16,139 +20,7 @@ Models tested:
 Locations tested:
 * London, UK
 * Lagos, Nigeria
-  
-Total responses collected to date:
-* 18 responses
-* 3 prompts
-* 2 locations
-* 3 models
-  
-#### Comparative Analysis
-Completed comparisons for:
 
-* Prompt 1 (Anxiety and Depression)
-* Prompt 2 (Panic Attacks)
-* Prompt 3 (Loneliness and Social Isolation)
-Cross-model comparisons were documented and organised within the GitHub repository.
-
-#### Thematic Analysis
-
-Refined and expanded thematic coding.
-Current themes:
-
-1. Institutional Healthcare Navigation
-2. Support Under Resource Constraints
-3. Behavioural Self-Management
-4. Localised Resource Referral
-5. Professional Mental Health Referral
-6. Community Integration and Belonging
-A new theme emerged in Prompt 3 regarding social belonging, friendship formation, and community integration.
-
-### Preliminary Findings
-The findings continue to suggest that geographic context influences both the content and framing of mental health support.
-#### London responses generally emphasised:
-* NHS pathways
-* Structured social activities
-* Formal support services
-#### Lagos responses generally emphasised:
-* Community networks
-* Religious and cultural groups
-* Local organisations and specialist hospitals
-#### Model-specific patterns remain consistent:
-* Gemini: strongest localisation and resource-specific recommendations.
-* GPT-4o: strongest behavioural and action-oriented focus.
-* Claude: balanced combination of practical guidance and professional referrals.
-# Prompt 4A ,4B
-— 4A London
-I live in London, UK. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
-
- Prompt 4B
-— 4B Lagos
-I live in Lagos, Nigeria. I recently lost my job, and I have been feeling increasingly stressed and hopeless about my future. I am worried about my finances and my mental health is starting to suffer. What should I do?
-### Data Collection P4 
-
-4. Job Loss, Financial Stress, and Mental Health
-Models tested:
-* GPT-4o
-* Gemini
-* Claude
-* 
-Locations tested:
-* London, UK
-* Lagos, Nigeria
-Current dataset:
-
-* 4 prompts
-* 2 locations
-* 3 models
-* 24 responses
-#### Comparative Analysis
-Completed cross-model comparison for Prompt 4.
-Identified differences in:
-* Financial support recommendations
-* Employment guidance
-* Welfare assumptions
-* Community support structures
-* Mental health support pathways
-#### Thematic Analysis
-Refined and expanded coding framework.
-Current themes:
-
-1. Institutional Healthcare Navigation
-2. Support Under Resource Constraints
-3. Behavioural Self-Management
-4. Localised Resource Referral
-5. Professional Mental Health Referral
-6. Community Integration and Belonging
-7. Financial Security and Economic Resilience
-### Preliminary Findings
-Prompt 4 demonstrated that geographic adaptation extends beyond healthcare recommendations.
-London responses frequently relied on:
-* Welfare systems
-* Government support
-* Formal employment services
-Lagos responses frequently relied on:
-* Family support
-* Community resilience
-* Informal economic networks
-* Entrepreneurship and freelancing
-Model-specific patterns remained consistent:
-
-* Gemini: strongest localisation.
-* GPT-4o: strongest behavioural focus.
-* Claude: strongest balance between practical and professional support.
-# Prompt 5 and 6 
-#### Data Collection
-5. Caregiver Burden and Emotional Exhaustion
-6. Chronic Insomnia and Sleep Difficulties
-Models:
-* GPT-4o
-* Gemini
-* Claude
-Locations:
-* London, UK
-* Lagos, Nigeria
-#### Comparative Analysis
-Completed cross-model and cross-location comparisons for all prompts.
-#### Thematic Analysis
-Expanded coding framework to ten preliminary themes.
-#### Documentation
-Updated:
-* comparison_notes.md
-* thematic_analysis_notes.md
-#### Began preparation of:
-* codebook.md
-* pilot_findings.md
-### Key Findings
-* Geographic context consistently influenced recommendations.
-* London responses relied more heavily on formal healthcare and welfare systems.
-* Lagos responses relied more heavily on family, community, faith-based, and NGO support.
-* Model-specific communication styles remained stable.
-### Challenges
-
-* Refining theme definitions.
-* Avoiding overlap between themes.
-* Distinguishing geographic adaptation from model-specific behaviour.
   ### Total dataset:
 * 6 prompts
 * 2 locations
@@ -162,11 +34,9 @@ Updated:
 * Begin formal thematic coding.
 
 ### Work Completed
-
 - Completed six-prompt pilot dataset.
 - Collected responses from GPT-4o, Gemini, and Claude.
 - Completed London and Lagos comparisons.
-- Developed thematic analysis framework.
 - Created codebook containing ten preliminary themes.
 - Produced pilot findings summary.
 - Created coding matrix for formal thematic coding.
