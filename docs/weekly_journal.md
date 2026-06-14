@@ -4,8 +4,10 @@
 
 ### week 3 
 #### Data Collection
-Expanded the pilot dataset by collecting responses for a third mental health scenario: P3
-3. Loneliness and Social Isolation
+Expanded the pilot dataset by collecting responses for Prompts 3, 4, 5, and 6.
+1. Institutional Healthcare Navigation; 
+3. Loneliness and Social Isolation; 4. Job Loss, Financial Stress, and Mental Health; 5. Caregiver Burden and Emotional Exhaustion;
+6. Chronic Insomnia and Sleep Difficulties
 Models tested:
 * GPT-4o
 * Gemini
