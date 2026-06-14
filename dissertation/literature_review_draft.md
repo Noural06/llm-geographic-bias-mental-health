@@ -1,6 +1,9 @@
-# Chapter 2: Literature Review
+# Geographic Variation in Large Language Model Responses to Mental Health Queries.
 
-## 2.1 Large Language Models in Healthcare
+
+## Chapter 2: Literature Review
+
+### 2.1 Large Language Models in Healthcare
 
 Large Language Models (LLMs) have rapidly emerged as important tools within healthcare settings. Recent advances in transformer-based architectures have enabled models such as GPT-4o, Gemini, and Claude to generate human-like responses across a wide range of medical and health-related tasks. Research has demonstrated that LLMs can support clinical decision-making, patient education, medical documentation, and health information retrieval (Singhal et al., 2023; Wang & Zhang, 2024).
 
