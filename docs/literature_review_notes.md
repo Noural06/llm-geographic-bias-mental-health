@@ -61,7 +61,7 @@ Research in this area suggests that language models may reflect regional pattern
 
 Cross-lingual healthcare studies also found that models often perform better in English or in high-resource contexts. This may create unequal quality in healthcare advice.
 
-Very little work has specifically examined mental health responses across cities or countries, which creates a strong research gap for the dissertation.
+Very little work has specifically examined mental health responses across cities or countries, creating a significant research gap for the dissertation.
 
 ---
 
@@ -75,7 +75,7 @@ Very little work has specifically examined mental health responses across cities
 
 ### Notes
 
-Access to mental healthcare is not equal across countries or regions. Some areas have strong healthcare systems and professional support, while others face shortages, high costs, or social stigma around mental illness.
+Access to mental healthcare is unequal across countries and regions. Some areas have strong healthcare systems and professional support, while others face shortages, high costs, or social stigma around mental illness.
 
 This is important because LLMs may unintentionally assume that therapy, crisis services, or healthcare professionals are easily available everywhere.
 
@@ -154,11 +154,7 @@ This dissertation aims to address that gap.
 * Cross-model comparison
 
 ---
-## My current understanding of the project
 
-My project investigates whether large language models give different mental health advice depending on the location mentioned in the prompt. I am interested in whether responses change regarding empathy, crisis guidance, referral quality, cultural assumptions, and awareness of limited healthcare access.
-
-## Main research gap
 
 Most studies focus on LLMs in healthcare or mental health broadly. Other studies look at bias in LLMs. However, fewer studies focus specifically on geographic bias in mental health responses. This is the gap my dissertation will address.
 
@@ -179,7 +175,8 @@ This paper compares AI-written and human-written responses to mental health quer
 ### Golden and Aboujaoude (2024)
 This paper gives a framework for evaluating AI mental health tools. It may help me design my scoring criteria.
 ######## 
-I am studying geographic variation in LLM responses to mental health.
+
+studying geographic variation in LLM responses to mental health.
 Why it matters: Mental health access varies globally, so AI advice should not assume the same services are available everywhere.
 I will test it: same prompts, different locations, compare responses using scoring and thematic analysis.
 I plan to evaluate responses using both scoring criteria and thematic analysis. Scoring will help compare models quantitatively across empathy, accessibility awareness, and crisis support. Thematic analysis will help identify recurring assumptions, cultural patterns, and differences in how mental health advice is framed across geographic contexts.
