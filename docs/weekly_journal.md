@@ -1,17 +1,16 @@
 #  Geographic Variation in Large Language Model Responses to Mental Health Queries.
 ## Weekly Journal
-
-
-### week 3 
+ 
 #### Data Collection
-Expanded the pilot dataset by collecting responses for Prompts 3, 4, 5, and 6.
+Expanded the pilot dataset by collecting responses.
 Prompt	Scenario
-P1	Anxiety and Depression
-P2	Panic Attacks
-P3	Loneliness and Social Isolation
-P4	Job Loss and Financial Stress
-P5	Caregiver Burden
-P6	Chronic Insomnia
+
+-P1	Anxiety and Depression
+-P2	Panic Attacks
+-P3	Loneliness and Social Isolation
+-P4	Job Loss and Financial Stress
+-P5	Caregiver Burden
+-P6	Chronic Insomnia
 Models tested:
 * GPT-4o
 * Gemini
@@ -26,13 +25,6 @@ Locations tested:
 * 2 locations
 * 3 models
 * 36 responses
-### Next Steps
-* Finalise codebook.
-* Complete pilot findings summary.
-* Expand literature review.
-* Draft Methodology chapter.
-* Begin formal thematic coding.
-
 ### Work Completed
 - Completed six-prompt pilot dataset.
 - Collected responses from GPT-4o, Gemini, and Claude.
