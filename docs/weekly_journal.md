@@ -3,6 +3,27 @@
 
 ### Week 5 
 Next step: Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).
+# Expanded Dataset Plan
+
+Pilot Dataset:
+- London
+- Lagos
+- 6 prompts
+- 3 models
+- 36 responses
+
+Expansion Dataset:
+- 20 cities
+- 8 scenarios
+- GPT-4o
+- Claude
+- Gemini
+
+Expected Responses:
+20 cities × 8 scenarios × 3 models = 480 responses
+
+Purpose:
+To evaluate geographic variation in LLM mental health responses across different World Bank income groups and WHO regions.
 
 ### Week 3/4  
 #### Data Collection
