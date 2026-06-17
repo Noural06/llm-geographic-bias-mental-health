@@ -1,6 +1,6 @@
 #  Geographic Variation in Large Language Model Responses to Mental Health Queries.
 ## Weekly Journal
- 
+### Week 3/4  
 #### Data Collection
 Expanded the pilot dataset by collecting responses.
 Prompt	Scenario
