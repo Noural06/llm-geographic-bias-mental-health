@@ -1,7 +1,7 @@
 import pandas as pd
 import yaml
 from pathlib import Path
-from itertools import product
+
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
