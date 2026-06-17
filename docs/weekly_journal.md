@@ -1,5 +1,9 @@
 #  Geographic Variation in Large Language Model Responses to Mental Health Queries.
 ## Weekly Journal
+
+### Week 5 
+Next step: Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).
+
 ### Week 3/4  
 #### Data Collection
 Expanded the pilot dataset by collecting responses.
