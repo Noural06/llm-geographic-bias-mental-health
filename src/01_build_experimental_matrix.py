@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-CITIES_PATH = BASE_DIR / "config" / "cities.csv"
+CITIES_PATH = BASE_DIR / "config" / "cities_15.csv"
 SCENARIOS_PATH = BASE_DIR / "config" / "scenarios.csv"
 MODELS_PATH = BASE_DIR / "config" / "models.yaml"
 
