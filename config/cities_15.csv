@@ -1,1 +1,16 @@
-
+city,country,income_category,who_region
+London,United Kingdom,High,EUR
+New York,United States,High,AMR
+Tokyo,Japan,High,WPR
+Riyadh,Saudi Arabia,High,EMR
+Sydney,Australia,High,WPR
+Sao Paulo,Brazil,Upper-Middle,AMR
+Beijing,China,Upper-Middle,WPR
+Johannesburg,South Africa,Upper-Middle,AFR
+Bogota,Colombia,Upper-Middle,AMR
+Belgrade,Serbia,Upper-Middle,EUR
+Lagos,Nigeria,Lower-Middle,AFR
+Mumbai,India,Lower-Middle,SEAR
+Cairo,Egypt,Lower-Middle,EMR
+Jakarta,Indonesia,Lower-Middle,WPR
+Kabul,Afghanistan,Low,EMR
