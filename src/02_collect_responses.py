@@ -1,5 +1,6 @@
-import os
+ import os
 def get_clients():
+    
     openai_key = os.getenv("OPENAI_API_KEY")
     gemini_key = os.getenv("GEMINI_API_KEY")
     anthropic_key = os.getenv("ANTHROPIC_API_KEY")
