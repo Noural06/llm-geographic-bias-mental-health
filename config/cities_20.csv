@@ -1,20 +1,21 @@
-    "city": "London", "country": "United Kingdom", "income": "High", "region": "EUR"},
-    {"city": "New York", "country": "United States", "income": "High", "region": "AMR"},
-    {"city": "Tokyo", "country": "Japan", "income": "High", "region": "WPR"},
-    {"city": "Sydney", "country": "Australia", "income": "High", "region": "WPR"},
-    {"city": "Riyadh", "country": "Saudi Arabia", "income": "High", "region": "EMR"},
-    {"city": "Sao Paulo", "country": "Brazil", "income": "Upper-Middle", "region": "AMR"},
-    {"city": "Beijing", "country": "China", "income": "Upper-Middle", "region": "WPR"},
-    {"city": "Johannesburg", "country": "South Africa", "income": "Upper-Middle", "region": "AFR"},
-    {"city": "Bogota", "country": "Colombia", "income": "Upper-Middle", "region": "AMR"},
-    {"city": "Belgrade", "country": "Serbia", "income": "Upper-Middle", "region": "EUR"},
-    {"city": "Lagos", "country": "Nigeria", "income": "Lower-Middle", "region": "AFR"},
-    {"city": "Mumbai", "country": "India", "income": "Lower-Middle", "region": "SEAR"},
-    {"city": "Cairo", "country": "Egypt", "income": "Lower-Middle", "region": "EMR"},
-    {"city": "Jakarta", "country": "Indonesia", "income": "Lower-Middle", "region": "WPR"},
-    {"city": "Kyiv", "country": "Ukraine", "income": "Lower-Middle", "region": "EUR"},
-    {"city": "Kinshasa", "country": "DR Congo", "income": "Low", "region": "AFR"},
-    {"city": "Kabul", "country": "Afghanistan", "income": "Low", "region": "EMR"},
-    {"city": "Kathmandu", "country": "Nepal", "income": "Low", "region": "SEAR"},
-    {"city": "Antananarivo", "country": "Madagascar", "income": "Low", "region": "AFR"},
-    {"city": "Damascus", "country": "Syria", "income": "Low", "region": "EMR"}
+city,country,income_category,who_region
+London,United Kingdom,High,EUR
+New York,United States,High,AMR
+Tokyo,Japan,High,WPR
+Sydney,Australia,High,WPR
+Riyadh,Saudi Arabia,High,EMR
+Sao Paulo,Brazil,Upper-Middle,AMR
+Beijing,China,Upper-Middle,WPR
+Johannesburg,South Africa,Upper-Middle,AFR
+Bogota,Colombia,Upper-Middle,AMR
+Belgrade,Serbia,Upper-Middle,EUR
+Lagos,Nigeria,Lower-Middle,AFR
+Mumbai,India,Lower-Middle,SEAR
+Cairo,Egypt,Lower-Middle,EMR
+Jakarta,Indonesia,Lower-Middle,WPR
+Kyiv,Ukraine,Lower-Middle,EUR
+Kinshasa,DR Congo,Low,AFR
+Kabul,Afghanistan,Low,EMR
+Kathmandu,Nepal,Low,SEAR
+Antananarivo,Madagascar,Low,AFR
+Damascus,Syria,Low,EMR
