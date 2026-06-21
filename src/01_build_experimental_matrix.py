@@ -6,7 +6,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-CITIES_PATH = BASE_DIR / "config" / "cities_15.csv"
+CITIES_PATH = BASE_DIR / "config" / "cities_20.csv"
 SCENARIOS_PATH = BASE_DIR / "config" / "scenarios.csv"
 MODELS_PATH = BASE_DIR / "config" / "models.yaml"
 
@@ -61,7 +61,7 @@ def build_experimental_matrix():
 
     matrix = pd.DataFrame(rows)
 
-    expected_rows = 15 * 8 * 3
+    expected_rows = 20 * 8 * 3
 
     if len(matrix) != expected_rows:
         raise ValueError(f"Expected {expected_rows} rows, but got {len(matrix)}")
