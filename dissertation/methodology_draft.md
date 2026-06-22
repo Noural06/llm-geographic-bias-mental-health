@@ -1,4 +1,11 @@
 ### Data Collection Procedure
+| Model   | Collection method                                     |
+| ------- | ----------------------------------------------------- |
+| ChatGPT | Interactive conversation / manually generated dataset |
+| Claude  | Sequential chat session                               |
+| Gemini  | API collection                                        |
+
+
 
 Data collection was conducted using three large language models: ChatGPT (OpenAI), Claude (Anthropic), and Gemini (Google).
 
