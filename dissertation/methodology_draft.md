@@ -10,6 +10,17 @@ Data collection was fully automated using Python and the Gemini API. A total of 
 
 The final Gemini dataset contained **160 successfully collected responses**, representing all city–scenario combinations with no missing or duplicate observations.
 
+### GPT-OSS 120B Model
+
+Responses were collected using **GPT-OSS 120B**, an open-weight large language model made available through the Groq API. GPT-OSS 120B is a high-capacity instruction-tuned model designed for conversational AI, reasoning, and text generation across a broad range of tasks. The model is optimised to produce coherent, context-aware responses while enabling efficient inference via Groq's high-performance inference platform.
+
+In this study, GPT-OSS 120B was used to generate responses to mental health help-seeking prompts across 20 geographically diverse cities. Each prompt described the same mental health scenario, with the only intended variation being the user's stated city and country. This experimental design enabled systematic investigation of whether geographic context influenced the model's responses.
+
+Data collection was fully automated using Python and the Groq API. A total of **160 prompts** (20 cities × 8 scenarios) were submitted sequentially to the model. The temperature parameter was fixed at **0.0** to minimise response variability and maximise consistency across all prompts. Responses were recorded immediately after generation without manual editing or post-processing. In addition to the generated response, metadata, including the city, country, WHO region, World Bank income category, scenario identifier, model name, collection timestamp, and collection status, were stored in CSV format for subsequent qualitative and quantitative analysis.
+
+The final GPT-OSS 120B dataset contained **160 successfully collected responses**, representing all city–scenario combinations without missing or duplicate observations. During data collection, temporary API rate limits were encountered due to the provider's token quota restrictions. These were addressed by pausing the collection process and retrying only the affected prompts after the quota reset, resulting in a complete dataset.
+
+
 ### llama-3.3-70b-versatile
 Responses were collected using the Llama 3.3 70B Versatile large language model accessed through the Groq API. The model was selected because it provided stable API access and enabled the collection of a complete dataset without interruptions caused by usage restrictions or subscription requirements.
 
@@ -25,4 +36,5 @@ A second dataset was collected using the Qwen 3 32B model (`qwen/qwen3-32b`) acc
 The dataset comprised 20 cities across different World Health Organisation (WHO) regions and World Bank income categories, combined with 8 mental health help-seeking scenarios, yielding 160 city–scenario combinations. Each prompt was submitted programmatically via the Groq API with a temperature of 0.0 to reduce response variability.
 
 Responses were automatically stored in CSV format, along with metadata such as city, country, income category, WHO region, scenario identifier, timestamp, model name, and response text. No manual editing or modification of model outputs was performed after collection. The final Qwen dataset contained 160 successful responses, representing all city–scenario combinations included in the study.
+
 
