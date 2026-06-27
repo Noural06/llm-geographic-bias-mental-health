@@ -7,9 +7,9 @@ from google import genai
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-RESPONSES_PATH = BASE_DIR / "data" / "raw" / "responses_gemini.csv"
-MODEL_NAME = "gemini-3.5-flash"
-MAX_NEW_SUCCESSES = 15
+RESPONSES_PATH = BASE_DIR / "data" / "raw" / "responses_ model name .csv"
+MODEL_NAME = "model name here "
+MAX_NEW_SUCCESSES = 20
 
 def query_gemini(client, prompt):
     response = client.models.generate_content(
@@ -19,9 +19,9 @@ def query_gemini(client, prompt):
     return response.text
 
 def main():
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("......._API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY not found.")
+        raise ValueError("......._API_KEY .")
 
     client = genai.Client(api_key=api_key)
 
@@ -42,7 +42,7 @@ def main():
         print(f"Retrying {row['matrix_id']}")
 
         try:
-            response_text = query_gemini(client, row["prompt"])
+            response_text = query_gemma(client, row["prompt"])
             df.loc[i, "response_text"] = response_text
             df.loc[i, "status"] = "success"
             df.loc[i, "error_message"] = ""
