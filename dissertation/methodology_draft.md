@@ -1,5 +1,5 @@
 # Data Collection
-
+## The data were collected from : 
 ### Google Gemma 4 26B A4B Instruct
 
 Responses were collected using **Google Gemma 4 26B A4B Instruct** (`gemma-4-26b-a4b-it`), an instruction-tuned open-weight large language model developed by **Google DeepMind**. The model was accessed via the **Google Gemini API (Google AI Studio)** and is designed for conversational AI, instruction-following, reasoning, and natural language generation, while providing efficient inference for large-scale language processing tasks.
