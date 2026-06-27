@@ -47,7 +47,7 @@ Finalising the 20 Cities: a clean distribution across WHO regions and World Bank
 | Google Gemma 4 26B A4B Instruct     |                    160 |
 | Mistral Small 2506                  |                    160 |
 | NVIDIA Nemotron-3 Super 120B A12B   |                    160 |
-Total responses collected so far:                         1,120 responses
+Total responses collected so far:                                     1,120 responses
 
 Purpose:
 To evaluate geographic variation in LLM mental health responses across different World Bank income groups and WHO regions.
