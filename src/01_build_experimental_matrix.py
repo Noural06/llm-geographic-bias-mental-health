@@ -61,7 +61,7 @@ def build_experimental_matrix():
 
     matrix = pd.DataFrame(rows)
 
-    expected_rows = 20 * 8 * 3
+    expected_rows = 20 * 8 * 7
 
     if len(matrix) != expected_rows:
         raise ValueError(f"Expected {expected_rows} rows, but got {len(matrix)}")
