@@ -1,7 +1,7 @@
 # Data Collection
+
 ## The data were collected from : 
 ### Google Gemma 4 26B A4B Instruct
-
 Responses were collected using **Google Gemma 4 26B A4B Instruct** (`gemma-4-26b-a4b-it`), an instruction-tuned open-weight large language model developed by **Google DeepMind**. The model was accessed via the **Google Gemini API (Google AI Studio)** and is designed for conversational AI, instruction-following, reasoning, and natural language generation, while providing efficient inference for large-scale language processing tasks.
 
 The same experimental design employed throughout this study was applied to the Gemma model. The dataset comprised **20 geographically diverse cities** representing four World Bank income categories and multiple World Health Organisation (WHO) regions, combined with **8 standardised mental health help-seeking scenarios**, yielding **160 unique city–scenario prompts**.
