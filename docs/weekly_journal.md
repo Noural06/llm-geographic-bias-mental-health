@@ -14,8 +14,6 @@ Cleaned all responses prior to Natural Language Processing (NLP) analysis.
 1,120 AI-generated responses
 
 
-#  Geographic Variation in Large Language Model Responses to Mental Health Queries.
-## Weekly Journal
 
 ### week 6 
 ### Weekly Journal
