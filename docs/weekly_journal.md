@@ -1,3 +1,19 @@
+# Weekly Progress Report
+## Dissertation Title
+
+# Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries
+
+## Objectives Completed This Week
+Completed automated collection of the full experimental dataset.
+Cleaned all responses prior to Natural Language Processing (NLP) analysis.
+
+## Dataset
+20 Cities
+8 Mental Health Scenarios
+7 Large Language Models
+1,120 AI-generated responses
+
+
 #  Geographic Variation in Large Language Model Responses to Mental Health Queries.
 ## Weekly Journal
 
