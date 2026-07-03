@@ -1,40 +1,30 @@
-# Results and Analysis 
-Chapter 4
+Chapter 4 Results and Analysis
 
 4.1 Results
 
-4.1.1 Dataset Overview
+    4.1.1 Dataset Overview
 
-4.1.2 Topic Distribution by Income
+    4.1.2 Topic Distribution by World Bank Income Category
 
-Table 4.1
-Figure 4.1
-Figure 4.2
+    4.1.3 Topic Distribution by WHO Region
 
-4.1.3 Topic Distribution by WHO Region
+    4.1.4 Geographic Micro-clusters
 
-Table 4.2
-Figure 4.3
-Figure 4.4
+    4.1.5 Topic Distribution by Language Model
 
-4.1.4 Geographic Micro-clusters
+    4.1.6 Topic Distribution by Scenario Acuity
 
-Figure 4.5
+    4.1.7 Actionability and Specificity
 
-4.1.5 Topic Distribution by Language Model
+4.2 Analysis
 
-Table 4.3
-Figure 4.6
+    4.2.1 Analysis of Research Question 1
 
-4.1.6 Topic Distribution by Scenario Acuity
+    4.2.2 Analysis of Research Question 2
 
-Table 4.4
-Figure 4.7
+    4.2.3 Analysis of Research Question 3
 
-4.1.7 Actionability and Specificity
-
-Figure 4.8
-
+    4.2.4 Chapter Summary
 
 
 
