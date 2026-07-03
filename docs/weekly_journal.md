@@ -2,9 +2,11 @@
 If  the prompts were rephrased  differently, I  would introduce a confounding variable: I would no longer know whether the differences in responses were due to geography or to the wording change. The current design cleanly isolates geography as the independent variable.
 The findings already answer all three research questions:
 
-RQ1 — Yes, models generate systematically different responses across geographic contexts. You have statistical evidence: Cramér's V = .675 for income category, .649 for WHO region, both p < .001. Geographic context predicts topic assignment far more strongly than model architecture (V = .170).
-RQ2 — Yes, models provide less clinically specific support in lower-resource settings. Professional help references declined 27.9% and crisis references declined 47.1% from High- to Low-income cities.
-RQ3 — Yes, models embed geographic stereotypes. Kyiv, Kabul, and Damascus responses reference conflict regardless of scenario; Beijing and Tokyo responses embed stigma and collectivism; Sub-Saharan African cities receive community and religious framing rather than clinical referral.
+#### RQ1 — Yes, models generate systematically different responses across geographic contexts. You have statistical evidence: Cramér's V = .675 for income category, .649 for WHO region, both p < .001. Geographic context predicts topic assignment far more strongly than model architecture (V = .170).
+
+#### RQ2 — Yes, models provide less clinically specific support in lower-resource settings. Professional help references declined 27.9% and crisis references declined 47.1% from High- to Low-income cities.
+
+#### RQ3 — Yes, models embed geographic stereotypes. Kyiv, Kabul, and Damascus responses reference conflict regardless of scenario; Beijing and Tokyo responses embed stigma and collectivism; Sub-Saharan African cities receive community and religious framing rather than clinical referral.
 
 What prompt variation would actually be useful for is a different research question — something like "does rephrasing affect consistency?" That would be a separate study, not a requirement for yours. Your dissertation, as designed, is complete and internally consistent. You could note in your Limitations section that the single-prompt-format design does not capture whether users who phrase their distress differently experience better or worse geographic variation — that would be a recommendation for future research.
 
