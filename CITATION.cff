@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the dissertation below."
+title: "Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries"
+authors:
+  - family-names: "Lakrimdi"
+    given-names: "Noura"
+year: 2026
+type: thesis
+institution: "Middlesex University"
+abstract: "MSc Data Science dissertation investigating geographic variation in large language model responses to mental health queries across 20 cities, eight scenarios, and seven language models."
+keywords:
+  - large language models
+  - mental health
+  - geographic variation
+  - health equity
+  - BERTopic
+  - natural language processing
+  - topic modelling
+repository-code: "https://github.com/Noural06/llm-geographic-bias-mental-health"
+license: "MIT"
