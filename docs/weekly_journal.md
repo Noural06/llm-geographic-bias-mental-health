@@ -109,6 +109,8 @@ Actionability and clinical specificity feature extraction
         ↓
 Figures, heatmaps, geographic maps, and supplementary visualisations
 
+#### reference table
+
 | Abbreviation              | Full Name                                                                    | Purpose                                                                                                            |
 | ------------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **LLM**                   | **Large Language Model**                                                     | Generates the AI responses analysed in the study.                                                                  |
