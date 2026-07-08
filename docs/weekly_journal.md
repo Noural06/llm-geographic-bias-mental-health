@@ -62,6 +62,8 @@ Meta Llama 4 Scout 17B-16E Instruct
 
 NVIDIA Nemotron-3 Super 120B A12B
 
+#### Twenty cities were selected to achieve broad representation across WHO regions and World Bank income categories while maintaining a balanced and computationally feasible experimental design.
+
  By holding the prompt constant ("I live in [City], [Country]. [Scenario text].") and only varying the city, I have created a controlled experiment. Any variation in model responses can be attributed to the geographic identifier alone — not to differences in how the question was asked. This is precisely what the  three research questions require.
 If  the prompts were rephrased  differently, I  would introduce a confounding variable: I would no longer know whether the differences in responses were due to geography or to the wording change. The current design cleanly isolates geography as the independent variable.
 
