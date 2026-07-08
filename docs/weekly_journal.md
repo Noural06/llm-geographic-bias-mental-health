@@ -38,7 +38,7 @@ Language models	|7|
 
 Total responses	|1,120|
 
-World Bank income categories	| 4 Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).|
+World Bank income categories	| 4 (  High-Income,  Upper-Middle,  Lower-Middle, Low-Income).|
 
 WHO regions	| 6|
 
