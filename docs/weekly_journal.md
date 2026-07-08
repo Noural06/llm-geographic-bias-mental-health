@@ -23,6 +23,34 @@ Following topic modelling, I analysed topic distributions across World Bank inco
 In addition to topic modelling, I implemented quantitative linguistic feature extraction to measure actionability and clinical specificity. This included calculating the frequency of action verbs, professional mental health referrals, crisis referrals, locally specific resources, and overall word counts, normalised per 1,000 words to enable fair comparison across responses.
 
 Finally, I generated the figures, heatmaps, geographic maps, UMAP projections, and supplementary visualisations for the dissertation to clearly communicate the results.
+
+#### Dataset
+
+The final dataset contains 1,120 AI-generated responses.
+
+Dimension	| Value|
+Cities	    |20
+Mental health scenarios|	8
+Language models	7
+Total responses	|1,120
+World Bank income categories	| 4 Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).
+WHO regions	| 6
+Each response corresponds to one unique combination of:
+
+#### city × scenario × language model
+The prompt format was:
+
+#### I live in [City], [Country]. [Mental health scenario]
+Models evaluated
+#### The study evaluated seven contemporary LLMs:
+
+Google Gemma 4 26B A4B Instruct
+GPT-OSS 120B
+Mistral Small 2506
+Meta Llama 3.3 70B Instruct
+Qwen 3 32B
+Meta Llama 4 Scout 17B-16E Instruct
+NVIDIA Nemotron-3 Super 120B A12B
  
   Fixed prompt format is a methodological strength, not a limitation. By holding the prompt constant ("I live in [City], [Country]. [Scenario text].") and only varying the city, I have created a controlled experiment. Any variation in model responses can be attributed to the geographic identifier alone — not to differences in how the question was asked. This is precisely what the  three research questions require.
 If  the prompts were rephrased  differently, I  would introduce a confounding variable: I would no longer know whether the differences in responses were due to geography or to the wording change. The current design cleanly isolates geography as the independent variable.
