@@ -9,19 +9,19 @@
 
 The final dataset contains 1,120 AI-generated responses.
 
-|Dimension|	------------| Value|
+|Dimension              | Value|
+------------------------|------|
+|Cities	                |20    |
 
-|Cities|	    |20|
+|Mental health scenarios|	8    |
 
-|Mental health scenarios||	8|
+|Language models       	|7     |
 
-|Language models|	|7|
+|Total responses       	|1,120 |
 
-|Total responses|	|1,120|
+|World Bank income cat. | 4 (  High-Income,  Upper-Middle,  Lower-Middle, Low-Income).|
 
-|World Bank income categories|	| 4 (  High-Income,  Upper-Middle,  Lower-Middle, Low-Income).|
-
-|WHO regions|	| 6|
+|WHO regions           	| 6                                                            |
 
 #### The World Health Organisation (WHO) divides the world into six regions.
 
