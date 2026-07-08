@@ -1,3 +1,32 @@
+
+
+
+
+Weekly Progress
+
+During this week, I completed and documented the full Natural Language Processing (NLP) analysis pipeline used in my dissertation. I reviewed each stage of the analytical workflow to ensure the methodology was technically accurate, reproducible, and clearly explained within the dissertation and supporting documentation.
+
+The pipeline began with the collection of 1,120 AI-generated mental health responses from seven large language models using standardised prompts across 20 cities. The responses were then preprocessed by removing non-user-visible reasoning traces using regular expression (Regex) techniques before semantic analysis.
+
+Next, I generated semantic embeddings for each response using the Sentence-Transformer all-MiniLM-L6-v2 model, converting every response into a 384-dimensional numerical representation that captured semantic meaning. These embeddings were reduced using UMAP to preserve semantic relationships while lowering dimensionality, allowing efficient clustering and visualisation.
+
+I then applied HDBSCAN to identify groups of semantically similar responses automatically without specifying the number of clusters in advance. The resulting clusters were analysed using BERTopic, which generated representative keywords and identified latent themes across the dataset.
+
+Following topic modelling, I analysed topic distributions across World Bank income categories, WHO regions, language models, scenarios, and acuity levels. Statistical analysis was performed using Chi-square tests of independence and Cramér's V to determine whether observed differences were statistically significant and to measure the strength of the associations.
+
+In addition to topic modelling, I implemented quantitative linguistic feature extraction to measure actionability and clinical specificity. This included calculating the frequency of action verbs, professional mental health referrals, crisis references, local-specific resources, and overall word counts, normalised per 1,000 words to enable fair comparison across responses.
+
+Finally, I generated the figures, heatmaps, geographic maps, UMAP projections, and supplementary visualisations used in the dissertation to communicate the results clearly.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  Fixed prompt format is a methodological strength, not a limitation. By holding the prompt constant ("I live in [City], [Country]. [Scenario text].") and only varying the city, I have created a controlled experiment. Any variation in model responses can be attributed to the geographic identifier alone — not to differences in how the question was asked. This is precisely what the  three research questions require.
 If  the prompts were rephrased  differently, I  would introduce a confounding variable: I would no longer know whether the differences in responses were due to geography or to the wording change. The current design cleanly isolates geography as the independent variable.
 The findings already answer all three research questions:
