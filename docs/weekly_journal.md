@@ -120,6 +120,13 @@ Actionability and clinical specificity feature extraction
         
 Figures, heatmaps, geographic maps, and supplementary visualisations
 
+
+
+
+
+
+
+
 | Stage                    | Main Library                | Algorithm                | Input              | Output                     |
 | ------------------------ | --------------------------- | ------------------------ | ------------------ | -------------------------- |
 | Raw Responses            | APIs                        | LLM generation           | Prompts            | 1,120 responses            |
