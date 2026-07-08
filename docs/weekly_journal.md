@@ -140,6 +140,22 @@ Figures, heatmaps, geographic maps, and supplementary visualisations
 | Feature Extraction       | spaCy / Python dictionaries | Rule-based NLP           | Text               | Actionability metrics      |
 | Visualisation            | Plotly / Matplotlib         | Charts & maps            | Results            | Figures 4.1–4.8            |
 
+| Stage                        | Package / Method                             | Why I chose it                                                                                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Data collection**          | Python (`requests`, API SDKs)                | Automated collection ensured all 1,120 responses were gathered consistently without manual copying, reducing human error and improving reproducibility.                                                                                                         |
+| **Text preprocessing**       | `re` (Regular Expressions)                   | Used to remove Qwen's internal `<think>...</think>` reasoning traces, which users never see. This prevented artificial semantic similarity between responses.                                                                                                   |
+| **Sentence embeddings**      | `sentence-transformers` (`all-MiniLM-L6-v2`) | This model converts text into semantic vectors, capturing meaning rather than just keywords. It is lightweight, fast, widely validated, and commonly used for semantic similarity and topic modelling.                                                          |
+| **Dimensionality reduction** | `UMAP`                                       | Sentence embeddings have 384 dimensions, making direct clustering computationally expensive and difficult to visualise. UMAP preserves semantic neighbourhoods while reducing dimensionality for efficient clustering.                                          |
+| **Clustering**               | `HDBSCAN`                                    | Unlike K-means, HDBSCAN does not require specifying the number of clusters in advance. Because the true number of latent themes was unknown, HDBSCAN was an appropriate unsupervised clustering algorithm. It also identifies outliers automatically.           |
+| **Topic modelling**          | `BERTopic`                                   | BERTopic combines transformer embeddings, UMAP, HDBSCAN, and c-TF-IDF to identify semantically coherent topics. It is more suitable than traditional methods such as LDA because it captures contextual meaning rather than relying only on word frequencies.   |
+| **Statistical analysis**     | `SciPy` (Chi-square), `pandas`               | Chi-square tests determine whether topic distributions differ significantly between groups. Cramér's V measures the strength of those relationships, allowing comparison of geography versus model identity.                                                    |
+| **Feature extraction**       | `pandas`, Python dictionaries, `re`          | Used to quantify clinically relevant linguistic features such as professional referrals, crisis references, local specificity, action verbs, and word counts. Normalising counts per 1,000 words allowed fair comparison across responses of different lengths. |
+| **Visualisation**            | `Plotly` and `Matplotlib`                    | Plotly produced interactive maps and exploratory visualisations during analysis, while Matplotlib generated publication-quality figures suitable for the dissertation.                                                                                          |
+
+
+
+
+
 
 ### RQ1:  Do large language models generate systematically different mental health responses across geographic contexts?
 ### RQ2:   Do large language models provide less actionable or less specific mental health support in lower-resource settings compared with higher-resource settings? 
