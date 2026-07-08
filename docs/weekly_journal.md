@@ -29,13 +29,21 @@ Finally, I generated the figures, heatmaps, geographic maps, UMAP projections, a
 The final dataset contains 1,120 AI-generated responses.
 
 Dimension	| Value|
-Cities	    |20
-Mental health scenarios|	8
-Language models	7
-Total responses	|1,120
-World Bank income categories	| 4 Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).
-WHO regions	| 6
-Each response corresponds to one unique combination of:
+
+Cities	    |20|
+
+Mental health scenarios|	8|
+
+Language models	|7|
+
+Total responses	|1,120|
+
+World Bank income categories	| 4 Finalising the 20 Cities: a clean distribution across WHO regions and World Bank income groups (e.g., 5 High-Income, 5 Upper-Middle, 5 Lower-Middle, 5 Low-Income).|
+
+WHO regions	| 6|
+
+
+#### Each response corresponds to one unique combination of:
 
 #### city × scenario × language model
 The prompt format was:
