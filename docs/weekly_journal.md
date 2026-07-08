@@ -84,25 +84,36 @@ In addition to topic modelling, I implemented quantitative linguistic feature ex
 Finally, I generated the figures, heatmaps, geographic maps, UMAP projections, and supplementary visualisations for the dissertation to clearly communicate the results.
 
 ### The complete pipeline
+
 Raw AI-generated responses
+
         ↓
 Text preprocessing using Regular Expressions (Regex)
+
         ↓
 Sentence Bidirectional Encoder Representations from Transformers (Sentence-BERT; all-MiniLM-L6-v2)
+
         ↓
 Uniform Manifold Approximation and Projection (UMAP)
+
         ↓
 Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN)
+
         ↓
 BERTopic (using Class-Based Term Frequency–Inverse Document Frequency, c-TF-IDF)
+
         ↓
 Topic distribution analysis
+
         ↓
 Chi-square Tests of Independence and Cramér's V Effect Size
+
         ↓
 Actionability and clinical specificity feature extraction
+
         ↓
 Figures, heatmaps, geographic maps, and supplementary visualisations
+
 
 #### reference table
 
