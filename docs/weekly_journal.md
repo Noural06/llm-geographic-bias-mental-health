@@ -120,6 +120,26 @@ Actionability and clinical specificity feature extraction
         
 Figures, heatmaps, geographic maps, and supplementary visualisations
 
+| Stage                    | Main Library                | Algorithm                | Input              | Output                     |
+| ------------------------ | --------------------------- | ------------------------ | ------------------ | -------------------------- |
+| Raw Responses            | APIs                        | LLM generation           | Prompts            | 1,120 responses            |
+| Text Preprocessing       | Python Regex                | Pattern matching         | Raw text           | Clean text                 |
+| Embeddings               | SentenceTransformers        | all-MiniLM-L6-v2         | Text               | 384-dimensional vectors    |
+| Dimensionality Reduction | UMAP                        | Manifold learning        | 384-D vectors      | Low-dimensional embeddings |
+| Clustering               | HDBSCAN                     | Density-based clustering | UMAP embeddings    | Topic clusters             |
+| Topic Modelling          | BERTopic                    | c-TF-IDF + HDBSCAN       | Clusters           | 24 topics                  |
+| Topic Analysis           | Pandas                      | Frequency analysis       | Topics             | Distribution tables        |
+| Statistics               | SciPy                       | Chi-square, Cramér's V   | Contingency tables | p-values & effect sizes    |
+| Feature Extraction       | spaCy / Python dictionaries | Rule-based NLP           | Text               | Actionability metrics      |
+| Visualisation            | Plotly / Matplotlib         | Charts & maps            | Results            | Figures 4.1–4.8            |
+
+
+
+
+
+
+
+
 
 #### reference table
 
