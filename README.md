@@ -75,28 +75,7 @@ The study evaluated seven contemporary LLMs:
 
 ## Analysis pipeline
 
-The analysis pipeline combines automated NLP methods and statistical testing:
 
-```text
-Raw responses
-    ↓
-Text preprocessing
-    ↓
-Sentence-BERT embeddings: all-MiniLM-L6-v2
-    ↓
-UMAP dimensionality reduction
-    ↓
-HDBSCAN clustering
-    ↓
-BERTopic topic modelling
-    ↓
-Topic distribution analysis
-    ↓
-Chi-square tests and Cramér's V
-    ↓
-Actionability and specificity feature extraction
-    ↓
-Figures, maps, and supplementary outputs
 ```
 
 ---
