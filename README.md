@@ -201,4 +201,5 @@ If you use this repository, please cite:
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-**Note:** The MIT License applies to the source code in this repository. The dissertation text, figures, and other written materials remain © 2026 Eleonora. Please cite the work appropriately if referencing the dissertation.
+
+**Note:** The MIT License applies to the source code in this repository. The dissertation text, figures, and other written materials remain the copyright of Eleonora © 2026. Please cite the work appropriately if referencing the dissertation.
