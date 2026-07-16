@@ -1,53 +1,69 @@
 # Reproducibility Checklist
 
-Use this checklist before final submission or public release.
+Use this checklist before submitting the dissertation or making the repository public.
 
-## Repository hygiene
+---
 
-- [ ] README describes the project, dataset, methodology, and key findings.
+## Repository
+
+- [ ] README.md is complete and up to date.
+- [ ] LICENSE is included.
+- [ ] CITATION.cff is complete.
 - [ ] requirements.txt lists all required Python packages.
-- [ ] CITATION.cff is included.
-- [ ] .gitignore excludes .env files, API keys, notebook checkpoints, caches, and temporary files.
+- [ ] .gitignore excludes temporary files, API keys, caches, and notebook checkpoints.
 - [ ] No API keys or sensitive information are committed.
-- [ ] Temporary test outputs have been removed or archived.
-- [ ] Notebook documentation reflects the final validated analysis.
+- [ ] Repository structure matches the documentation.
 
-## Data and outputs
+---
+
+## Data
 
 - [ ] Final dataset contains **1,120 AI-generated responses**.
-- [ ] Experimental matrix contains **20 cities × 8 scenarios × 7 language models (1,120 prompts)**.
-- [ ] `coded_responses.csv` corresponds to the corrected phone-number extraction pipeline.
-- [ ] Descriptive statistics, tables, figures, and statistical tests are reproduced from the supplied dataset.
-- [ ] All dissertation figures are stored in `figures/`.
-- [ ] Supplementary outputs are stored in `supplementary/`.
+- [ ] Experimental matrix contains **20 cities × 8 scenarios × 7 language models**.
+- [ ] Processed datasets are included where appropriate.
+- [ ] Raw data requiring API access is excluded if redistribution is not permitted.
 
-## Analysis verification
+---
 
-- [ ] Notebook runs successfully from start to finish without errors.
-- [ ] Kruskal–Wallis results reproduce.
-- [ ] Chi-square results reproduce.
-- [ ] Figures and tables match those reported in the dissertation.
-- [ ] Documentation no longer contains obsolete statements about the phone-regex pipeline.
+## Analysis
 
-## Dissertation materials
+- [ ] Notebook executes from start to finish without errors.
+- [ ] Descriptive statistics reproduce successfully.
+- [ ] Figures reproduce successfully.
+- [ ] Statistical analyses reproduce successfully.
+- [ ] Repository documentation reflects the validated phone-number extraction pipeline.
 
-- [ ] Dissertation compiles successfully.
-- [ ] All chapters have been proofread.
+---
+
+## Dissertation
+
+- [ ] LaTeX files compile successfully.
 - [ ] References compile correctly.
 - [ ] Figures and tables are numbered correctly.
-- [ ] Appendices include the project outline and risk assessment (if required by the programme).
-- [ ] Word count complies with university regulations.
+- [ ] Appendices are complete.
+- [ ] Word count complies with university requirements.
 
-## Viva (Poster) preparation
+---
 
-- [ ] Poster presentation is finalised.
-- [ ] Speaker notes are prepared.
-- [ ] Main findings can be explained without referring to notes.
-- [ ] Statistical methods and key results can be justified.
+## Presentation
 
-## Ethical considerations
+- [ ] Final viva presentation is included.
+- [ ] Research design presentation is included.
 
-- [ ] Repository clearly states that the study evaluates AI-generated responses.
-- [ ] Repository does not present LLMs as substitutes for qualified mental health professionals.
-- [ ] Dataset does not contain personally identifiable information.
-- [ ] API usage complies with the provider's terms of service.
+---
+
+## Ethics
+
+- [ ] Repository evaluates AI-generated text only.
+- [ ] No personally identifiable information is included.
+- [ ] Repository does not recommend LLMs as substitutes for qualified mental health professionals.
+
+---
+
+## Final Verification
+
+- [ ] All files are committed to Git.
+- [ ] Repository is pushed to GitHub.
+- [ ] Final notebook is included.
+- [ ] Documentation is internally consistent.
+- [ ] Repository is ready for submission.
