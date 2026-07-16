@@ -30,18 +30,17 @@ This repository accompanies the MSc Data Science dissertation:
 │   ├── 01_build_experimental_matrix.py
 │   ├── 02_collect_responses.py
 │   ├── 03_preprocess_responses.py
-│   ├── 04_extract_embeddings.py
-│   └── 05_bertopic_analysis.py
+│   
+│   
 │
 ├── notebooks/
 │   └── geographic_variation_analysis_VISUALS_IMPROVED.ipynb
 │
 ├── figures/                      # Figures used in the dissertation
+│              
 │
-├── supplementary/                # Supplementary outputs
-│
-├── presentation/
-│   ├── final_viva_slides.pdf
+├── Presentation/
+│   ├── presentation_slides.pdf
 │   └── research_design_presentation.pdf
 │
 ├── dissertation/
@@ -78,11 +77,9 @@ Contains the main Jupyter notebook used to reproduce the statistical analyses an
 ### figures/
 Contains publication-quality figures used in the dissertation.
 
-### supplementary/
-Contains supplementary materials that support the dissertation but are not included in the main text.
 
 ### presentation/
-Contains the MSc research presentation and viva presentation materials.
+Contains the MSc research slides presentation materials.
 
 ### dissertation/
 Contains the LaTeX source files for the dissertation chapters and bibliography.
