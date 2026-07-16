@@ -5,7 +5,7 @@
 **MSc Data Science Dissertation — Middlesex University**  
 **Author:** Noura Lakrimdi  
 **Module:** CST4990 Postgraduate Individual Project  
-**Status:** Final Dissertation Repository
+**Status:**  Final MSc Dissertation Repository
 
 ---
 
@@ -82,7 +82,7 @@ I live in [City], [Country]. [Mental health scenario]
 The complete analysis workflow consists of:
 
 1. Experimental matrix generation
-2. API-based response collection
+2. Response collection (requires user-supplied API credentials)
 3. Response cleaning and preprocessing
 4. NLP feature extraction
    - Word count
@@ -178,6 +178,8 @@ The workflow consists of:
 
 API keys are **not included** and should be stored securely using environment variables or notebook secrets.
 
+The notebook and processed dataset correspond to the corrected phone-number extraction pipeline. Repository documentation has been updated to reflect the validated analysis.
+
 ---
 
 # Ethical Considerations
@@ -195,11 +197,11 @@ The project:
 
 # Citation
 
-If you use this repository, please cite:
+If you use this repository in academic work, please cite the dissertation or use the metadata provided in CITATION.cff.
 
 **Lakrimdi, N. (2026). _Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries._ MSc Data Science Dissertation, Middlesex University.**
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-**Note:** The MIT License applies to the source code in this repository. The dissertation text, figures, and other written materials remain the copyright of Eleonora © 2026. Please cite the work appropriately if referencing the dissertation.
+**Note:** The MIT License applies to the source code in this repository. The dissertation text, figures, and other written materials remain © 2026 Noura Lakrimdi. Please cite the work appropriately if referencing the dissertation.
