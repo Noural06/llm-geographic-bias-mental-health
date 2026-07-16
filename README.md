@@ -122,6 +122,23 @@ Key findings include:
 - Professional, family, community, and religious support recommendations differed across regions.
 - Geographic context influenced response characteristics independently of model identity.
 - Model identity also contributed significantly to observed variation.
+  
+# Summary and interpretation
+
+RQ1 — Effort parity
+Response length can be compared across income categories, but length is not equivalent to quality, safety, or usefulness.
+
+RQ2 — Actionability and safety
+Specificity and crisis-number inclusion are evaluated against income category and the crisis-service availability proxy. Possible-fabrication flags identify text requiring verification; they do not prove factual inaccuracy by themselves.
+
+RQ3 — Cultural framing
+Regional and income patterns in religious, family, community, and professional framing may reflect localisation, stereotyping, model training distributions, or confounding among geography, culture, and resources.
+
+RQ4 — Model heterogeneity
+Model-level differences must be reported explicitly. Results from these seven models should not be generalised automatically to all LLMs.
+
+Overall caution
+The design detects associations produced when geographic context changes. It does not establish why the models changed their responses. Strong claims require verified service data, human qualitative coding, post-hoc comparisons, and careful interpretation of the city sample.
 
 ---
 
