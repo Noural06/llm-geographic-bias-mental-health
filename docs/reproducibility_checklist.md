@@ -4,46 +4,50 @@ Use this checklist before final submission or public release.
 
 ## Repository hygiene
 
-- [ ] README describes the project, dataset, methods, and findings.
-- [ ] `requirements.txt` lists the main Python dependencies.
-- [ ] `CITATION.cff` is present.
-- [ ] `.env` and API keys are not committed.
-- [ ] Notebook checkpoints and cache files are ignored.
-- [ ] Temporary test outputs are removed or moved to an archive.
+- [ ] README describes the project, dataset, methodology, and key findings.
+- [ ] requirements.txt lists all required Python packages.
+- [ ] CITATION.cff is included.
+- [ ] .gitignore excludes .env files, API keys, notebook checkpoints, caches, and temporary files.
+- [ ] No API keys or sensitive information are committed.
+- [ ] Temporary test outputs have been removed or archived.
+- [ ] Notebook documentation reflects the final validated analysis.
 
 ## Data and outputs
 
-- [ ] Final dataset contains 1,120 responses.
-- [ ] Experimental matrix matches 20 cities × 8 scenarios × 7 models.
-- [ ] Topic assignments are reproducible from the processed dataset.
-- [ ] Figures used in the dissertation are stored in `figures/`.
-- [ ] Supplementary HTML visualisations are stored in `supplementary/`.
+- [ ] Final dataset contains **1,120 AI-generated responses**.
+- [ ] Experimental matrix contains **20 cities × 8 scenarios × 7 language models (1,120 prompts)**.
+- [ ] `coded_responses.csv` corresponds to the corrected phone-number extraction pipeline.
+- [ ] Descriptive statistics, tables, figures, and statistical tests are reproduced from the supplied dataset.
+- [ ] All dissertation figures are stored in `figures/`.
+- [ ] Supplementary outputs are stored in `supplementary/`.
+
+## Analysis verification
+
+- [ ] Notebook runs successfully from start to finish without errors.
+- [ ] Kruskal–Wallis results reproduce.
+- [ ] Chi-square results reproduce.
+- [ ] Figures and tables match those reported in the dissertation.
+- [ ] Documentation no longer contains obsolete statements about the phone-regex pipeline.
 
 ## Dissertation materials
 
-- [ ] LaTeX files compile successfully in Overleaf.
-- [ ] Chapter 1 to Chapter 6 are within the required page limit.
-- [ ] Word count is declared using the programme's required method.
-- [ ] Project outline is included in the appendix.
-- [ ] Risk assessment is included in the appendix.
+- [ ] Dissertation compiles successfully.
+- [ ] All chapters have been proofread.
 - [ ] References compile correctly.
+- [ ] Figures and tables are numbered correctly.
+- [ ] Appendices include the project outline and risk assessment (if required by the programme).
+- [ ] Word count complies with university regulations.
 
-## Viva preparation
+## Viva (Poster) preparation
 
-- [ ] Viva presentation is saved in `presentation/`.
+- [ ] Poster presentation is finalised.
 - [ ] Speaker notes are prepared.
-- [ ] Key statistics are memorised:
-  - 1,120 responses
-  - 24 BERTopic topics
-  - 15 geographic micro-clusters
-  - 41.3% geographic micro-cluster responses
-  - Cramér's V = 0.675 for income category
-  - Cramér's V = 0.649 for WHO region
-  - Cramér's V = 0.170 for model identity
-  - 27.9% reduction in professional references
-  - 47.1% reduction in crisis references
+- [ ] Main findings can be explained without referring to notes.
+- [ ] Statistical methods and key results can be justified.
 
-## Ethical and safety note
+## Ethical considerations
 
-- [ ] Repository makes clear that the project evaluates AI-generated text only.
+- [ ] Repository clearly states that the study evaluates AI-generated responses.
 - [ ] Repository does not present LLMs as substitutes for qualified mental health professionals.
+- [ ] Dataset does not contain personally identifiable information.
+- [ ] API usage complies with the provider's terms of service.
