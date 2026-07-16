@@ -1,4 +1,3 @@
-
 .
 ├── README.md
 ├── LICENSE
@@ -33,7 +32,7 @@
 │   ├── figure2.png
 │   └── figure3.png
 │
-├── 
+├── supplementary/
 │
 ├── presentation/
 │   ├── final_viva_slides.pdf
