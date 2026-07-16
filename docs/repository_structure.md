@@ -26,16 +26,17 @@
 │   └── 05_bertopic_analysis.py         (only if used)
 │
 ├── notebooks/
-│   └── Geographic_variation_analysis_VISUALS.ipynb
+│   └── geographic_variation_analysis_VISUALS_IMPROVED.ipynb
 │
 ├── figures/
 │   ├── figure1.png
 │   ├── figure2.png
 │   └── figure3.png
 │
+├── 
 │
-├── Presentation/
-│   ├── presentation_slides.pdf
+├── presentation/
+│   ├── final_viva_slides.pdf
 │   └── research_design_presentation.pdf
 │
 ├── dissertation/
