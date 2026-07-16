@@ -1,38 +1,44 @@
+# Repository Structure
+
+This repository accompanies the MSc Data Science dissertation:
+
+**Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries**
+
+## Directory Structure
+
+```text
 .
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── requirements.txt
-├── .env.example
-├── .gitignore
+├── README.md                     # Project overview and usage instructions
+├── LICENSE                       # MIT License
+├── CITATION.cff                  # Citation metadata
+├── requirements.txt              # Python dependencies
+├── .env.example                  # Example environment variables
+├── .gitignore                    # Git ignore rules
 │
-├── config/
+├── config/                       # Experimental configuration
 │   ├── cities_20.csv
 │   ├── scenarios.csv
 │   └── models.yaml
 │
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   ├── coding/
-│   └── outputs/
+│   ├── raw/                      # Raw LLM responses
+│   ├── processed/                # Processed datasets
+│   ├── coding/                   # Human coding files
+│   └── outputs/                  # Analysis outputs
 │
 ├── src/
 │   ├── 01_build_experimental_matrix.py
 │   ├── 02_collect_responses.py
 │   ├── 03_preprocess_responses.py
-│   ├── 04_extract_embeddings.py        (only if used)
-│   └── 05_bertopic_analysis.py         (only if used)
+│   ├── 04_extract_embeddings.py
+│   └── 05_bertopic_analysis.py
 │
 ├── notebooks/
 │   └── geographic_variation_analysis_VISUALS_IMPROVED.ipynb
 │
-├── figures/
-│   ├── figure1.png
-│   ├── figure2.png
-│   └── figure3.png
+├── figures/                      # Figures used in the dissertation
 │
-├── 
+├── supplementary/                # Supplementary outputs
 │
 ├── presentation/
 │   ├── final_viva_slides.pdf
@@ -53,3 +59,33 @@
     ├── repository_structure.md
     ├── reproducibility_checklist.md
     └── weekly_journal.md
+```
+
+## Repository Components
+
+### config/
+Contains the experimental configuration files defining the cities, mental health scenarios, and language models evaluated.
+
+### data/
+Contains raw responses, processed datasets, coding files, and generated outputs used during the analysis.
+
+### src/
+Python scripts implementing the experimental pipeline, from experimental matrix generation through preprocessing and analysis.
+
+### notebooks/
+Contains the main Jupyter notebook used to reproduce the statistical analyses and figures reported in the dissertation.
+
+### figures/
+Contains publication-quality figures used in the dissertation.
+
+### supplementary/
+Contains supplementary materials that support the dissertation but are not included in the main text.
+
+### presentation/
+Contains the MSc research presentation and viva presentation materials.
+
+### dissertation/
+Contains the LaTeX source files for the dissertation chapters and bibliography.
+
+### docs/
+Contains supporting project documentation, including repository documentation, reproducibility guidance, and the project journal.
