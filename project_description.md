@@ -142,26 +142,7 @@ The design detects associations produced when geographic context changes. It doe
 
 ---
 
-# Repository Structure
 
-```text
-.
-├── config/                 # Cities, scenarios, and model configuration
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── outputs/
-├── dissertation/           # Dissertation chapters and appendices
-├── figures/                # Publication-quality figures
-├── notebooks/              # Development notebooks
-├── src/                    # Python source code
-├── presentation/           # presentation. slides
-├── docs/                   # Project documentation
-├── README.md
-├── requirements.txt
-├── CITATION.cff
-└── .gitignore
-```
 
 # Reproducibility
 
@@ -195,13 +176,3 @@ The project:
 
 ---
 
-# Citation
-
-If you use this repository in academic work, please cite the dissertation or use the metadata provided in CITATION.cff.
-
-**Lakrimdi, N. (2026). _Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries._ MSc Data Science Dissertation, Middlesex University.**
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-**Note:** The MIT License applies to the source code in this repository. The dissertation text, figures, and other written materials remain © 2026 Noura Lakrimdi. Please cite the work appropriately if referencing the dissertation.
