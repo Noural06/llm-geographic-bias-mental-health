@@ -1,8 +1,5 @@
-> **Important:** GitHub is **not** a cloud drive (like Google Drive or OneDrive). Do not dump unstructured files into the root directory.
 
 ### Required Directory Structure
-
-Your repository **must** follow this layout:
 
 ```
 .
