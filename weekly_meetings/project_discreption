@@ -100,4 +100,28 @@ RQ4 — Model heterogeneity: Model-level differences must be reported explicitly
 
 Overall caution: The design detects associations produced when geographic context changes. It does not establish why the models changed their responses. Strong claims require verified service data, human qualitative coding, post-hoc comparisons, and careful interpretation of the city sample.
 
+Reproducibility
+The repository supports full reproduction of the dissertation analysis.
+
+The workflow consists of:
+
+Generate the experimental matrix.
+Collect model responses using APIs.
+Clean and preprocess responses.
+Extract NLP features.
+Perform statistical analyses.
+Generate figures and supplementary outputs.
+API keys are not included and should be stored securely using environment variables or notebook secrets.
+
+The notebook and processed dataset correspond to the corrected phone-number extraction pipeline. Repository documentation has been updated to reflect the validated analysis.
+
+Ethical Considerations
+This research analyses AI-generated text only.
+
+The project:
+
+does not involve human participants;
+does not collect personal or identifiable information;
+does not evaluate clinical effectiveness;
+should not be interpreted as recommending LLMs as substitutes for qualified mental health professionals.
 
