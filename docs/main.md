@@ -1,39 +1,10 @@
-Middlesex University
 
-Department of Computer Science
 
 **Does Where You Are Shape What You Get?\
 Geographic Variation in Large Language Model Responses to Mental Health
 Queries**
 
-Noura Lakrimdi
 
-A dissertation submitted to Middlesex University
-
-in partial fulfilment of the requirements for the degree of
-
-Master of Science (MSc) in Data Science
-
-Department of Computer Science
-
-Middlesex University
-
-May 2026
-:::
-
-# Dissertation Coversheet 
-
-  Student ID Number     M00
-  --------------------- ------------------------------------------------------------------------------------------------------------------------
-  Student Name          Noura Lakrimdi
-  Module Code           CST4990
-  Programme of Study    MSc Data Science
-  Supervisor            Dr Giovanni Quattrone
-  Dissertation Title    Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries
-  Declared Word Count   8,005 (Chapters 1–6, excluding appendices)
-
-By submitting this dissertation, I confirm that I have read and
-understood the Middlesex University Declaration of Academic Integrity.
 
 # Abstract 
 
