@@ -1,11 +1,3 @@
----
-bibliography: references.bib
-link-citations: true
----
-
-::: titlepage
-![image](./Figures/Figure_01_MeanResponseLength.png){width="28%"}
-
 Middlesex University
 
 Department of Computer Science
@@ -31,7 +23,7 @@ May 2026
 
 # Dissertation Coversheet {#dissertation-coversheet .unnumbered}
 
-  Student ID Number     M00845271
+  Student ID Number     M00
   --------------------- ------------------------------------------------------------------------------------------------------------------------
   Student Name          Noura Lakrimdi
   Module Code           CST4990
