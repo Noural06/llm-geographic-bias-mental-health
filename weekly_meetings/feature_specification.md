@@ -1,8 +1,5 @@
----
-title: Feature Specification and Hypotheses
-subtitle: Response to supervisor feedback — week of 2026-07-22
----
-
+ week of 2026-07-22
+ 
 # 1. Three Primary Outcome Families
 
 Response length is treated as a **control variable** throughout (it varies
