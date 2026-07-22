@@ -4,10 +4,10 @@ Response to supervisor feedback (week of 2026-07-22).
 
 ## Contents
 
-- **`methodology.md`** — Current Methodology chapter (experimental design,
+- **`methodology`** — Current Methodology chapter (experimental design,
   data collection, pre-processing/feature extraction, statistical
   analysis, reliability/validity/limitations/ethics).
-- **`feature_specification.md`** — The three primary outcome families
+- **`feature_specification`** — The three primary outcome families
   (Actionability, Localisation, Support Orientation), a complete feature
   specification table (conceptual definition, extraction rule, output
   type, examples, assumptions, and expected failure modes for every
@@ -19,7 +19,7 @@ Response to supervisor feedback (week of 2026-07-22).
   are deliberately withheld from this sheet to avoid anchoring bias
   during manual coding.
 
-## Status against supervisor's to-do list
+## Status 
 
 | # | Item | Status |
 |---|---|---|
@@ -27,8 +27,8 @@ Response to supervisor feedback (week of 2026-07-22).
 | 2 | Complete feature specification table | Done — see `feature_specification`  |
 | 3 | Manually label stratified validation sample (80–120) | Sample drawn (n=112); manual labeling in progress |
 | 4 | Precision/recall/F1 for binary/categorical features | Pending — needs (a) completed manual labels and (b) the automated extraction output for the same 112 responses |
-| 5 | Three explicit hypotheses | Done — see `feature_specification.md` |
-| 6 | 3–4 core figures, each mapped to one hypothesis | Recommendation drafted — see `feature_specification` ; figures not yet regenerated |
+| 5 | Three explicit hypotheses | Done — see `feature_specification` |
+| 6 | 3–4 core figures, each mapped to one hypothesis | Recommendation drafted — see `feature_specification`; figures not yet regenerated |
 | 7 | Upload to GitHub | This repo |
 
 ## Next steps
