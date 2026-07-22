@@ -35,7 +35,7 @@ May 2026
 By submitting this dissertation, I confirm that I have read and
 understood the Middlesex University Declaration of Academic Integrity.
 
-# Abstract {#abstract .unnumbered}
+# Abstract 
 
 Large language models (LLMs) are increasingly consulted as informal
 sources of mental health support, yet little is known about whether the
@@ -90,7 +90,7 @@ systems intended for global mental health applications.
 variation, health equity, natural language processing, rule-based NLP,
 fairness, socioeconomic context
 
-# Declaration {#declaration .unnumbered}
+# Declaration 
 
 I hereby declare that this dissertation is entirely my own work. Where
 the work of others has been used, it has been appropriately acknowledged
@@ -109,7 +109,7 @@ Signed:
 
 Noura Lakrimdi
 
-# Acknowledgements {#acknowledgements .unnumbered}
+# Acknowledgements 
 
 I would like to express my sincere gratitude to my supervisor, Dr
 Giovanni Quattrone, for his guidance, constructive feedback, and
@@ -340,14 +340,14 @@ The study employed a fully balanced factorial experimental design in
 which every city was paired with every mental health scenario and every
 language model:
 
-$$D = C \times S \times M$$
+D = C x times x S 
 
-where $C$ denotes the set of cities, $S$ the set of mental health
-scenarios, and $M$ the set of language models. With twenty cities, eight
+where denotes the set of cities, the set of mental health
+scenarios, and the set of language models. With twenty cities, eight
 scenarios, and seven language models, the complete experimental matrix
 consisted of
 
-$$|D| = 20 \times 8 \times 7 = 1,120$$
+|D| = 20 \times 8 \times 7 = 1,120
 
 unique prompt--response combinations, each generated exactly once,
 producing a balanced dataset that enabled direct comparison across
@@ -380,17 +380,7 @@ parameters were held constant wherever possible, with the temperature
 fixed at 0.0 to minimise stochastic variation and improve
 reproducibility.
 
-Figure [3.1](#fig:experimental_design){reference-type="ref"
-reference="fig:experimental_design"} illustrates the overall
-experimental design employed in the study.
 
-<!-- FIX NEEDED: no image file has been supplied for this figure. Insert
-     an <img src="./Figures/..." /> tag here once the diagram is available. -->
-<figure id="fig:experimental_design" data-latex-placement="H">
-
-<figcaption>Overview of the factorial experimental design used in the
-study.</figcaption>
-</figure>
 
 ## Dataset and Data Collection
 
@@ -399,9 +389,8 @@ balanced design. The twenty cities were purposively selected, rather
 than sampled at random, to ensure representation across all four World
 Bank income categories and six WHO regions while maximising geographic,
 economic, and cultural diversity. The selected cities are shown in
-Table [3.1](#tab:cities){reference-type="ref" reference="tab:cities"}.
+Table [3.1]
 
-::: {#tab:cities}
   **Income Category**   **Cities**
   --------------------- ----------------------------------------------------
   High income           London, New York, Tokyo, Sydney, Riyadh
