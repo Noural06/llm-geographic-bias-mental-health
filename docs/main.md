@@ -1,47 +1,8 @@
----
-bibliography: references.bib
-link-citations: true
----
-
-::: titlepage
-![image](./Figures/Figure_01_MeanResponseLength.png){width="28%"}
-
-Middlesex University
-
 Department of Computer Science
 
 **Does Where You Are Shape What You Get?\
 Geographic Variation in Large Language Model Responses to Mental Health
 Queries**
-
-Noura Lakrimdi
-
-A dissertation submitted to Middlesex University
-
-in partial fulfilment of the requirements for the degree of
-
-Master of Science (MSc) in Data Science
-
-Department of Computer Science
-
-Middlesex University
-
-May 2026
-:::
-
-# Dissertation Coversheet {#dissertation-coversheet .unnumbered}
-
-  Student ID Number     M00845271
-  --------------------- ------------------------------------------------------------------------------------------------------------------------
-  Student Name          Noura Lakrimdi
-  Module Code           CST4990
-  Programme of Study    MSc Data Science
-  Supervisor            Dr Giovanni Quattrone
-  Dissertation Title    Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries
-  Declared Word Count   8,005 (Chapters 1–6, excluding appendices)
-
-By submitting this dissertation, I confirm that I have read and
-understood the Middlesex University Declaration of Academic Integrity.
 
 # Abstract {#abstract .unnumbered}
 
@@ -97,38 +58,6 @@ systems intended for global mental health applications.
 **Keywords:** large language models, mental health, geographic
 variation, health equity, natural language processing, rule-based NLP,
 fairness, socioeconomic context
-
-# Declaration {#declaration .unnumbered}
-
-I hereby declare that this dissertation is entirely my own work. Where
-the work of others has been used, it has been appropriately acknowledged
-and referenced in accordance with academic conventions.
-
-I confirm that I have neither copied material from another source nor
-committed plagiarism. I further confirm that I have not commissioned,
-fabricated, falsified, or otherwise misrepresented any part of this
-work.
-
-I declare that this dissertation has not previously been submitted, in
-whole or in part, for the award of any degree or qualification at this
-or any other institution.
-
-Signed:
-
-Noura Lakrimdi
-
-# Acknowledgements {#acknowledgements .unnumbered}
-
-I would like to express my sincere gratitude to my supervisor, Dr
-Giovanni Quattrone, for his guidance, constructive feedback, and
-continuous support throughout this dissertation.
-
-I would also like to thank Middlesex University and the Department of
-Computer Science for providing the opportunity and resources to
-undertake this research.
-
-Finally, I wish to thank my family and friends for their encouragement,
-patience, and support throughout my MSc studies.
 
 # Introduction
 
@@ -348,14 +277,14 @@ The study employed a fully balanced factorial experimental design in
 which every city was paired with every mental health scenario and every
 language model:
 
-$$D = C \times S \times M$$
+D = C \times S \times M
 
-where $C$ denotes the set of cities, $S$ the set of mental health
-scenarios, and $M$ the set of language models. With twenty cities, eight
+where $C$ denotes the set of cities, S the set of mental health
+scenarios, and M the set of language models. With twenty cities, eight
 scenarios, and seven language models, the complete experimental matrix
 consisted of
 
-$$|D| = 20 \times 8 \times 7 = 1,120$$
+|D| = 20 \times 8 \times 7 = 1,120
 
 unique prompt--response combinations, each generated exactly once,
 producing a balanced dataset that enabled direct comparison across
