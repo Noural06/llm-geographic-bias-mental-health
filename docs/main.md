@@ -4,7 +4,7 @@ Department of Computer Science
 Geographic Variation in Large Language Model Responses to Mental Health
 Queries**
 
-# Abstract {#abstract .unnumbered}
+# Abstract 
 
 Large language models (LLMs) are increasingly consulted as informal
 sources of mental health support, yet little is known about whether the
