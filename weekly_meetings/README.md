@@ -1,44 +1,26 @@
 # Does Where You Are Shape What You Get?
 ### Geographic Variation in LLM Responses to Mental Health Queries
 
-**Noura Lakrimdi** — MSc Data Science, Middlesex University  
-**Supervisor:** Dr Giovanni Quattrone  
-**Module:** CST4990
-
----
-
-## What this project is
-
-An audit of whether the geographic location a user states when asking a large language
-model for mental health guidance changes the quality, localisation, and cultural framing
-of the response they receive — and whether that variation disadvantages users in lower-income
-and lower-infrastructure settings.
+### week 29/07/2026
 
 **Dataset:** 1,120 responses from 7 LLMs across 20 cities, 8 scenarios, varying only the
 stated city and country. Every other element of the prompt is held constant.
 
-**Core methodological commitment:** no automated outcome measure is used in a hypothesis
+**Core methodological commitment:** No automated outcome measure is used in a hypothesis
 test until it has been validated against independently collected human labels with
-F1 ≥ 0.70. Two of the three original measures failed this check. One failure would have
-supported a published finding pointing in the wrong direction. This is documented rather
-than hidden.
+F1 ≥ 0.70. 
 
 ---
-
-## This week's work — response to supervisor feedback
-
-The supervisor's to-do list (7 items) has been completed in full.
-
 ### 1. Manual coding (Item 1)
 - **112 responses** hand-coded across all three outcome families (actionability,
-  localisation, support orientation) using a structured holistic coding sheet
+  localisation, support orientation) using a structured, holistic coding sheet
 - **100 additional responses** coded in a second, targeted pass for the H3 religious
   framing measure, using choice-based sampling (40 auto-positive / 60 auto-negative)
   with sampling weights to correct for the low base rate
 
 ### 2. Validation — precision, recall, F1 (Item 2)
 
-All three pre-registered measures were tested against human labels. None passed on
+All three pre-registered measures were tested against human labels. None passed on the 
 first attempt. The table below shows the before/after:
 
 | Outcome | First F1 | Problem found | Final F1 | Status |
@@ -63,11 +45,11 @@ in the opposite direction from the original.
 | **H2** | `localisation_v2c` (0–2) | Documented crisis-service availability (ref = None) | model, scenario | 0.750 | **Supported** |
 | **H3** | `religious_rec` (binary) | WHO region (ref = AFR) | model, scenario | 0.889 [0.678, 0.934] | **Supported** |
 
-### 4. Data retained at city and response level (Item 4)
+### 4. Data retained at the city and response level (Item 4)
 
-All 1,120 responses retained throughout. Models fitted at response level with city as
+All 1,120 responses were retained throughout. Models fitted at the response level with the city as
 a random intercept. City-level outcome table exported (`Table_CityLevel_Outcomes.csv`).
-Nothing is aggregated to income tier or WHO region before modelling — those enter only
+Nothing is aggregated to the income tier or the WHO region before modelling — those enter only
 as predictors.
 
 ### 5. One controlled model per outcome (Item 5)
@@ -101,12 +83,6 @@ aggregation.
 - `Figure_H1_Actionability.png` — actionability by city, grouped by income category
 - `Figure_H2_Localisation.png` — localisation by city, grouped by service availability
 - `Figure_H3_ReligiousFraming.png` — religious framing by city, grouped by WHO region
-
-### 7. GitHub upload (Item 7)
-
-This repository. Code, data, validation labels, notebook, and dissertation source
-all uploaded.
-
 ---
 
 ## An unplanned finding: fabricated crisis-helpline numbers
@@ -183,11 +159,3 @@ workbooks in the working directory.
   fabrication may be intermittent; a single sample may over- or under-estimate it.
 
 ---
-
-## What remains before publication
-
-1. **Complete the crisis-service verification** for all 20 countries (15 outstanding)
-2. **Add a no-location control condition** — one API run to establish a baseline
-3. **Expand city count** beyond 20 for stronger generalisability
-
-The dissertation is submitted. The paper is not yet written.
