@@ -114,9 +114,8 @@ This is a floor estimate. The true fabrication rate is higher.
 ├── data/
 │   ├── combined_dataset_REPAIRED.csv               # Use this — rebuilt IDs
 │   ├── combined_dataset.csv                        # Original (broken matrix_id)
-│   └── coded_dataset_v2.csv                        # All engineered features
-├── source_data/                                    # 7 original per-model response files
-├── validation/
+│   └── coded_dataset_v2.csv                        # All engineered features                                   
+├
 │   ├── validation_sample_v2_HOLISTIC_TO_LABEL.xlsx # 112 responses, completed
 │   └── validation_H3_religious_TO_LABEL.xlsx       # 100 responses, completed & scored
 ├── reference/
@@ -124,9 +123,6 @@ This is a floor estimate. The true fabrication rate is higher.
 │   └── rebuild_v3.py                               # Final outcome-measure construction
 ├── tables/                                         # All output tables (CSV)
 ├── figures/                                        # All output figures (PNG)
-├── supervisor_response.md                          # Full methods writeup
-├── publication_strategy.md                         # Path to publication
-├── data_audit.md                                   # Source-file provenance
 └── References.tex                                  # Bibliography (Google Scholar / MDX)
 ```
 
