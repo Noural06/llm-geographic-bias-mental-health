@@ -19,11 +19,11 @@ F1 ≥ 0.70.
 
 ---
 
-##  29/07/2026 This week's work — response to supervisor feedback
+##  29/07/2026 This week's work.
 
 All seven items on the supervisor's to-do list are complete.
 
-### 1. Manual coding (Item 1)
+### 1. Manual coding
 
 - **112 responses** hand-coded across three outcome families (actionability,
   localisation, support orientation) using a structured holistic coding sheet
@@ -31,7 +31,7 @@ All seven items on the supervisor's to-do list are complete.
   framing measure, using choice-based sampling (40 auto-positive / 60 auto-negative)
   with sampling weights to correct for the low base rate
 
-### 2. Validation — precision, recall, F1 (Item 2)
+### 2. Validation — precision, recall, F1 
 
 Three outcome measures were developed and validated against independent human labels.
 All three pass the pre-specified threshold of F1 ≥ 0.70.
@@ -55,7 +55,7 @@ constraint produced a directionally reversed result that human validation caught
 | **H2** | `localisation_v2c` | Documented crisis-service availability (ref = None) | model, scenario | 0.750 | **Supported** |
 | **H3** | `religious_rec` | WHO region (ref = AFR) | model, scenario | 0.889 | **Supported** |
 
-### 4. Data retained at city and response level (Item 4)
+### 4. Data retained at city and response level 
 
 All 1,120 responses retained throughout. Models fitted at response level with city as
 a random intercept. City-level outcome table exported. Nothing is aggregated to income
