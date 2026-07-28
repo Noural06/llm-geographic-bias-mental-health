@@ -1,10 +1,6 @@
 # Does Where You Are Shape What You Get?
 ### Geographic Variation in LLM Responses to Mental Health Queries
 
-**Noura Lakrimdi** — MSc Data Science, Middlesex University  
-**Supervisor:** Dr Giovanni Quattrone  
-**Module:** CST4990
-
 ---
 
 ## What this project is
@@ -118,39 +114,15 @@ health documentation states explicitly that no such line exists.
 
 This is a floor estimate. The true fabrication rate is higher.
 
----
 
-## Repository layout
 
-```
-├── Geographic_variation_analysis_VALIDATED.ipynb   # Full pipeline, Colab-ready
-├── score_h3.py                                     # H3 validation scoring script
-├── data/
-│   ├── combined_dataset_REPAIRED.csv               # Use this — rebuilt IDs + provenance
-│   ├── combined_dataset.csv                        # Original export (broken matrix_id)
-│   └── coded_dataset_v2.csv                        # All engineered features
-├── source_data/                                    # 7 original per-model response files
-├── validation/
-│   ├── validation_sample_v2_HOLISTIC_TO_LABEL.xlsx # 112 responses, labelled
-│   └── validation_H3_religious_TO_LABEL.xlsx       # 100 responses, completed & scored
-├── reference/
-│   ├── crisis_reference_v2.py                      # Verified crisis-service reference
-│   └── rebuild_v3.py                               # Final outcome-measure construction
-├── tables/                                         # All output tables (CSV)
-├── figures/                                        # All output figures (PNG)
-├── supervisor_response.md                          # Full methods writeup
-├── publication_strategy.md                         # Path to publication
-├── data_audit.md                                   # Source-file provenance & issues
-└── References.tex                                  # Bibliography (Google Scholar / MDX)
-```
 
 ---
 
 ## Reproducing the analysis
 
 Open `Geographic_variation_analysis_VALIDATED.ipynb` in Google Colab or Jupyter.
-Run top to bottom. Expects `combined_dataset_REPAIRED.csv` and both validation
-workbooks in the working directory.
+Run top to bottom. 
 
 **Dependencies:** `pandas`, `numpy`, `scipy`, `scikit-learn`, `statsmodels`,
 `matplotlib`, `plotly`, `vaderSentiment`, `openpyxl`
@@ -176,18 +148,13 @@ the conservative choice.
 - **Language:** all queries in English. Non-Anglophone users querying in a local
   language would likely show wider gaps.
 - **Crisis-service reference:** 5 of 20 countries verified against IASP / Befrienders /
-  WHO (Nepal, Madagascar, Afghanistan, Nigeria, DR Congo); 15 carry earlier desk-research
+  WHO (Nepal, Madagascar, Afghanistan, Nigeria, DR Congo); 15 carried out earlier desk research
   classifications.
 - **20 cities:** every geographic claim rests on 20 units. Robustness checks included.
 - **Fabrication floor:** pattern-matching only catches visibly synthetic numbers.
 - **One response per cell:** no within-cell variance estimate.
 
----
 
-## What remains before publication
 
-1. **Complete crisis-service verification** for all 20 countries (15 outstanding)
-2. **Add a no-location control condition** — one API run to establish a baseline
-3. **Expand city count** beyond 20 for stronger generalisability
 
-The dissertation is submitted. The paper is not yet written.
+
