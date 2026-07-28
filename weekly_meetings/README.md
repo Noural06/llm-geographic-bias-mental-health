@@ -19,7 +19,7 @@ F1 ≥ 0.70.
 
 ---
 
-## This week's work — response to supervisor feedback
+##  29/07/2026 This week's work — response to supervisor feedback
 
 All seven items on the supervisor's to-do list are complete.
 
