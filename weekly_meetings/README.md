@@ -11,14 +11,14 @@ test until it has been validated against independently collected human labels wi
 F1 ≥ 0.70. 
 
 ---
-### 1. Manual coding (Item 1)
+### 1. Manual coding 
 - **112 responses** hand-coded across all three outcome families (actionability,
   localisation, support orientation) using a structured, holistic coding sheet
 - **100 additional responses** coded in a second, targeted pass for the H3 religious
   framing measure, using choice-based sampling (40 auto-positive / 60 auto-negative)
   with sampling weights to correct for the low base rate
 
-### 2. Validation — precision, recall, F1 (Item 2)
+### 2. Validation — precision, recall, F1 
 
 All three pre-registered measures were tested against human labels. None passed on the 
 first attempt. The table below shows the before/after:
@@ -37,7 +37,7 @@ Two automated coding rules agreed at κ = 0.93–0.99 without catching this, bec
 shared the same flawed logic. Human validation caught it. The corrected result points
 in the opposite direction from the original.
 
-### 3. Three finalised hypotheses (Item 3)
+### 3. Three finalised hypotheses 
 
 | | Outcome | Predictor | Controls | Validated F1 | Result |
 |---|---|---|---|---|---|
@@ -45,14 +45,14 @@ in the opposite direction from the original.
 | **H2** | `localisation_v2c` (0–2) | Documented crisis-service availability (ref = None) | model, scenario | 0.750 | **Supported** |
 | **H3** | `religious_rec` (binary) | WHO region (ref = AFR) | model, scenario | 0.889 [0.678, 0.934] | **Supported** |
 
-### 4. Data retained at the city and response level (Item 4)
+### 4. Data retained at the city and response level 
 
 All 1,120 responses were retained throughout. Models fitted at the response level with the city as
 a random intercept. City-level outcome table exported (`Table_CityLevel_Outcomes.csv`).
 Nothing is aggregated to the income tier or the WHO region before modelling — those enter only
 as predictors.
 
-### 5. One controlled model per outcome (Item 5)
+### 5. One controlled model per outcome 
 
 - **H1:** Linear mixed-effects model — `actionability_v2 ~ income + model + scenario`,
   city random intercept, n = 1,120
