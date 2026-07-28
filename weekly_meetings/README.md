@@ -109,18 +109,15 @@ This is a floor estimate. The true fabrication rate is higher.
 ## Repository layout
 
 ```
-├── Geographic_variation_analysis_VALIDATED.ipynb   # Full pipeline, Colab-ready
+├── Geographic_variation_analysis_VALIDATED.ipynb   # Full pipeline, 
 ├── score_h3.py                                     # H3 validation scoring script
 ├── data/
 │   ├── combined_dataset_REPAIRED.csv               # Use this — rebuilt IDs
 │   ├── combined_dataset.csv                        # Original (broken matrix_id)
-│   └── coded_dataset_v2.csv                        # All engineered features                                   
+│                                   
 ├
 │   ├── validation_sample_v2_HOLISTIC_TO_LABEL.xlsx # 112 responses, completed
 │   └── validation_H3_religious_TO_LABEL.xlsx       # 100 responses, completed & scored
-├── reference/
-│   ├── crisis_reference_v2.py                      # Verified crisis-service reference
-│   └── rebuild_v3.py                               # Final outcome-measure construction
 ├── tables/                                         # All output tables (CSV)
 ├── figures/                                        # All output figures (PNG)
 └── References.tex                                  # Bibliography (Google Scholar / MDX)
