@@ -11,7 +11,7 @@
 
 An audit of whether the geographic location a user states when asking a large language
 model for mental health guidance changes the quality, localisation, and cultural framing
-of the response they receive — and whether that variation disadvantages users in
+of the response they receive, and whether that variation disadvantages users in
 lower-income and lower-infrastructure settings.
 
 **Dataset:** 1,120 responses from 7 LLMs across 20 cities, 8 scenarios, varying only
@@ -23,20 +23,20 @@ F1 ≥ 0.70.
 
 ---
 
-## This week's work — response to supervisor feedback
+##  29/07/2026 This week's work 
 
 All seven items on the supervisor's to-do list are complete.
 
-### 1. Manual coding (Item 1)
+### 1. Manual coding 
 
 - **112 responses** hand-coded across three outcome families (actionability,
-  localisation, support orientation) using a structured holistic coding sheet
+  localisation, support orientation) using a structured, holistic coding sheet
 - **100 additional responses** coded in a second targeted pass for the H3 religious
   framing measure, using choice-based sampling (40 auto-positive / 60 auto-negative)
   with inverse-probability weights to account for the deliberately enriched
   auto-positive sample
 
-The human and automated actionability measures are related but are **not the same
+The human and automated actionability measures are related but are **not on the same
 numeric scale**. Human coding used a holistic 0–2 actionability rating. The automated
 `actionability_v2` measure is a five-component 0–5 index. Validation compared
 pre-defined top-category cases after binarising both measures; it did not compare
@@ -44,11 +44,11 @@ the raw 0–2 and 0–5 values as though they were interchangeable.
 
 For the targeted H3 validation, the sampling weights refer to the original sampling
 pool: 86 automated positives and 1,034 negatives (86/1,120 = 7.7%). After the
-religious-vocabulary correction, the final automated full-dataset count was
+religious vocabulary correction, the final automated full-dataset count was
 140/1,120 = 12.5%. These percentages describe different stages of the pipeline and
 should not be treated as contradictory estimates.
 
-### 2. Validation — precision, recall, F1 (Item 2)
+### 2. Validation — precision, recall, F1 
 
 Three outcome measures were developed and validated against independent human labels.
 All three pass the pre-specified threshold of F1 ≥ 0.70.
@@ -61,7 +61,7 @@ All three pass the pre-specified threshold of F1 ≥ 0.70.
 
 The localisation measure was designed under two explicit constraints — every component
 must be recoverable from the response text alone, and every component must increase
-monotonically with the construct — because a specification that violated the second
+monotonically with the construct, because a specification that violated the second
 constraint produced a directionally reversed result that human validation caught.
 
 The exact collapse rule is:
@@ -73,7 +73,7 @@ The exact collapse rule is:
 Contact presence measures whether a contact is supplied, not whether the contact is
 accurate. Contact verification is therefore treated as a separate safety audit.
 
-### 3. Three finalised hypotheses (Item 3)
+### 3. Three finalised hypotheses 
 
 | | Outcome | Predictor | Controls | Validated F1 | Result |
 |---|---|---|---|---|---|
@@ -81,15 +81,15 @@ accurate. Contact verification is therefore treated as a separate safety audit.
 | **H2** | `localisation_v2c` | Documented crisis-service availability (ref = None) | model, scenario | 0.750 | **Supported** |
 | **H3** | `religious_rec` | WHO region (ref = AFR) | model, scenario | 0.889 | **Supported** |
 
-### 4. Data retained at city and response level (Item 4)
+### 4. Data retained at the city and response level (Item 4)
 
-All 1,120 responses retained throughout. Models fitted at response level with city as
-a random intercept. City-level outcome table exported. Nothing is aggregated to income
+All 1,120 responses were retained throughout. Models fitted at the response level with the city as
+a random intercept. City-level outcome table exported. Nothing is aggregated to the income
 tier or WHO region before modelling — those enter only as predictors. The figures use
 city-level means for presentation, while the confirmatory mixed-effects models retain
 the response-level observations.
 
-### 5. One controlled model per outcome (Item 5)
+### 5. One controlled model per outcome
 
 - **H1:** Linear mixed-effects — `actionability_v2 ~ income + model + scenario`, city random intercept, n = 1,120
 - **H2:** Linear mixed-effects — `localisation_v2c ~ service_category + model + scenario`, city random intercept, n = 1,120
@@ -108,7 +108,7 @@ the response-level observations.
 Both H1 and H2 survive refitting on city-level means only (n = 20 cities,
 H1 Spearman ρ = 0.824, p < 0.001) and under all 7 leave-one-model-out exclusions.
 
-### 6. Three core figures (Item 6)
+### 6. Three core figures 
 
 All three figures display city means with ±1 SE error bars, grouped by the relevant
 geographic category. These are descriptive summaries; the confirmatory models use
@@ -117,13 +117,7 @@ the response-level data described above.
 - `figures/Figure_H1_Actionability.png` — actionability by city, grouped by income category
 - `figures/Figure_H2_Localisation.png` — localisation by city, grouped by service availability
 - `figures/Figure_H3_ReligiousFraming.png` — religious framing by city, grouped by WHO region
-
-### 7. GitHub upload (Item 7)
-
-This repository. All code, data, validation labels, notebook, dissertation source,
-and methodology materials are included.
-
----
+- ---
 
 ## An unplanned finding: suspicious crisis-helpline number patterns
 
@@ -151,29 +145,6 @@ sources before it can be classified as valid, unverifiable, or incorrect.
 
 ---
 
-## Repository layout
-
-```
-├── Geographic_variation_analysis_VALIDATED.ipynb   # Full pipeline, Colab-ready
-├── score_h3.py                                     # H3 validation scoring script
-├── data/
-│   ├── combined_dataset_REPAIRED.csv               # Use this — rebuilt IDs + provenance
-│   ├── combined_dataset.csv                        # Original export (broken matrix_id)
-│   └── coded_dataset_v2.csv                        # All engineered features
-├── source_data/                                    # 7 original per-model response files
-├── validation/
-│   ├── validation_sample_v2_HOLISTIC_TO_LABEL.xlsx # 112 responses, labelled
-│   └── validation_H3_religious_TO_LABEL.xlsx       # 100 responses, completed & scored
-├── reference/
-│   ├── crisis_reference_v2.py                      # Verified crisis-service reference
-│   └── rebuild_v3.py                               # Final outcome-measure construction
-├── tables/                                         # All output tables (CSV)
-├── figures/                                        # All output figures (PNG)
-├── supervisor_response.md                          # Full methods writeup
-├── publication_strategy.md                         # Path to publication
-├── data_audit.md                                   # Source-file provenance & issues
-└── References.tex                                  # Bibliography (Google Scholar / MDX)
-```
 
 ---
 
@@ -207,19 +178,13 @@ the conservative choice.
 - **Language:** all queries in English. Non-Anglophone users querying in a local
   language are not represented, limiting generalisability.
 - **Crisis-service reference:** 5 of 20 countries verified against IASP / Befrienders /
-  WHO (Nepal, Madagascar, Afghanistan, Nigeria, DR Congo); 15 carry earlier desk-research
+  WHO (Nepal, Madagascar, Afghanistan, Nigeria, DR Congo); 15 carried out earlier desk research
   classifications.
 - **20 cities:** every geographic claim rests on 20 units. Robustness checks included.
 - **Contact-number audit:** pattern matching identifies suspicious forms but cannot
   verify whether a number connects to a legitimate service.
 - **One response per cell:** no within-cell variance estimate.
 
----
 
-## What remains before publication
 
-1. **Complete crisis-service verification** for all 20 countries (15 outstanding)
-2. **Add a no-location control condition** — one API run to establish a baseline
-3. **Expand city count** beyond 20 for stronger generalisability
 
-The dissertation is submitted. The paper is not yet written.
