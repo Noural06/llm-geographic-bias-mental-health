@@ -44,10 +44,10 @@ All three pass the pre-specified threshold of F1 ≥ 0.70.
 
 The localisation measure was designed under two explicit constraints — every component
 must be recoverable from the response text alone, and every component must increase
-monotonically with the construct — because a specification that violated the second
+monotonically with the construct, because a specification that violated the second 
 constraint produced a directionally reversed result that human validation caught.
 
-### 3. Three finalised hypotheses (Item 3)
+### 3. Three finalised hypotheses 
 
 | | Outcome | Predictor | Controls | Validated F1 | Result |
 |---|---|---|---|---|---|
@@ -55,13 +55,13 @@ constraint produced a directionally reversed result that human validation caught
 | **H2** | `localisation_v2c` | Documented crisis-service availability (ref = None) | model, scenario | 0.750 | **Supported** |
 | **H3** | `religious_rec` | WHO region (ref = AFR) | model, scenario | 0.889 | **Supported** |
 
-### 4. Data retained at city and response level 
+### 4. Data is retained at the city and response level 
 
-All 1,120 responses retained throughout. Models fitted at response level with city as
-a random intercept. City-level outcome table exported. Nothing is aggregated to income
+All 1,120 responses were retained throughout. Models fitted at the response level with city as
+a random intercept. City-level outcome table exported. Nothing is aggregated to the income
 tier or WHO region before modelling — those enter only as predictors.
 
-### 5. One controlled model per outcome (Item 5)
+### 5. One controlled model per outcome 
 
 - **H1:** Linear mixed-effects — `actionability_v2 ~ income + model + scenario`, city random intercept, n = 1,120
 - **H2:** Linear mixed-effects — `localisation_v2c ~ service_category + model + scenario`, city random intercept, n = 1,120
@@ -79,7 +79,7 @@ tier or WHO region before modelling — those enter only as predictors.
 Both H1 and H2 survive refitting on city-level means only (n = 20 cities,
 H1 Spearman ρ = 0.824, p < 0.001) and under all 7 leave-one-model-out exclusions.
 
-### 6. Three core figures (Item 6)
+### 6. Three core figures 
 
 All three figures show cities as the unit with ±1 SE error bars, grouped by the
 relevant geographic category. Nothing is aggregated away.
@@ -88,10 +88,6 @@ relevant geographic category. Nothing is aggregated away.
 - `figures/Figure_H2_Localisation.png` — localisation by city, grouped by service availability
 - `figures/Figure_H3_ReligiousFraming.png` — religious framing by city, grouped by WHO region
 
-### 7. GitHub upload (Item 7)
-
-This repository. All code, data, validation labels, notebook, dissertation source,
-and methodology materials are included.
 
 ---
 
