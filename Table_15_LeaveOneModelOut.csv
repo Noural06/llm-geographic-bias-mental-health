@@ -1,0 +1,9 @@
+specification,n,H1_high_vs_low,H1_p,H2_established_vs_none,H2_p
+ALL 7 MODELS,1120,0.639,0.0,0.353,0.0
+drop: Llama-4-Scout-17B,960,0.625,0.0,0.377,0.0
+drop: Nemotron-3-Super-120B-A12B,960,0.667,0.0,0.407,0.0
+drop: gemma-4-26b-a4b-it,960,0.579,0.0,0.299,0.0
+drop: llama-3.3-70b-versatile,960,0.658,0.0,0.368,0.0
+drop: mistral-small-2506,960,0.588,0.0,0.319,0.0
+drop: openai/gpt-oss-120b,960,0.75,0.0,0.391,0.0
+drop: qwen/qwen3-32b,960,0.608,0.0,0.31,0.0
