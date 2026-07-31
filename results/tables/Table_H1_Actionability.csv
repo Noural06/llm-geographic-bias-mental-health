@@ -1,0 +1,4 @@
+term,coef,se,p,ci_lo,ci_hi
+C(income_category)[T.Lower-Middle],0.325,0.0894,0.0003,0.1498,0.5002
+C(income_category)[T.Upper-Middle],0.4143,0.0894,0.0,0.2391,0.5895
+C(income_category)[T.High],0.6143,0.0894,0.0,0.4391,0.7895

@@ -1,0 +1,142 @@
+                             MNLogit Regression Results                             
+====================================================================================
+Dep. Variable:     support_orientation_code   No. Observations:                 1120
+Model:                              MNLogit   Df Residuals:                     1010
+Method:                                 MLE   Df Model:                          104
+Date:                      Fri, 31 Jul 2026   Pseudo R-squ.:                  0.3053
+Time:                              16:51:34   Log-Likelihood:                -1350.5
+converged:                             True   LL-Null:                       -1943.9
+Covariance Type:                  nonrobust   LLR p-value:                3.731e-183
+==================================================================================================================================================
+                                                    support_orientation_code=1       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -1.6981      0.555     -3.062      0.002      -2.785      -0.611
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                   0.3553      0.537      0.662      0.508      -0.697       1.407
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.8291      0.496      1.672      0.094      -0.143       1.801
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                   0.1538      0.546      0.282      0.778      -0.917       1.224
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                  0.0932      0.631      0.148      0.883      -1.144       1.331
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -0.4783      0.552     -0.866      0.387      -1.561       0.605
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]         -1.3163      0.711     -1.852      0.064      -2.709       0.077
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]     1.2213      0.426      2.864      0.004       0.385       2.057
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]           0.9793      0.435      2.250      0.024       0.126       1.832
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]               0        nan        nan        nan         nan         nan
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       0.0027      0.930      0.003      0.998      -1.819       1.825
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                   0.7695      0.563      1.368      0.171      -0.333       1.872
+C(scenario_id)[T.S2]                                                              -1.2404      0.614     -2.021      0.043      -2.444      -0.037
+C(scenario_id)[T.S3]                                                              -4.1071      1.465     -2.803      0.005      -6.979      -1.235
+C(scenario_id)[T.S4]                                                              -0.7931      0.621     -1.276      0.202      -2.011       0.425
+C(scenario_id)[T.S5]                                                               1.4896      0.531      2.807      0.005       0.449       2.530
+C(scenario_id)[T.S6]                                                              -3.4224      1.469     -2.330      0.020      -6.301      -0.544
+C(scenario_id)[T.S7]                                                              -0.6305      0.560     -1.126      0.260      -1.728       0.467
+C(scenario_id)[T.S8]                                                              -0.7974      0.504     -1.583      0.113      -1.785       0.190
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    support_orientation_code=2       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -0.8694      0.432     -2.012      0.044      -1.716      -0.023
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                  -0.5886      0.403     -1.461      0.144      -1.378       0.201
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.3459      0.334      1.036      0.300      -0.309       1.001
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                  -0.3702      0.377     -0.981      0.327      -1.110       0.369
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                       0        nan        nan        nan         nan         nan
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -0.7850      0.356     -2.208      0.027      -1.482      -0.088
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]          0.4647      0.393      1.182      0.237      -0.306       1.235
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]     0.7015      0.433      1.620      0.105      -0.147       1.550
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]           0.5932      0.431      1.377      0.168      -0.251       1.437
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]         -0.2609      0.488     -0.535      0.593      -1.217       0.695
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       1.8035      0.526      3.426      0.001       0.772       2.835
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                   1.0846      0.464      2.338      0.019       0.175       1.994
+C(scenario_id)[T.S2]                                                              -1.8135      0.574     -3.159      0.002      -2.939      -0.688
+C(scenario_id)[T.S3]                                                              -3.5365      0.876     -4.037      0.000      -5.254      -1.819
+C(scenario_id)[T.S4]                                                               0.1403      0.408      0.344      0.731      -0.660       0.941
+C(scenario_id)[T.S5]                                                               2.1393      0.435      4.915      0.000       1.286       2.992
+C(scenario_id)[T.S6]                                                              -4.0555      1.452     -2.792      0.005      -6.902      -1.209
+C(scenario_id)[T.S7]                                                              -1.8980      0.632     -3.004      0.003      -3.137      -0.660
+C(scenario_id)[T.S8]                                                              -0.9643      0.416     -2.316      0.021      -1.781      -0.148
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    support_orientation_code=3       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -0.9665      0.395     -2.448      0.014      -1.740      -0.193
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                  -0.0482      0.310     -0.155      0.876      -0.656       0.559
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.1732      0.293      0.591      0.555      -0.402       0.748
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                  -0.1845      0.309     -0.598      0.550      -0.789       0.420
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                 -0.3495      0.358     -0.975      0.329      -1.052       0.353
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -0.4562      0.287     -1.588      0.112      -1.019       0.107
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]         -0.3289      0.332     -0.990      0.322      -0.980       0.322
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]     0.8461      0.324      2.612      0.009       0.211       1.481
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]           0.7254      0.322      2.249      0.024       0.093       1.357
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]          0.9041      0.308      2.940      0.003       0.301       1.507
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       0.1767      0.569      0.310      0.756      -0.939       1.293
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                   1.4103      0.351      4.019      0.000       0.723       2.098
+C(scenario_id)[T.S2]                                                              -0.4307      0.403     -1.070      0.285      -1.220       0.358
+C(scenario_id)[T.S3]                                                              -1.0515      0.389     -2.705      0.007      -1.813      -0.290
+C(scenario_id)[T.S4]                                                               1.0188      0.369      2.765      0.006       0.297       1.741
+C(scenario_id)[T.S5]                                                               1.5143      0.450      3.368      0.001       0.633       2.395
+C(scenario_id)[T.S6]                                                              -0.7300      0.431     -1.694      0.090      -1.574       0.114
+C(scenario_id)[T.S7]                                                               0.3971      0.376      1.056      0.291      -0.340       1.134
+C(scenario_id)[T.S8]                                                              -0.3231      0.370     -0.874      0.382      -1.048       0.401
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    support_orientation_code=4       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -2.7541      0.713     -3.860      0.000      -4.153      -1.356
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                  -0.0322      0.480     -0.067      0.947      -0.973       0.909
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.0595      0.449      0.133      0.894      -0.820       0.939
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                  -0.1035      0.477     -0.217      0.828      -1.038       0.831
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                 -0.1675      0.533     -0.314      0.754      -1.213       0.878
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -0.2324      0.438     -0.531      0.596      -1.091       0.626
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]          0.7486      0.760      0.985      0.325      -0.741       2.238
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]     2.5347      0.663      3.820      0.000       1.234       3.835
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]           2.1944      0.678      3.237      0.001       0.866       3.523
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]               0        nan        nan        nan         nan         nan
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       6.1069      0.664      9.203      0.000       4.806       7.407
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                  -0.1498      1.544     -0.097      0.923      -3.176       2.876
+C(scenario_id)[T.S2]                                                              -0.7069      0.521     -1.358      0.175      -1.727       0.314
+C(scenario_id)[T.S3]                                                              -1.5576      0.530     -2.938      0.003      -2.597      -0.518
+C(scenario_id)[T.S4]                                                              -0.5030      0.540     -0.931      0.352      -1.562       0.556
+C(scenario_id)[T.S5]                                                              -1.3102      0.702     -1.866      0.062      -2.687       0.066
+C(scenario_id)[T.S6]                                                              -1.1266      0.547     -2.059      0.039      -2.199      -0.054
+C(scenario_id)[T.S7]                                                              -1.1492      0.555     -2.069      0.039      -2.238      -0.061
+C(scenario_id)[T.S8]                                                              -1.7823      0.549     -3.249      0.001      -2.857      -0.707
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    support_orientation_code=5       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -1.2986      0.567     -2.292      0.022      -2.409      -0.188
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                  -3.2736      1.458     -2.246      0.025      -6.130      -0.417
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.1551      0.431      0.360      0.719      -0.690       1.000
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                  -3.3934      1.457     -2.329      0.020      -6.250      -0.537
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                 -1.1257      0.722     -1.560      0.119      -2.540       0.289
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -2.2524      0.718     -3.138      0.002      -3.659      -0.845
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]               0        nan        nan        nan         nan         nan
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]    -1.6696      1.466     -1.139      0.255      -4.543       1.204
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]          -0.6636      0.902     -0.736      0.462      -2.432       1.105
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]          0.9301      0.528      1.762      0.078      -0.104       1.965
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       1.1606      0.793      1.463      0.143      -0.394       2.716
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                   2.3534      0.496      4.747      0.000       1.382       3.325
+C(scenario_id)[T.S2]                                                              -0.7673      0.677     -1.134      0.257      -2.093       0.559
+C(scenario_id)[T.S3]                                                              -2.7010      0.953     -2.835      0.005      -4.568      -0.834
+C(scenario_id)[T.S4]                                                              -0.9857      0.805     -1.224      0.221      -2.564       0.593
+C(scenario_id)[T.S5]                                                               1.2369      0.659      1.876      0.061      -0.055       2.529
+C(scenario_id)[T.S6]                                                              -1.8445      0.950     -1.942      0.052      -3.706       0.017
+C(scenario_id)[T.S7]                                                              -0.1476      0.627     -0.235      0.814      -1.377       1.082
+C(scenario_id)[T.S8]                                                              -1.2046      0.678     -1.777      0.076      -2.533       0.124
+--------------------------------------------------------------------------------------------------------------------------------------------------
+                                                    support_orientation_code=6       coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                         -1.2838      0.424     -3.028      0.002      -2.115      -0.453
+C(who_region, Treatment(reference="AFR"))[T.AMR]                                   0.2894      0.337      0.858      0.391      -0.372       0.951
+C(who_region, Treatment(reference="AFR"))[T.EMR]                                   0.2136      0.328      0.650      0.515      -0.430       0.857
+C(who_region, Treatment(reference="AFR"))[T.EUR]                                  -0.1154      0.346     -0.333      0.739      -0.794       0.563
+C(who_region, Treatment(reference="AFR"))[T.SEAR]                                  0.5841      0.355      1.645      0.100      -0.112       1.280
+C(who_region, Treatment(reference="AFR"))[T.WPR]                                  -0.3049      0.320     -0.953      0.340      -0.932       0.322
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Gemma-4-26B-A4B-IT]         -1.4748      0.481     -3.069      0.002      -2.417      -0.533
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-3.3-70B-Versatile]     0.7345      0.354      2.073      0.038       0.040       1.429
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Llama-4-Scout-17B]           0.6905      0.350      1.974      0.048       0.005       1.376
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Mistral-Small-2506]          1.1406      0.329      3.464      0.001       0.495       1.786
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Nemotron-3-Super-120B]       0.4186      0.583      0.718      0.473      -0.724       1.561
+C(model_label, Treatment(reference="GPT-OSS-120B"))[T.Qwen3-32B]                   2.3534      0.354      6.645      0.000       1.659       3.048
+C(scenario_id)[T.S2]                                                               0.2891      0.375      0.772      0.440      -0.445       1.023
+C(scenario_id)[T.S3]                                                              -1.5419      0.426     -3.616      0.000      -2.378      -0.706
+C(scenario_id)[T.S4]                                                              -0.5595      0.460     -1.216      0.224      -1.462       0.343
+C(scenario_id)[T.S5]                                                               0.6299      0.501      1.259      0.208      -0.351       1.611
+C(scenario_id)[T.S6]                                                               0.7960      0.364      2.185      0.029       0.082       1.510
+C(scenario_id)[T.S7]                                                               0.4578      0.384      1.193      0.233      -0.294       1.210
+C(scenario_id)[T.S8]                                                              -2.1110      0.541     -3.905      0.000      -3.171      -1.051
+==================================================================================================================================================

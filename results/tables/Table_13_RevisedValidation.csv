@@ -1,0 +1,5 @@
+outcome,n,spearman_rho,weighted_kappa,exact_agreement,precision,recall,f1,meets_threshold
+"actionability (OLD, 0-4)",112,0.624,0.618,0.625,0.895,0.548,0.68,False
+actionability_v2 (0-5),112,0.619,0.619,0.643,0.763,0.726,0.744,True
+"localisation (OLD, 0-2)",112,0.199,0.186,0.545,0.63,0.576,0.602,False
+localisation_v2 (0-3),112,0.448,0.422,0.67,0.738,0.763,0.75,True

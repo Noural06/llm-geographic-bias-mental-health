@@ -1,0 +1,5 @@
+rule,accuracy,kappa,macro_f1
+"directive-context, dominance>=0.00",0.286,0.147,0.171
+"directive-context, dominance>=0.40",0.277,0.141,0.169
+"directive-context, dominance>=0.50",0.277,0.141,0.169
+"directive-context, dominance>=0.60",0.232,0.129,0.151
