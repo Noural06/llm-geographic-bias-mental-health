@@ -19,3 +19,33 @@ xlrd>=2.0
 # Notebook
 ipykernel>=6.0
 nbformat>=5.9
+
+
+# model.yml 
+- provider: groq
+    model_name: openai/gpt-oss-120b
+    temperature: 0.0
+
+  - provider: groq
+    model_name: llama-3.3-70b-versatile
+    temperature: 0.0
+
+  - provider: groq
+    model_name: qwen/qwen3-32b
+    temperature: 0.0
+
+  - provider: groq
+    model_name: meta-llama/llama-4-scout-17b-16e-instruct
+    temperature: 0.0
+
+  - provider: google
+    model_name: gemma-4-26b-a4b-it
+    temperature: 0.0
+
+  - provider: mistral
+    model_name: mistral-small-2506
+    temperature: 0.0
+
+  - provider: openrouter
+    model_name: nvidia/nemotron-3-super-120b-a12b
+    temperature: 0.0
