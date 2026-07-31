@@ -1,6 +1,6 @@
 \section{Exploratory Data Analysis}
 
-The following exploratory analyses characterise the response corpus before any hypothesis test. No confirmatory inferences are drawn here.
+The following exploratory analyses characterise the response corpus prior to any hypothesis testing. No confirmatory inferences are drawn here.
 
 \subsection{Response-Length Distribution}
 
@@ -14,7 +14,7 @@ The following exploratory analyses characterise the response corpus before any h
 
 \begin{table}[H]
 \centering
-\caption{Descriptive statistics by income category ($n = 280$ per group). Specificity mean = phone numbers + short-codes + URLs per response; values corrected from pipeline rerun.}
+\caption{Descriptive statistics by income category ($n = 280$ per group). Specificity means phone numbers, short codes, and URLs per response; values corrected from the pipeline rerun.}
 \label{tab:descriptive_income}
 \begin{tabular}{lcccc}
 \toprule
@@ -205,9 +205,9 @@ High & $\mathbf{+0.614}$ & \textbf{[0.439, 0.790]} & $<$0.0001 \\
 \end{tabular}
 \end{table}
 
-\textbf{Interpretation:} High-income cities receive responses scoring 0.614 points higher on the 0--5 actionability scale than low-income cities, after controlling for model identity and scenario. The effect is not attributable to response length (equal across tiers) or model selection (survives all seven model-exclusion variants).
+\textbf{Interpretation:} High-income cities receive responses scoring 0.614 points higher on the 0--5 actionability scale than low-income cities, after controlling for model identity and scenario. The effect is not attributable to response length (equal across tiers) or to model selection (it survives all seven model-exclusion variants).
 
-\textbf{Limitation:} Actionability is measured as presence of concrete components, not their accuracy. A response with a visibly suspicious crisis number scores equally to one with a verified real number.
+\textbf{Limitation:} Actionability is measured as the presence of concrete components, not their accuracy. A response with a visibly suspicious crisis number scores equally to one with a verified real number.
 
 \section{RQ2: Does Localisation Vary with Documented Service Availability? (H2)}
 
@@ -338,7 +338,7 @@ Visibly suspicious (555-block, repeated or sequential digits) & 75 & 16.1\% \\
 
 \textbf{Question:} Does the H2 finding hold when the localisation contact component is restricted to numbers matched to documented services?
 
-\textbf{Data:} Same 1,120 responses; \texttt{comp\_contact\_verified} constructed from the verification table. Of 490 responses containing a detected contact, 68 (13.9\%) contained a contact matched to a documented service; all 68 occurred in the established-national-line tier.
+\textbf{Data:} Same 1,120 responses; \texttt{comp\_contact\_verified} constructed from the verification table. Of 490 responses containing a detected contact, 68 (13.9\%) matched a documented service; all 68 occurred in the established-national-line tier.
 
 \textbf{Result:} Table~\ref{tab:surface_vs_verified}.
 
@@ -358,7 +358,7 @@ Verified (new) & $+$0.219 & 0.025 & $+$0.310 & 0.001 \\
 \end{tabular}
 \end{table}
 
-\textbf{Interpretation:} The direction is identical under both specifications and both are statistically significant. The verified model coefficients are slightly smaller, because responses that offered an unverifiable contact lose the contact credit. The surface localisation finding is therefore \emph{conservative}: removing unverifiable contacts reduces rather than inflates the gap. H2 is robust to this sensitivity check.
+\textbf{Interpretation:} The direction is identical under both specifications, and both are statistically significant. The verified model coefficients are slightly smaller because responses that offered an unverifiable contact lose the contact credit. The surface localisation finding is therefore \emph{conservative}: removing unverifiable contacts reduces rather than inflates the gap. H2 is robust to this sensitivity check.
 
 \begin{figure}[H]
 \centering
