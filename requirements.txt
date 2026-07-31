@@ -21,7 +21,7 @@ ipykernel>=6.0
 nbformat>=5.9
 
 
-# model.yml 
+# enviroment.yml 
 - provider: groq
     model_name: openai/gpt-oss-120b
     temperature: 0.0
