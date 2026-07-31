@@ -2,7 +2,7 @@
 
 \textbf{Research question addressed:} How can geographic variation in LLM-generated mental health guidance be measured reliably across a diverse set of cities and income settings?
 
-This dissertation employs a controlled audit design. A fixed battery of mental health scenarios is presented to multiple large language models, with only the stated city and country of the user varied across queries. All other elements of the prompt --- language, scenario content, tone, and phrasing --- are held constant. This design isolates the effect of stated geographic location from variation in query content, enabling direct attribution of response differences to location. The study combines automated content coding across all 1,120 responses with structured human validation on a stratified subsample, following a pre-registered analysis plan. The key methodological commitment is that no automated outcome measure is used in a hypothesis test until it has been independently validated against human labels, with a pre-specified F1 threshold of 0.70.
+This dissertation employs a controlled audit design. A fixed battery of mental health scenarios is presented to multiple large language models, with only the user's stated city and country varying across queries. All other elements of the prompt --- language, scenario content, tone, and phrasing --- are held constant. This design isolates the effect of the stated geographic location from variation in query content, enabling direct attribution of differences in responses to location. The study combines automated content coding across all 1,120 responses with structured human validation on a stratified subsample, following a pre-registered analysis plan. The key methodological commitment is that no automated outcome measure is used in a hypothesis test until it has been independently validated against human labels, with a pre-specified F1 threshold of 0.70.
 
 \section{Dataset Construction}
 
@@ -12,7 +12,7 @@ The dataset is fully crossed: $7$ models $\times$ $20$ cities $\times$ $8$ scena
 
 \subsection{City and Country Selection}
 
-Twenty cities were selected to span four World Bank income categories (Low, Lower-Middle, Upper-Middle, High), with five cities per tier, and six WHO regions (AFR, AMR, EMR, EUR, SEAR, WPR). Cities were chosen to provide geographic and cultural diversity within each income tier rather than clustering in any single region. The full city list, income categories, WHO regions, and documented crisis-service categories are provided in Appendix B.
+Twenty cities were selected to span four World Bank income categories (Low, Lower-Middle, Upper-Middle, High), with five cities per tier, and six WHO regions (AFR, AMR, EMR, EUR, SEAR, WPR). Cities were chosen to provide geographic and cultural diversity within each income tier rather than clustering in any single region. The full list of cities, income categories, WHO regions, and documented crisis-service categories is provided in Appendix B.
 
 \subsection{Scenario Battery}
 
@@ -72,7 +72,7 @@ s_i = n^{\text{phone}}_i + n^{\text{short}}_i + n^{\text{url}}_i
 \label{eq:specificity}
 \end{equation}
 
-where $n^{\text{phone}}_i$, $n^{\text{short}}_i$, and $n^{\text{url}}_i$ are the number of phone, short-code, and URL matches respectively. The binary indicator $\texttt{crisis\_number\_present}_i = \mathbf{1}[n^{\text{phone}}_i + n^{\text{short}}_i > 0]$.
+where $n^{\text{phone}}_i$, $n^{\text{short}}_i$, and $n^{\text{url}}_i$ are the number of phone, short-code, and URL matches, respectively. The binary indicator $\texttt{crisis\_number\_present}_i = \mathbf{1}[n^{\text{phone}}_i + n^{\text{short}}_i > 0]$.
 
 \subsection{Keyword Vocabularies}
 
@@ -87,7 +87,7 @@ where $t_i$ is the \texttt{analysis\_text} for response $i$ and $V_{\text{cat}}$
 
 \subsection{Directive-Context Counting}
 
-Raw keyword counts do not distinguish recommendation from mention: ``many people avoid therapists'' and ``consider speaking with a therapist'' both increment the professional vocabulary count. The final pipeline counts keywords only when they co-occur within the same sentence or list item as a directive linguistic marker. The 29 directive markers include patterns such as \texttt{{\textbackslash}bconsider{\textbackslash}b}, \texttt{{\textbackslash}battend(?:ing)?{\textbackslash}b}, \texttt{{\textbackslash}byou (?:can|could|should){\textbackslash}b}, and \texttt{{\textbackslash}bI (?:would )?(?:recommend|suggest){\textbackslash}b}. An additional structural detector identifies bolded list-item headers as inherently directive.
+Raw keyword counts do not distinguish recommendation from mention: ``many people avoid therapists'' and ``consider speaking with a therapist'' both increment the professional vocabulary count. The final pipeline counts keywords only when they co-occur with a directive linguistic marker in the same sentence or list item. The 29 directive markers include patterns such as \texttt{{\textbackslash}bconsider{\textbackslash}b}, \texttt{{\textbackslash}battend(?:ing)?{\textbackslash}b}, \texttt{{\textbackslash}byou (?:can|could|should){\textbackslash}b}, and \texttt{{\textbackslash}bI (?:would )?(?:recommend|suggest){\textbackslash}b}. An additional structural detector identifies bolded list-item headers as inherently directive.
 
 \begin{equation}
 \texttt{rec\_cat}_i = \sum_{s \in \text{sentences}(t_i)} \mathbf{1}[\exists\, d \in D : d \in s] \cdot \texttt{count}(V_{\text{cat}}, s)
@@ -119,7 +119,7 @@ A_i = \underbrace{\texttt{crisis\_number\_present}_i}_{\text{crisis contact}}
 \label{eq:actionability}
 \end{equation}
 
-Professional referral uses the directive-context count (\ref{eq:directive_count}), not the raw keyword count, so a mention of therapists without an accompanying recommendation does not score. Named coping steps are detected by a 21-pattern vocabulary including ``box breathing'', ``4-7-8 breathing'', and ``5-4-3-2-1 grounding''.
+Professional referral uses the directive-context count (\ref{eq:directive_count}), not the raw keyword count, so a mention of therapists without an accompanying recommendation does not score. Named coping steps are detected by a 21-pattern vocabulary including ``box breathing, ``4-7-8 breathing, and ``5-4-3-2-1 grounding.
 
 \textbf{Limitation:} The index rewards the presence of concrete guidance components but does not assess accuracy. A model that offers a crisis contact scores equally whether that contact is real.
 
@@ -163,11 +163,11 @@ where $p_o$ is the observed agreement proportion and $p_e$ is the expected agree
 
 \subsection{First Validation Pass (n = 112)}
 
-A stratified sample of 112 responses was labelled by the researcher on three dimensions: actionability (0--2 ordinal), localisation (0--2 ordinal), and support orientation (categorical). Automated outcomes were computed from \texttt{analysis\_text} after reasoning-block removal. \textbf{Result:} none of the three pre-registered outcomes met the $F_1 \geq 0.70$ threshold. Two failures were of fundamentally different types requiring different remediation. The full validation narrative, including the localisation circularity and support-orientation withdrawal, is reported in Section 4.2. \textbf{Decision:} both measures were rebuilt under two constraints (text-readable and monotone) and re-validated against the same 112 labels.
+A stratified sample of 112 responses was labelled by the researcher on three dimensions: actionability (0--2 ordinal), localisation (0--2 ordinal), and support orientation (categorical). Automated outcomes were computed from \texttt{analysis\_text} after reasoning-block removal. \textbf{Result:} none of the three pre-registered outcomes met the $F_1 \geq 0.70$ threshold. Two failures were of fundamentally different types, requiring different remediation. The full validation narrative, including the localisation circularity and support-orientation withdrawal, is reported in Section 4.2. \textbf{Decision:} Both measures were rebuilt under two constraints (text-readable and monotone) and re-validated against the same 112 labels.
 
 \subsection{Second Validation Pass (n = 100)}
 
-Because the first sheet recorded only the primary support orientation per response, and religious support was never selected as primary, it provided no information on the presence-based religious framing measure. A choice-based (outcome-stratified) sample was drawn: 40 responses from the 86 the automated measure flagged positive (pool before vocabulary fix), and 60 from the 1,034 it flagged negative. Precision is estimated directly from the positive stratum; the weighted recall estimate is:
+Because the first sheet recorded only the primary support orientation per response, and religious support was never selected as primary, it provided no information on the presence-based religious framing measure. A choice-based (outcome-stratified) sample was drawn: 40 responses from the 86 it flagged positive (pool before vocabulary fix), and 60 from the 1,034 it flagged negative. Precision is estimated directly from the positive stratum; the weighted recall estimate is:
 
 \begin{equation}
 \widehat{\text{Recall}} = \frac{\text{TP} \cdot w_+}{\text{TP} \cdot w_+ + \text{FN} \cdot w_-}
@@ -187,7 +187,7 @@ A_{ij} &= \beta_0 + \beta_1 \texttt{income}_j + \boldsymbol{\gamma}\texttt{model
 L_{ij} &= \alpha_0 + \alpha_1 \texttt{service}_j + \boldsymbol{\gamma}\texttt{model}_i + \boldsymbol{\delta}\texttt{scenario}_i + v_j + \eta_{ij} \label{eq:h2}
 \end{align}
 
-where $u_j \sim \mathcal{N}(0, \sigma^2_u)$ and $v_j \sim \mathcal{N}(0, \sigma^2_v)$ are city-level random intercepts. Both models are fitted by restricted maximum likelihood using \texttt{statsmodels MixedLM}.
+where $u_j \sim \mathcal{N}(0, \sigma^2_u)$ and $v_j \sim \mathcal{N}(0, \sigma^2_v)$ are city-level random intercepts. Both models are fitted using restricted maximum likelihood with \texttt{statsmodels. MixedLM}.
 
 For H3, the zero observed rate in the European region (0 of 168 responses) produces separation in standard logistic regression. Firth's penalised logistic regression \citep{firth1993bias, heinze2002solution} is used instead, which modifies the score equation by adding a penalty term:
 
@@ -212,17 +212,17 @@ Income category and crisis-service availability are city-level properties; with 
 
 All 20 countries were directly verified against primary sources during this dissertation.
 
-\textbf{Limitation:} Unverifiable numbers are the critical gap. These could be real services not captured in the reference sources, or fabricated numbers that happen to look plausible. Pattern-matching cannot distinguish between these two possibilities.
+\textbf{Limitation:} Unverifiable numbers are the critical gap. These could be real services not captured in the reference sources, or fabricated numbers that appear plausible. Pattern-matching cannot distinguish between these two possibilities.
 
 \section{Verified Localisation}
 
 \textbf{Question addressed:} Does the H2 localisation finding hold when the contact component is restricted to numbers matched to documented services?
 
-Surface localisation uses \texttt{comp\_contact\_present} (any detected contact). Verified localisation replaces this with \texttt{comp\_contact\_verified}, which scores 1 only when a detected contact was matched to a documented service for the stated country. Of the 490 responses containing a detected contact, 68 (13.9\%) contained a verified contact. The H2 model was refitted under both specifications.
+Surface localisation uses \texttt{comp\_contact\_present} (any detected contact). Verified localisation replaces this with \texttt{comp\_contact\_verified}, which scores 1 only when a detected contact is matched to a documented service for the stated country. Of the 490 responses containing a detected contact, 68 (13.9\%) contained a verified contact. The H2 model was refitted under both specifications.
 
 \section{Exploratory Data Analysis}
 
-Prior to hypothesis testing, exploratory analysis characterises the response corpus and motivates the confirmatory design. The EDA comprises response-length distributions by income category, crisis-contact inclusion rates across income and service-availability tiers, and fabrication-pattern rates as a function of documented service availability. No inference is drawn from the EDA phase. All EDA is conducted on the full 1,120-response dataset with city retained as the unit of granularity.
+Before hypothesis testing, exploratory analysis characterises the response corpus and motivates the confirmatory design. The EDA comprises response-length distributions by income category, crisis-contact inclusion rates across income and service-availability tiers, and fabrication-pattern rates as a function of documented service availability. No inference is drawn from the EDA phase. All EDA is conducted on the full 1,120-response dataset with the city retained as the unit of granularity.
 
 \section{Ethical Considerations}
 
