@@ -1,8 +1,0 @@
-check,status,detail
-Row count,PASS,1120 rows (expected 1120 = 7 x 20 x 8)
-Factorial completeness,PASS,"1120 filled cells, 1120 with exactly one response"
-Distinct responses,PASS,1120 distinct of 1120 rows
-matrix_id usable as key,PASS,"0 null, 0 duplicated -> DO NOT use for counting or joining"
-Rebuilt row_uid is unique,PASS,1120 unique of 1120
-No truncated responses,FAIL,146 responses end mid-sentence
-Truncation independent of income,PASS,"chi-square p = 0.992 (truncation is a per-model artefact, not a geographic one)"

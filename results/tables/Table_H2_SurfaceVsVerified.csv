@@ -1,5 +1,0 @@
-specification,term,coef,se,p,ci_lo,ci_hi
-Surface (current),"C(service_reference_category, Treatment('None documented'))[T.Limited/NGO]",0.25148809523809235,0.10062027827891007,0.012441157929009176,0.054272349811428616,0.4487038406647561
-Surface (current),"C(service_reference_category, Treatment('None documented'))[T.Established national line]",0.3531746031745998,0.09908400060885127,0.00036469518578112774,0.15896996198125132,0.5473792443679483
-Verified (new),"C(service_reference_category, Treatment('None documented'))[T.Limited/NGO]",0.21874999999999814,0.0976000186512304,0.025007260345388766,0.027453963443586554,0.4100460365564097
-Verified (new),"C(service_reference_category, Treatment('None documented'))[T.Established national line]",0.30952380952380704,0.09610985452312508,0.001279577956373288,0.12114849465848188,0.4978991243891322
