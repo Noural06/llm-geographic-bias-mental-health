@@ -1,0 +1,5 @@
+income_category,n,word_count_mean,specificity_mean,crisis_number_rate,fabrication_rate,religion_mean,family_mean,professional_mean,sentiment_mean
+Low,280,550.586,0.768,0.221,0.018,0.843,1.457,2.321,0.754
+Lower-Middle,280,541.85,1.761,0.425,0.004,0.357,1.2,2.664,0.725
+Upper-Middle,280,524.0,2.089,0.496,0.004,0.082,1.175,2.689,0.744
+High,280,530.661,3.646,0.607,0.004,0.239,0.986,3.282,0.757
