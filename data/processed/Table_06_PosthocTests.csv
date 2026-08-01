@@ -1,0 +1,88 @@
+research_question,family,outcome,group_variable,group_a,group_b,u_statistic,p_value_raw,rank_biserial_correlation,p_value_bh_within_family,significant_bh_0_05
+RQ1,Word count by income category,word_count,income_category,High,Low,37813.5,0.4690883355749228,-0.03536989795918366,0.8343799978600503,False
+RQ1,Word count by income category,word_count,income_category,High,Lower-Middle,38073.0,0.5562533319067002,-0.028750000000000053,0.8343799978600503,False
+RQ1,Word count by income category,word_count,income_category,High,Upper-Middle,39268.5,0.9716658039452212,0.0017474489795918924,0.9716658039452212,False
+RQ1,Word count by income category,word_count,income_category,Low,Lower-Middle,39424.5,0.9068567620667617,0.0057270408163265785,0.9716658039452212,False
+RQ1,Word count by income category,word_count,income_category,Low,Upper-Middle,40645.5,0.45038025651097313,0.03687499999999999,0.8343799978600503,False
+RQ1,Word count by income category,word_count,income_category,Lower-Middle,Upper-Middle,40357.5,0.5456127275074378,0.0295280612244897,0.8343799978600503,False
+RQ2,Specificity by income category,specificity_score,income_category,High,Low,56785.0,1.739668765857434e-23,0.4485969387755102,1.0438012595144603e-22,True
+RQ2,Specificity by income category,specificity_score,income_category,High,Lower-Middle,49507.5,1.5472001805364496e-08,0.26294642857142847,3.094400361072899e-08,True
+RQ2,Specificity by income category,specificity_score,income_category,High,Upper-Middle,46947.0,2.683163512048265e-05,0.1976275510204082,3.2197962144579175e-05,True
+RQ2,Specificity by income category,specificity_score,income_category,Low,Lower-Middle,31288.0,1.6504746956563425e-06,-0.20183673469387753,2.4757120434845135e-06,True
+RQ2,Specificity by income category,specificity_score,income_category,Low,Upper-Middle,27923.0,3.5338649276262666e-11,-0.28767857142857145,1.06015947828788e-10,True
+RQ2,Specificity by income category,specificity_score,income_category,Lower-Middle,Upper-Middle,36186.0,0.0908024692512121,-0.07688775510204082,0.0908024692512121,False
+RQ3,Religion mentions by income category,religion_mentions,income_category,High,Low,30771.0,1.3556488744516716e-10,-0.21502551020408167,4.066946623355015e-10,True
+RQ3,Religion mentions by income category,religion_mentions,income_category,High,Lower-Middle,37140.0,0.046657391501775884,-0.052551020408163285,0.05598886980213106,False
+RQ3,Religion mentions by income category,religion_mentions,income_category,High,Upper-Middle,40271.5,0.20483785935403032,0.027334183673469292,0.20483785935403032,False
+RQ3,Religion mentions by income category,religion_mentions,income_category,Low,Lower-Middle,45602.0,3.5871637056738207e-06,0.16331632653061234,7.174327411347641e-06,True
+RQ3,Religion mentions by income category,religion_mentions,income_category,Low,Upper-Middle,48945.5,2.353976618539637e-14,0.24860969387755105,1.4123859711237823e-13,True
+RQ3,Religion mentions by income category,religion_mentions,income_category,Lower-Middle,Upper-Middle,42396.0,0.001114894022593075,0.081530612244898,0.0016723410338896124,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AFR,AMR,23457.0,8.104916794026116e-11,0.2466517857142858,3.9671849786984613e-10,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AFR,EMR,24350.5,0.4957890523944287,-0.029396524234693855,0.5312025561368879,False
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AFR,EUR,23428.5,1.0579159943195897e-10,0.24513711734693877,3.9671849786984613e-10,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AFR,SEAR,14414.0,0.002107305258279557,0.1490752551020409,0.0031609578874193358,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AFR,WPR,30240.5,5.979417360889214e-09,0.20537707270408156,1.4948543402223035e-08,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AMR,EMR,13739.5,5.5157803420044515e-12,-0.26979698129251706,5.4347154632586396e-11,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AMR,EUR,14109.5,0.9932127321119645,-0.0001771541950112976,0.9932127321119645,False
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AMR,SEAR,8449.5,0.0006850257882382036,-0.10188137755102045,0.0012583482293204386,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,AMR,WPR,18076.5,0.06641911578977415,-0.03930165816326525,0.07965857094474874,False
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,EMR,EUR,23864.0,7.246287284344853e-12,0.26828231292517013,5.4347154632586396e-11,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,EMR,SEAR,14744.0,0.00041793456788763325,0.17538265306122458,0.0008955740740449284,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,EMR,WPR,30844.5,2.500911699627482e-10,0.22945232780612246,7.502735098882445e-10,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,EUR,SEAR,8457.0,0.0007550089375922632,-0.10108418367346939,0.0012583482293204386,True
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,EUR,WPR,18083.5,0.06903742815211557,-0.03892963435374153,0.07965857094474874,False
+RQ3,Religion mentions by WHO region,religion_mentions,who_region,SEAR,WPR,13310.0,0.05704133791738487,0.06106505102040827,0.07778364261461573,False
+RQ3,Family mentions by income category,family_mentions,income_category,High,Low,32248.5,0.00012119898345439343,-0.17733418367346943,0.0007271939007263606,True
+RQ3,Family mentions by income category,family_mentions,income_category,High,Lower-Middle,35454.5,0.03642496840742342,-0.09554846938775508,0.07284993681484685,False
+RQ3,Family mentions by income category,family_mentions,income_category,High,Upper-Middle,36069.5,0.0795178142190141,-0.07985969387755099,0.09542137706281692,False
+RQ3,Family mentions by income category,family_mentions,income_category,Low,Lower-Middle,42599.5,0.060974683852424924,0.08672193877551027,0.09146202577863738,False
+RQ3,Family mentions by income category,family_mentions,income_category,Low,Upper-Middle,43218.5,0.02641209039915998,0.10251275510204083,0.07284993681484685,False
+RQ3,Family mentions by income category,family_mentions,income_category,Lower-Middle,Upper-Middle,39836.5,0.7226275809323754,0.01623724489795908,0.7226275809323756,False
+RQ3,Professional mentions by income category,professional_mentions,income_category,High,Low,46535.5,9.725822058489568e-05,0.18713010204081626,0.0005835493235093741,True
+RQ3,Professional mentions by income category,professional_mentions,income_category,High,Lower-Middle,42843.0,0.053794303167170945,0.09293367346938775,0.08069145475075643,False
+RQ3,Professional mentions by income category,professional_mentions,income_category,High,Upper-Middle,41707.5,0.1847576771062045,0.06396683673469394,0.2217092125274454,False
+RQ3,Professional mentions by income category,professional_mentions,income_category,Low,Lower-Middle,35302.5,0.0377613769720733,-0.09942602040816328,0.0755227539441466,False
+RQ3,Professional mentions by income category,professional_mentions,income_category,Low,Upper-Middle,34035.0,0.0059625440046140055,-0.1317602040816327,0.01788763201384202,True
+RQ3,Professional mentions by income category,professional_mentions,income_category,Lower-Middle,Upper-Middle,37932.0,0.5015334086530283,-0.0323469387755102,0.5015334086530283,False
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Gemma-4-26B-A4B-IT,15773.5,0.00032730367736328697,0.2323046875000001,0.00036175669603310666,True
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Llama-3.3-70B-Versatile,25041.0,1.6552255872879252e-49,0.956328125,4.344967166630803e-49,True
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Llama-4-Scout-17B,24690.0,8.259290749155372e-47,0.92890625,1.7344510573226281e-46,True
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Mistral-Small-2506,24784.5,1.57845981183793e-47,0.9362890625,3.6830728942885033e-47,True
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Nemotron-3-Super-120B,25506.5,3.3089102833332173e-53,0.9926953125,1.3897423189999512e-52,True
+RQ4,Word count by model,word_count,model_label,GPT-OSS-120B,Qwen3-32B,23031.0,4.152356016033641e-35,0.799296875,5.813298422447098e-35,True
+RQ4,Word count by model,word_count,model_label,Gemma-4-26B-A4B-IT,Llama-3.3-70B-Versatile,25600.0,5.765305473354944e-54,1.0,3.713602682372514e-53,True
+RQ4,Word count by model,word_count,model_label,Gemma-4-26B-A4B-IT,Llama-4-Scout-17B,25598.0,5.983052508503886e-54,0.9998437499999999,3.713602682372514e-53,True
+RQ4,Word count by model,word_count,model_label,Gemma-4-26B-A4B-IT,Mistral-Small-2506,25593.0,6.574676490766158e-54,0.999453125,3.713602682372514e-53,True
+RQ4,Word count by model,word_count,model_label,Gemma-4-26B-A4B-IT,Nemotron-3-Super-120B,25589.0,7.073528918804789e-54,0.9991406249999999,3.713602682372514e-53,True
+RQ4,Word count by model,word_count,model_label,Gemma-4-26B-A4B-IT,Qwen3-32B,25142.0,2.677703109262084e-50,0.9642187499999999,8.033109327786252e-50,True
+RQ4,Word count by model,word_count,model_label,Llama-3.3-70B-Versatile,Llama-4-Scout-17B,8134.5,1.7261265461434688e-08,-0.3644921875,2.0138143038340467e-08,True
+RQ4,Word count by model,word_count,model_label,Llama-3.3-70B-Versatile,Mistral-Small-2506,9852.5,0.000369038747214762,-0.23027343749999996,0.00038749068457550007,True
+RQ4,Word count by model,word_count,model_label,Llama-3.3-70B-Versatile,Nemotron-3-Super-120B,23849.5,1.1513391196447082e-40,0.8632421875,1.7270086794670622e-40,True
+RQ4,Word count by model,word_count,model_label,Llama-3.3-70B-Versatile,Qwen3-32B,1550.0,4.3286372645022825e-42,-0.87890625,6.992414042657532e-42,True
+RQ4,Word count by model,word_count,model_label,Llama-4-Scout-17B,Mistral-Small-2506,14699.0,0.0217761929959121,0.14835937500000007,0.0217761929959121,True
+RQ4,Word count by model,word_count,model_label,Llama-4-Scout-17B,Nemotron-3-Super-120B,24332.0,3.869924281839003e-44,0.9009375,6.772367493218254e-44,True
+RQ4,Word count by model,word_count,model_label,Llama-4-Scout-17B,Qwen3-32B,3016.5,2.9970512441862587e-32,-0.7643359375000001,3.7022397722300845e-32,True
+RQ4,Word count by model,word_count,model_label,Mistral-Small-2506,Nemotron-3-Super-120B,24417.0,9.142590678299362e-45,0.9075781249999999,1.7454036749480598e-44,True
+RQ4,Word count by model,word_count,model_label,Mistral-Small-2506,Qwen3-32B,2649.0,1.3749567430574558e-34,-0.793046875,1.8046307252629107e-34,True
+RQ4,Word count by model,word_count,model_label,Nemotron-3-Super-120B,Qwen3-32B,430.5,1.6237790513532644e-50,-0.9663671875,5.683226679736426e-50,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Gemma-4-26B-A4B-IT,15175.0,0.003663688019519871,0.185546875,0.0047905385780180445,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Llama-3.3-70B-Versatile,21503.0,1.26546202901011e-28,0.679921875,1.3287351304606155e-27,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Llama-4-Scout-17B,21091.5,1.3012079244878906e-25,0.6477734374999999,6.831341603561426e-25,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Mistral-Small-2506,17976.5,1.7511087846987452e-10,0.4044140624999999,3.3430258616976047e-10,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Nemotron-3-Super-120B,22649.5,1.7642743768345114e-37,0.7694921875,3.704976191352474e-36,True
+RQ4,Specificity by model,specificity_score,model_label,GPT-OSS-120B,Qwen3-32B,14015.5,0.1384923629851208,0.09496093750000001,0.15307050645723877,False
+RQ4,Specificity by model,specificity_score,model_label,Gemma-4-26B-A4B-IT,Llama-3.3-70B-Versatile,18476.5,2.3566696974808294e-14,0.4434765624999999,6.186257955887177e-14,True
+RQ4,Specificity by model,specificity_score,model_label,Gemma-4-26B-A4B-IT,Llama-4-Scout-17B,17958.0,1.0378306325691702e-11,0.4029687500000001,2.1794443283952573e-11,True
+RQ4,Specificity by model,specificity_score,model_label,Gemma-4-26B-A4B-IT,Mistral-Small-2506,15086.0,0.0038780550393479407,0.1785937500000001,0.0047905385780180445,True
+RQ4,Specificity by model,specificity_score,model_label,Gemma-4-26B-A4B-IT,Nemotron-3-Super-120B,19586.5,4.654870411627085e-21,0.5301953125000001,1.955045572883376e-20,True
+RQ4,Specificity by model,specificity_score,model_label,Gemma-4-26B-A4B-IT,Qwen3-32B,11660.5,0.15982322948028593,-0.08902343749999997,0.16781439095430023,False
+RQ4,Specificity by model,specificity_score,model_label,Llama-3.3-70B-Versatile,Llama-4-Scout-17B,11974.0,0.19863604864332818,-0.06453125000000004,0.1986360486433282,False
+RQ4,Specificity by model,specificity_score,model_label,Llama-3.3-70B-Versatile,Mistral-Small-2506,8904.5,5.444968347819649e-08,-0.3043359375,9.528694608684385e-08,True
+RQ4,Specificity by model,specificity_score,model_label,Llama-3.3-70B-Versatile,Nemotron-3-Super-120B,14144.0,0.016298273266481162,0.10499999999999998,0.019014652144228025,True
+RQ4,Specificity by model,specificity_score,model_label,Llama-3.3-70B-Versatile,Qwen3-32B,5851.5,8.468585520006617e-20,-0.5428515625,2.964004932002316e-19,True
+RQ4,Specificity by model,specificity_score,model_label,Llama-4-Scout-17B,Mistral-Small-2506,9559.5,1.025469782239237e-05,-0.2531640625,1.656528109771075e-05,True
+RQ4,Specificity by model,specificity_score,model_label,Llama-4-Scout-17B,Nemotron-3-Super-120B,15035.0,0.00018674756422662597,0.17460937499999996,0.0002614465899172764,True
+RQ4,Specificity by model,specificity_score,model_label,Llama-4-Scout-17B,Qwen3-32B,6364.0,9.703895921399807e-17,-0.5028125,2.9111687764199423e-16,True
+RQ4,Specificity by model,specificity_score,model_label,Mistral-Small-2506,Nemotron-3-Super-120B,18017.0,3.3774540121236935e-14,0.4075781249999999,7.880726028288619e-14,True
+RQ4,Specificity by model,specificity_score,model_label,Mistral-Small-2506,Qwen3-32B,9285.5,1.1507275568167836e-05,-0.27457031249999997,1.7260913352251755e-05,True
+RQ4,Specificity by model,specificity_score,model_label,Nemotron-3-Super-120B,Qwen3-32B,4712.0,1.5904884468681127e-27,-0.631875,1.1133419128076788e-26,True
