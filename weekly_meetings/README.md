@@ -10,7 +10,7 @@
 
 Controlled audit of geographic variation in large language model responses to standardised
 mental health queries. Seven LLMs × 20 cities × 8 scenarios × 1 fixed prompt template
-= 1,120 responses. Only the stated city and country varies across prompts.
+= 1,120 responses. Only the stated city and country vary across prompts.
 
 Three pre-registered hypotheses tested with validated composite outcome measures
 (F1 ≥ 0.70, threshold set before any human labels were collected).
@@ -51,8 +51,8 @@ A fourth finding (S1) emerged during direct inspection of response text.
 │   └── logs/                       ← (reserved for future execution logs)
 ├── weekly_meetings/                ← (reserved for meeting logs and slide decks)
 ├── docs/
-│   ├── dissertation_latex/         ← full LaTeX source + compiled PDF
-│   └── Dissertation_Presentation_FINAL.pptx
+│   ├── dissertation_latex/         ← full LaTeX source 
+│   └── Poster                      ← not yet 
 ├── .gitignore
 └── requirements.txt
 ```
@@ -77,31 +77,6 @@ Run cells top to bottom. Section 22 is the authoritative result section.
 > **Important:** Section 17 uses pre-validated outcomes that failed human validation.
 > Its coefficients are retained for methodological transparency but must not be cited
 > as findings. Always cite Section 22.
-
----
-
-## Corrections applied (July 2026)
-
-1. **Table 1 specificity means** corrected from stale pre-regex-fix values
-   (0.59 / 1.28 / 1.39 / 1.71) to correct pipeline values (0.77 / 1.76 / 2.09 / 3.65).
-2. **Figure 3 BH-adjusted p annotation** corrected — prior value (1.14 × 10⁻¹⁷) was
-   smaller than the raw p (8.36 × 10⁻¹⁶), which is mathematically impossible under
-   Benjamini-Hochberg. Corrected to raw p = 8.36 × 10⁻¹⁶; BH-adjusted ≈ 3.0 × 10⁻¹⁵.
-3. **Helpline Verification Table** — 11 rows reclassified Unverifiable → Verified real
-   after cross-checking all 466 entries against primary sources (US 988, Brazil 188,
-   Colombia 106, Saudi Arabia 937, South Africa SADAG ×4, Nigeria SURPIN ×3).
-   Corrected totals: 45 verified real (9.7%), 307 unverifiable (65.9%).
-4. **Presentation slide 2** — city-to-income-tier assignments corrected
-   (Kyiv, Bogota, Riyadh were in the wrong tiers).
-5. **Presentation slide 9** — H3 summary row updated to show model result
-   (OR = 0.015, p = 0.003) rather than raw rates only.
-6. **Notebook cell 17** — circular localisation component (`service_alignment_ok`)
-   replaced with monotone text-readable formula.
-7. **Notebook cell 57** — Plotly interactive map replaced with redirect to Section 26
-   static cartopy summary map (city names survive PDF export).
-8. **Notebook cell 88** — `PHONE_RE_VERIFIED` broken lookbehind and wrong closing
-   delimiter fixed.
-
 ---
 
 ## Reproducibility
