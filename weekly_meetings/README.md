@@ -1,9 +1,7 @@
-# Does Where You Are Shape What You Get?
+# 3/8/2026
+
+## Does Where You Are Shape What You Get?
 ## Geographic Variation in LLM Responses to Mental Health Queries
-
-**MSc Data Science Dissertation — Middlesex University 2026**  
-**Author:** Noura Lakrimdi | **Supervisor:** Dr Giovanni Quattrone
-
 ---
 
 ## Overview
