@@ -1,0 +1,388 @@
+\section{Exploratory Data Analysis}
+
+The following exploratory analyses characterise the response corpus before any hypothesis test. No confirmatory inferences are drawn here.
+
+\subsection{Response-Length Distribution}
+
+\textbf{Question:} Do models produce shorter responses for users in lower-income settings, which might explain quality differences?
+
+\textbf{Method:} Word counts computed for all 1,120 responses; Kruskal-Wallis test across four income tiers, Benjamini-Hochberg adjusted.
+
+\textbf{Result:} Mean response length is similar across tiers: Low 551 words, Lower-Middle 542, Upper-Middle 524, High 531 (Table~\ref{tab:descriptive_income}). The Kruskal-Wallis test finds no significant difference ($H = 0.91$, $p = 0.823$).
+
+\textbf{Interpretation:} The null result is informative. Models are not producing less text for lower-income users; the quality differences found in the confirmatory analysis reflect content, not length.
+
+\begin{table}[H]
+\centering
+\caption{Descriptive statistics by income category ($n = 280$ per group). Specificity mean = phone numbers + short-codes + URLs per response; values corrected from pipeline rerun.}
+\label{tab:descriptive_income}
+\begin{tabular}{lcccc}
+\toprule
+Income category & Mean words & Crisis contact rate & Specificity (mean) & Religious framing \\
+\midrule
+Low & 551 & 0.221 & 0.77 & 0.164 \\
+Lower-Middle & 542 & 0.425 & 1.76 & 0.075 \\
+Upper-Middle & 524 & 0.496 & 2.09 & 0.021 \\
+High & 531 & 0.607 & 3.65 & 0.046 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Crisis-Contact Inclusion and Specificity}
+
+\textbf{Question:} Does the simplest binary feature --- does the response include a phone number --- already vary with income?
+
+\textbf{Method:} Chi-square test of crisis-contact inclusion rate across income tiers.
+
+\textbf{Result:} Crisis-contact inclusion varies substantially and monotonically by income category: 22.1\% for Low, 42.5\% for Lower-Middle, 49.6\% for Upper-Middle, and 60.7\% for High ($\chi^2 = 89.99$, $df = 3$, $p < 0.0001$, Cram\'er's $V = 0.283$).
+
+\textbf{Interpretation:} The actionability gap is visible even in the simplest binary feature, foreshadowing the H1 result. City-level boxplots of the specificity score reveal within-tier heterogeneity: Johannesburg (Upper-Middle) and Mumbai (Lower-Middle) match some High-income cities, while Tokyo (High) falls below the tier mean. This motivates the random intercept for city rather than treating all cities in a tier as exchangeable.
+
+\subsection{Visibly Suspicious Contact Patterns: Exploratory Distribution}
+
+\textbf{Question:} Does the quality of contacts offered vary with service availability, even before any modelling?
+
+\textbf{Method:} Three fabrication-pattern detectors applied to all extracted contacts; rate computed by service tier.
+
+\textbf{Result:} Table~\ref{tab:fabrication_eda} shows a steep gradient: 34.4\% of numbers in cities with no documented service display a visibly suspicious pattern, against 1.1\% in cities with an established national line.
+
+\begin{table}[H]
+\centering
+\caption{Exploratory: visibly suspicious crisis-contact patterns by documented service availability}
+\label{tab:fabrication_eda}
+\begin{tabular}{lccc}
+\toprule
+Service category & Numbers offered & Visibly suspicious & Rate \\
+\midrule
+Established national line & 277 & 3 & 1.1\% \\
+Limited/NGO & 181 & 29 & 16.0\% \\
+None documented & 32 & 11 & 34.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} The quality of contacts --- not merely their presence --- differs across service tiers. This foreshadows the H2 result and motivates the surface versus verified localisation analysis (Section 4.8).
+
+\textbf{Limitation:} This is a floor estimate. Numbers matching a suspicious pattern are identified; plausible-looking non-real numbers are not.
+
+\subsection{Religious Framing: Exploratory Regional Distribution}
+
+\textbf{Question:} Does the raw rate of religious framing already show a regional concentration before modelling?
+
+\textbf{Result:} AFR 13.8\% ($n = 31$ of 224), EMR 17.9\% ($n = 40$ of 224), compared with SEAR 4.5\% ($n = 5$ of 112), WPR 3.6\% ($n = 8$ of 224), AMR 1.2\% ($n = 2$ of 168), and EUR 0.0\% ($n = 0$ of 168).
+
+\textbf{Interpretation:} The zero European count is not a calibration artefact but a structural feature of the coded data. This motivates the use of Firth's penalised logistic regression for H3 because ordinary logistic regression separates at the EUR boundary.
+
+\section{Data Provenance and Integrity}
+
+Table~\ref{tab:provenance} summarises the provenance audit. All 1,120 responses are present exactly once, all cells are filled, and no response text is duplicated.
+
+\begin{table}[H]
+\centering
+\caption{Data provenance and integrity audit}
+\label{tab:provenance}
+\begin{tabular}{lll}
+\toprule
+Check & Result & Status \\
+\midrule
+Total responses & 1,120 of 1,120 expected & Pass \\
+Factorial completeness & 1,120 cells, 1 per cell & Pass \\
+Duplicate response text & 0 & Pass \\
+Failed API calls & 0 & Pass \\
+Matrix ID usable as key & 320 null, 320 duplicated & Fail — rebuilt \\
+Nemotron truncation rate & 143 of 160 (89\%) & Flagged \\
+Truncation independent of income & $\chi^2\ p = 0.99$ & Pass \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Validation of Automated Outcome Measures}
+
+\textbf{Question addressed:} Do the automated measures capture what an independent human reader would judge? If not, what needs to change before they can be used in a hypothesis test?
+
+\subsection{First Validation Pass (n = 112)}
+
+\textbf{Data:} 112 stratified responses, labelled by the researcher on actionability (0--2), localisation (0--2), and support orientation (categorical), without seeing the automated scores.
+
+\textbf{Method:} Spearman $\rho$, quadratic-weighted $\kappa_w$, and $F_1$ at the top ordinal category. Pre-specified threshold: $F_1 \geq 0.70$.
+
+\textbf{Result:} Table~\ref{tab:val1}. None of the three pre-registered outcomes passed.
+
+\begin{table}[H]
+\centering
+\caption{First-pass validation against 112 human labels ($F_1 \geq 0.70$ required)}
+\label{tab:val1}
+\begin{tabular}{lccccc}
+\toprule
+Outcome & $\rho$ & $\kappa_w$ & Precision & Recall & F1 \\
+\midrule
+\texttt{actionability\_index} (0--4) & 0.624 & 0.618 & 0.895 & 0.548 & 0.680 \\
+\texttt{localisation\_index} (0--2) & 0.199 & 0.186 & 0.630 & 0.576 & 0.602 \\
+\texttt{support\_orientation\_auto} & --- & 0.135 & 0.244 & 0.220 & 0.218 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation --- localisation:} Component-level analysis reveals a circular definition. The \texttt{service\_alignment\_ok} component was algebraically identical to \texttt{crisis\_number\_present} in served countries and its complement in unserved countries, rewarding models for \emph{omitting} a crisis number in cities with no documented service. This produced higher mean localisation scores for the least-served locations (1.798 versus 1.496 and 1.381). Two automated rule-sets agreed at $\kappa = 0.93$--$0.99$ without detecting the flaw; human validation caught it. Had this measure been used as pre-registered, H2 would have concluded that least-served cities receive the most localised advice --- the opposite of the true direction.
+
+\textbf{Interpretation --- support orientation:} Human validators judged 52\% of responses as ``mixed'', reflecting that LLM responses typically recommend multiple support types at comparable weight. A single-winner categorical classifier cannot represent this structure regardless of vocabulary. The outcome is withdrawn; macro-$F_1$ remained below 0.20 under all rule variants tested (Appendix D, Table D.1).
+
+\textbf{Decision:} Both failing measures were rebuilt under two constraints (text-readable and monotone) and re-validated against the same 112 labels.
+
+\subsection{Rebuilt Measures and Re-validation}
+
+\textbf{Result:} Table~\ref{tab:val2}. Both rebuilt measures pass $F_1 \geq 0.70$.
+
+\begin{table}[H]
+\centering
+\caption{Re-validation of rebuilt outcome measures against the same 112 human labels}
+\label{tab:val2}
+\begin{tabular}{lccccc}
+\toprule
+Outcome & $\rho$ & $\kappa_w$ & Precision & Recall & F1 \\
+\midrule
+\texttt{actionability\_v2} (0--5) & 0.619 & 0.619 & 0.763 & 0.726 & \textbf{0.744} \\
+\texttt{localisation\_v2} (0--3) & 0.448 & 0.422 & 0.738 & 0.763 & \textbf{0.750} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} Actionability improved by restricting professional-referral detection to directive contexts and adding the named-coping-step component. Localisation improved by replacing the circular component with two monotone alternatives: named local institution and contact present.
+
+\textbf{Limitation:} All labels are from a single coder. Inter-rater reliability between two human coders was not computed.
+
+\subsection{Second Validation Pass: Religious Framing (n = 100)}
+
+\textbf{Question:} Does the \texttt{religious\_rec} measure agree with independent human judgement?
+
+\textbf{Data:} 100-response choice-based sample (40 auto-positive, 60 auto-negative; pool sizes $N_+ = 86$, $N_- = 1{,}034$, pre-vocabulary-fix).
+
+\textbf{Method:} Weighted estimators with Jeffreys intervals for boundary counts (see Equations~\ref{eq:recall}).
+
+\textbf{Result:} Table~\ref{tab:val3}.
+
+\begin{table}[H]
+\centering
+\caption{Final validation of \texttt{religious\_rec}, second pass}
+\label{tab:val3}
+\begin{tabular}{lcc}
+\toprule
+Statistic & Estimate & 95\% CI \\
+\midrule
+Precision & 0.800 & [0.658, 0.901] \\
+Recall & 1.000 & [0.616, 1.000] \\
+F1 & \textbf{0.889} & \textbf{[0.678, 0.934]} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} The recall of 1.000 reflects zero observed false negatives in 60 auto-negative responses --- a small-sample boundary effect, not a guarantee. The Jeffreys lower bound of 0.616 is the honest floor. Regional precision within the auto-positive stratum is non-differential (AFR 0.786, EMR 0.789, WPR 0.750), indicating that the measure's errors bias the regional contrast towards the null rather than creating a spurious one.
+
+\textbf{Decision:} \texttt{religious\_rec} is used as the H3 outcome.
+
+\section{RQ1: Does Actionability Vary with Income Category? (H1)}
+
+\textbf{Outcome:} \texttt{actionability\_v2} (0--5), validated $F_1 = 0.744$.
+
+\textbf{Predictor:} World Bank income category (ref = Low).
+
+\textbf{Model:} Linear mixed-effects (Equation~\ref{eq:h1}), controls: model identity, scenario, city random intercept.
+
+\textbf{Result:} Table~\ref{tab:h1}. The effect is monotone across all four income levels.
+
+\begin{table}[H]
+\centering
+\caption{H1: \texttt{actionability\_v2} by income category, mixed-effects model, $n = 1{,}120$}
+\label{tab:h1}
+\begin{tabular}{lccc}
+\toprule
+Income group (ref = Low) & Coef & 95\% CI & $p$ \\
+\midrule
+Lower-Middle & $+$0.325 & [0.150, 0.500] & 0.0003 \\
+Upper-Middle & $+$0.414 & [0.239, 0.590] & $<$0.0001 \\
+High & $\mathbf{+0.614}$ & \textbf{[0.439, 0.790]} & $<$0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} High-income cities receive responses scoring 0.614 points higher on the 0--5 actionability scale than low-income cities, after controlling for model identity and scenario. The effect is not attributable to response length (equal across tiers) or model selection (survives all seven model-exclusion variants).
+
+\textbf{Limitation:} Actionability is measured as presence of concrete components, not their accuracy. A response with a visibly suspicious crisis number scores equally to one with a verified real number.
+
+\section{RQ2: Does Localisation Vary with Documented Service Availability? (H2)}
+
+\textbf{Outcome:} \texttt{localisation\_v2c} (0--2), validated $F_1 = 0.750$.
+
+\textbf{Predictor:} Documented crisis-service availability (ref = None documented).
+
+\textbf{Model:} Linear mixed-effects (Equation~\ref{eq:h2}).
+
+\textbf{Result:} Table~\ref{tab:h2}.
+
+\begin{table}[H]
+\centering
+\caption{H2: \texttt{localisation\_v2c} by documented service category, $n = 1{,}120$}
+\label{tab:h2}
+\begin{tabular}{lccc}
+\toprule
+Service (ref = None documented) & Coef & 95\% CI & $p$ \\
+\midrule
+Limited/NGO & $+$0.251 & [0.054, 0.449] & 0.012 \\
+Established national line & $\mathbf{+0.353}$ & \textbf{[0.159, 0.547]} & $<$0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} Responses are more localised where a documented service exists to be named. The corrected measure shows the expected direction; the pre-validated measure would have shown the opposite.
+
+\textbf{Limitation:} Surface localisation credits any contact, including unverifiable ones. Section 4.8 assesses sensitivity to this.
+
+\section{RQ3: Does Religious Framing Vary by WHO Region? (H3)}
+
+\textbf{Outcome:} \texttt{religious\_rec} (binary), validated $F_1 = 0.889$.
+
+\textbf{Predictor:} WHO region (ref = AFR).
+
+\textbf{Model:} Firth penalised logistic regression (Equation~\ref{eq:firth}), controlling for model identity and scenario; separation occurs in EUR (0 of 168 positive responses).
+
+\textbf{Result:} Table~\ref{tab:h3}. AFR and EMR are statistically indistinguishable and together sit far above every other region.
+
+\begin{table}[H]
+\centering
+\caption{H3: \texttt{religious\_rec} by WHO region, Firth logistic regression, $n = 1{,}120$}
+\label{tab:h3}
+\begin{tabular}{lcccc}
+\toprule
+Region (ref = AFR) & OR & 95\% CI & $p$ & Raw rate \\
+\midrule
+AFR (reference) & 1.000 & --- & --- & 13.8\% \\
+EMR & 1.425 & [0.822, 2.470] & 0.207 & 17.9\% \\
+SEAR & 0.275 & [0.105, 0.720] & 0.009 & 4.5\% \\
+WPR & 0.210 & [0.094, 0.466] & $<$0.001 & 3.6\% \\
+AMR & 0.077 & [0.021, 0.282] & $<$0.001 & 1.2\% \\
+EUR & 0.015 & [0.001, 0.229] & 0.003 & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} No scenario mentioned religion. The model infers cultural context from the stated location alone. This is a systematic pattern, not noise: no prompt variant in the eight scenarios asked about faith.
+
+\textbf{Limitation:} The regional pattern may partly reflect income confounding because AFR and EMR are predominantly lower-income in this 20-city sample. The fitted H3 model controls for model identity and scenario, not income; its WHO-region coefficients therefore describe adjusted regional associations but cannot establish an income-independent regional effect.
+
+\section{Robustness Checks}
+
+\subsection{Effective Sample Size}
+
+Both H1 and H2 were refitted on the 20 city-level means only. Point estimates are identical by the balanced design. H1 survives: High vs Low $+0.614$, Spearman $\rho = 0.848$ across city means ($p < 0.0001$). H2 survives (Limited/NGO $p = 0.015$; Established national line $p = 0.0013$). See Appendix C, Table C.1.
+
+\subsection{Leave-One-Model-Out}
+
+Table~\ref{tab:loo} presents H1 and H2 refitted with each model excluded. All effects remain positive and significant under every exclusion; excluding Nemotron increases both effects, confirming that retaining it is conservative.
+
+\begin{table}[H]
+\centering
+\caption{Leave-one-model-out sensitivity for H1 and H2}
+\label{tab:loo}
+\begin{tabular}{lcc}
+\toprule
+Model dropped & H1 (High vs Low) & H2 (Established vs None) \\
+\midrule
+None (all 7) & $+$0.614 & $+$0.353 \\
+Llama-4-Scout & $+$0.596 & $+$0.377 \\
+Nemotron-3-Super & $+$0.637 & $+$0.407 \\
+Gemma-4-26B & $+$0.563 & $+$0.299 \\
+Llama-3.3-70B & $+$0.637 & $+$0.368 \\
+Mistral Small & $+$0.558 & $+$0.319 \\
+GPT-OSS 120B & $+$0.708 & $+$0.391 \\
+Qwen3-32B & $+$0.600 & $+$0.310 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Unplanned Finding: Visibly Suspicious Crisis-Contact Numbers}
+
+\textbf{Question:} When models offer specific crisis-contact numbers, how often are those numbers real?
+
+\textbf{Data:} Across the response corpus, 490 responses contained at least one detected contact. The verification workbook contains 466 unique (country, number) pairs classified against the stated reference sources.
+
+\textbf{Result:} Table~\ref{tab:verif_summary}. The gradient is steep: 34.4\% of numbers in cities with no documented service are visibly suspicious, against 1.1\% in cities with an established national line.
+
+\begin{table}[H]
+\centering
+\caption{Classification of unique crisis-contact numbers by verification status. Counts corrected after cross-checking all 466 rows against the Country Reference sheet; 11 numbers reclassified from Unverifiable to Verified real.}
+\label{tab:verif_summary}
+\begin{tabular}{lcc}
+\toprule
+Status & Count & \% of 466 \\
+\midrule
+Verified real & 45 & 9.7\% \\
+General emergency (112, 911, 999, etc.) & 39 & 8.4\% \\
+Unverifiable (no match; no synthetic pattern) & 307 & 65.9\% \\
+Visibly suspicious (555-block, repeated or sequential digits) & 75 & 16.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} A crisis-line number offered for Antananarivo, Madagascar (\texttt{020 22 222 22}, repeated-digit run) was presented as a 24-hour Suicide Prevention Hotline. Madagascar's own health documentation states no such line exists. The pattern concentrates in the least-served locations --- the users most likely to rely on the response and least able to verify it independently.
+
+\textbf{Limitation:} This is a floor estimate. The 318 unverifiable numbers could be real services not captured in the reference sources, or fabricated numbers that look plausible. The true non-real rate is higher than 16.1\% / 34.4\%.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{Figure_S1_Fabrication.png}
+\caption{Percentage of offered crisis-contact numbers displaying a visibly suspicious pattern, by documented service availability.}
+\label{fig:s1}
+\end{figure}
+
+\section{Surface Versus Verified Localisation (H2 Sensitivity)}
+
+\textbf{Question:} Does the H2 finding hold when the localisation contact component is restricted to numbers matched to documented services?
+
+\textbf{Data:} Same 1,120 responses; \texttt{comp\_contact\_verified} constructed from the verification table. Of 490 responses containing a detected contact, 68 (13.9\%) contained a contact matched to a documented service; all 68 occurred in the established-national-line tier.
+
+\textbf{Result:} Table~\ref{tab:surface_vs_verified}.
+
+\begin{table}[H]
+\centering
+\caption{H2 under surface and verified localisation specifications (ref = None documented)}
+\label{tab:surface_vs_verified}
+\begin{tabular}{lcccc}
+\toprule
+Specification & \multicolumn{2}{c}{Limited/NGO} & \multicolumn{2}{c}{Established national line} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Coef & $p$ & Coef & $p$ \\
+\midrule
+Surface (validated, $F_1 = 0.750$) & $+$0.251 & 0.012 & $+$0.353 & $<$0.001 \\
+Verified (new) & $+$0.219 & 0.025 & $+$0.310 & 0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} The direction is identical under both specifications and both are statistically significant. The verified model coefficients are slightly smaller, because responses that offered an unverifiable contact lose the contact credit. The surface localisation finding is therefore \emph{conservative}: removing unverifiable contacts reduces rather than inflates the gap. H2 is robust to this sensitivity check.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{Figure_H2_Surface_vs_Verified_Localisation.png}
+\caption{Surface versus verified localisation by city, grouped by documented crisis-service availability. Surface (left) credits any contact present; verified (right) requires the contact to match a documented service.}
+\label{fig:h2verif}
+\end{figure}
+
+\section{Summary of Results}
+
+Table~\ref{tab:results_summary} provides a single-view summary of all four findings.
+
+\begin{table}[H]
+\centering
+\caption{Summary of all results}
+\label{tab:results_summary}
+\begin{tabular}{llccc}
+\toprule
+Finding & Outcome / measure & Effect & $p$ & Validated $F_1$ \\
+\midrule
+H1 (RQ1) & Actionability, High vs Low income & $+$0.614 & $<$0.001 & 0.744 \\
+H2 (RQ2) & Localisation, Established vs None & $+$0.353 & $<$0.001 & 0.750 \\
+H3 (RQ3) & Religious framing, EUR vs AFR & OR = 0.015 & 0.003 & 0.889 \\
+S1 (unplanned) & Visibly suspicious contacts, None documented & 34.4\% & --- & floor est. \\
+\bottomrule
+\end{tabular}
+\end{table}
