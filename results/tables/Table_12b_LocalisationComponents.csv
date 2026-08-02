@@ -1,0 +1,3 @@
+component,precision,recall,f1
+explicit_location_mention,0.927,0.971,0.948
+service_alignment_ok,0.964,0.519,0.675
