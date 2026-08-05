@@ -1,27 +1,41 @@
 # Python
 __pycache__/
 *.py[cod]
-*.egg-info/
-.env
+.ipynb_checkpoints/
 .venv/
 venv/
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
+# R / statistics
+.Rhistory
+.RData
 
-# OS
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# Editors and operating systems
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# Large data files (keep structure, not content, if needed)
-# data/raw/*.csv  # uncomment if raw data is too large for GitHub
+# Generated temporary files
+tmp/
+*.inspect.ndjson
 
-# LaTeX build artefacts
-*.aux
-*.log
-*.out
-*.synctex.gz
-*.toc
-*.fls
-*.fdb_latexmk
+# Model binaries (not redistributed)
+models/*.bin
+models/*.pt
+models/*.pth
+models/*.safetensors
+models/*.pkl
+
