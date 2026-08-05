@@ -1,0 +1,446 @@
+sample_id,coder_provider,coder_model,temperature,raw_actionability_overall,actionability_overall,coping_step,professional_help,social_support,crisis_action,follow_up,surface_localisation,reconciliation_flag,raw_model_output,status
+H146,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,0,0,0,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 0
+}
+```",success
+H031,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,2,0,1,0,0,0,0,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 0
+}
+```",success
+H103,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H042,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,1,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H030,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H049,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,0,0,0,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H020,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,0,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H013,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H045,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H086,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H140,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H125,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,0,1,1,1,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 0,
+  ""crisis_action"": 1,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H076,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H091,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H006,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H071,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H061,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H024,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,1,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H141,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,2,0,0,0,1,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 1,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H136,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H001,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,0,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H112,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```
+
+Explanation:
+- **Professional Help**: Mentioned with ""therapy, hotlines, or doctors"" which indicates seeking professional help.
+- **Social Support**: Mentions ""family, friends, or support groups,"" indicating the need for emotional support from others.
+- **Coping Step**: Mentions ""self",success
+H052,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,0,0,0,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 0
+}
+```",success
+H098,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H092,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,1,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 1,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H154,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H018,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,1,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 1,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H002,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,0,1,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H023,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H060,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H082,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H135,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,0,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 0,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H109,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H040,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,1,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H068,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,1,1,0,1,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H005,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,1,1,0,0,1,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 1
+}
+```",success
+H133,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,0,2,0,1,0,0,0,1,fixed_contradiction_upward,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 0,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 1,
+  ""actionability_overall"": 0
+}
+```",success
+H066,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,0,1,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 1,
+  ""social_support"": 1,
+  ""coping_step"": 0,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H113,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
+H128,local_colab,Qwen/Qwen2.5-1.5B-Instruct,0.0,1,1,1,0,1,0,0,0,logically_consistent,"```json
+{
+  ""professional_help"": 0,
+  ""social_support"": 1,
+  ""coping_step"": 1,
+  ""crisis_action"": 0,
+  ""follow_up"": 0,
+  ""surface_localisation"": 0,
+  ""actionability_overall"": 1
+}
+```",success
