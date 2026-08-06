@@ -1,10 +1,16 @@
 import json
+import argparse
 from pathlib import Path
 
 import openpyxl
 from sklearn.metrics import cohen_kappa_score, confusion_matrix
 
-ROOT = Path("/workspace/scratch/e5c7d9a5fab7")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description="Calculate the codebook-aligned repeat-coding diagnostic.")
+parser.add_argument("--raw-dir", type=Path, default=REPO_ROOT / "data" / "raw")
+parser.add_argument("--processed-dir", type=Path, default=REPO_ROOT / "data" / "processed")
+parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "results" / "logs" / "repeat_reliability")
+args = parser.parse_args()
 
 
 def sheet_rows(path, sheet):
@@ -14,10 +20,10 @@ def sheet_rows(path, sheet):
     return [dict(zip(headers, row)) for row in values[1:]]
 
 
-repeat = sheet_rows(ROOT / "upload/Fresh_Holdout_REPEAT_CODING_LABELED.xlsx", "Label Here")
-original = sheet_rows(ROOT / "upload/Fresh_Holdout_Validation_LABELLED.xlsx", "Label Here")
-corrections = sheet_rows(ROOT / "upload/Repeat_Coding_CORRECTION_REQUIRED_LABELED.xlsx", "Correct Scores")
-replacement = sheet_rows(ROOT / "upload/Repeat_Coding_CORRECTION_REQUIRED_LABELED.xlsx", "Replacement Row")
+repeat = sheet_rows(args.raw_dir / "Fresh_Holdout_REPEAT_CODING_LABELED.xlsx", "Label Here")
+original = sheet_rows(args.raw_dir / "Fresh_Holdout_Validation_LABELLED.xlsx", "Label Here")
+corrections = sheet_rows(args.processed_dir / "Repeat_Coding_CORRECTION_REQUIRED_LABELED.xlsx", "Correct Scores")
+replacement = sheet_rows(args.processed_dir / "Repeat_Coding_CORRECTION_REQUIRED_LABELED.xlsx", "Replacement Row")
 
 score_col = "actionability_overall (ENTER 0–2)"
 corrected_scores = {row["sample_id"]: row[score_col] for row in corrections}
@@ -89,7 +95,7 @@ payload = {
     "merged_repeat": merged,
 }
 
-out = ROOT / "tmp/repeat_reliability"
+out = args.output_dir
 out.mkdir(parents=True, exist_ok=True)
 (out / "results.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 print(json.dumps({"output": str(out / "results.json"), "metrics": metrics}, indent=2))

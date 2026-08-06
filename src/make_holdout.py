@@ -1,4 +1,5 @@
 import json
+import argparse
 import re
 import unicodedata
 from pathlib import Path
@@ -7,8 +8,14 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import Bounds, LinearConstraint, milp
 
-BASE = Path('/workspace/scratch/e5c7d9a5fab7/upload')
-OUT = Path('/tmp/validation_holdout_rows.json')
+REPO_ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description="Reproduce the stratified 160-response hold-out sample.")
+parser.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data" / "raw")
+parser.add_argument("--output", type=Path, default=REPO_ROOT / "results" / "logs" / "validation_holdout_rows.json")
+args = parser.parse_args()
+BASE = args.data_dir
+OUT = args.output
+OUT.parent.mkdir(parents=True, exist_ok=True)
 SEED = 20260804
 
 def norm(s):

@@ -1,11 +1,18 @@
+import argparse
 import pandas as pd, numpy as np, re, json
 from pathlib import Path
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score, balanced_accuracy_score, accuracy_score, cohen_kappa_score
 from scipy.stats import spearmanr
 
-ROOT=Path('/workspace/scratch/e5c7d9a5fab7')
-lab=pd.read_excel(ROOT/'upload/Fresh_Holdout_Validation_LABELLED.xlsx',sheet_name='Label Here')
-df=pd.read_csv(ROOT/'upload/combined_dataset_REPAIRED_1.csv')
+REPO_ROOT = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description="Evaluate frozen rule-based measures on the fresh hold-out sample.")
+parser.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data" / "raw")
+parser.add_argument("--output-dir", type=Path, default=REPO_ROOT / "results" / "logs" / "holdout_validation")
+args = parser.parse_args()
+args.output_dir.mkdir(parents=True, exist_ok=True)
+
+lab=pd.read_excel(args.data_dir/'Fresh_Holdout_Validation_LABELLED.xlsx',sheet_name='Label Here')
+df=pd.read_csv(args.data_dir/'combined_dataset_REPAIRED_1.csv')
 
 req=['actionability_overall','coping_step','professional_help','social_support','crisis_action','follow_up','surface_localisation','verified_localisation']
 audit={'n_rows':len(lab),'duplicate_ids':int(lab.sample_id.duplicated().sum()),'missing':{c:int(lab[c].isna().sum()) for c in req},'invalid':{}}
@@ -102,12 +109,12 @@ errors=pd.concat(err,ignore_index=True)
 repeat=lab.sample(n=40,random_state=20260805)[['sample_id','response_text']].copy()
 repeat.insert(0,'repeat_id',[f'R{i:03d}' for i in range(1,41)])
 for c in req+['verification_source_url','coder_notes']: repeat[c]=np.nan
-repeat.to_csv('/tmp/repeat_sample.csv',index=False)
+repeat.to_csv(args.output_dir/'repeat_sample.csv',index=False)
 
-pd.DataFrame(results).to_csv('/tmp/holdout_results.csv',index=False)
-merged.to_csv('/tmp/holdout_matched.csv',index=False)
-errors.to_csv('/tmp/holdout_errors.csv',index=False)
-with open('/tmp/holdout_audit.json','w') as f: json.dump(audit,f,indent=2,default=str)
+pd.DataFrame(results).to_csv(args.output_dir/'holdout_results.csv',index=False)
+merged.to_csv(args.output_dir/'holdout_matched.csv',index=False)
+errors.to_csv(args.output_dir/'holdout_errors.csv',index=False)
+with open(args.output_dir/'holdout_audit.json','w') as f: json.dump(audit,f,indent=2,default=str)
 print(json.dumps(audit,indent=2,default=str))
 print(pd.DataFrame(results).to_string(index=False))
 print('\nHuman distributions')

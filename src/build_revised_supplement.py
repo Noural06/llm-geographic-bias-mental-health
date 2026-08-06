@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -7,7 +9,8 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.enum.style import WD_STYLE_TYPE
 
-OUT = "/workspace/scratch/e5c7d9a5fab7/Intra_Rater_Reliability_Supplement_REVISED.docx"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+OUT = REPO_ROOT / "docs" / "Intra_Rater_Reliability_Supplement_REVISED.docx"
 
 BLUE = "2E5D7B"
 DARK = "20323F"
