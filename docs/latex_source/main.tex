@@ -1,0 +1,344 @@
+\documentclass[12pt,a4paper,oneside]{report}
+
+%====================================================
+% Fonts
+%====================================================
+
+\usepackage{iftex}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \IfFileExists{carlito.sty}{
+    \usepackage[sfdefault]{carlito}
+  }{
+    \usepackage[scaled]{helvet}
+    \renewcommand{\familydefault}{\sfdefault}
+  }
+\else
+  \usepackage{fontspec}
+  \IfFontExistsTF{Carlito}{\setmainfont{Carlito}}{\setmainfont{DejaVu Sans}}
+\fi
+
+%====================================================
+% Page Layout
+%====================================================
+
+\usepackage[
+  a4paper,
+  top=2.5cm,
+  bottom=2.5cm,
+  left=2.5cm,
+  right=2cm
+]{geometry}
+
+%====================================================
+% Spacing and Paragraph Style
+%====================================================
+
+\usepackage{setspace}
+\setstretch{1.5}
+
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+%====================================================
+% Mathematics
+%====================================================
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%====================================================
+% Figures and Tables
+%====================================================
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\graphicspath{
+  {Figures/}
+  {figures/Figures/}
+  {media/}
+  {./}
+}
+
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage[table]{xcolor}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric}
+
+%====================================================
+% Lists
+%====================================================
+
+\usepackage{enumitem}
+
+\setlist[itemize]{
+  leftmargin=*,
+  label=\textbullet
+}
+
+\setlist[enumerate]{
+  leftmargin=*
+}
+
+%====================================================
+% Colours and Code Listings
+%====================================================
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!10},
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false
+}
+
+%====================================================
+% Captions
+%====================================================
+
+\usepackage{caption}
+
+\captionsetup{
+  font=small,
+  labelfont=bf
+}
+
+%====================================================
+% Quotations and References
+%====================================================
+
+\usepackage{csquotes}
+\usepackage{natbib}
+\usepackage{url}
+
+%====================================================
+% Hyperlinks
+%====================================================
+
+\usepackage[hidelinks]{hyperref}
+
+%====================================================
+% Document
+%====================================================
+
+\begin{document}
+
+%====================================================
+% Title Page
+%====================================================
+
+\begin{titlepage}
+\centering
+
+% ─────────────────────────────────────────────────────────────────
+% TO INSERT THE OFFICIAL MDX LOGO:
+%   1. Download the logo PNG from Middlesex University brand portal
+%   2. Save it as Figures/MDX_LOGO.png
+%   3. Uncomment the two lines below and delete the \vspace{3.2cm} line
+%
+% \includegraphics[width=0.28\textwidth]{Figures/MDX_LOGO}
+% \vspace{0.8cm}
+% ─────────────────────────────────────────────────────────────────
+\vspace{3.2cm}
+
+{\Large Middlesex University\par}
+{\large Department of Computer Science\par}
+
+\vspace{2cm}
+
+{\LARGE\bfseries
+Does Where You Are Shape What You Get?\\[0.4cm]
+Geographic Variation in Large Language Model Responses to Mental Health Queries
+}
+\par
+
+\vspace{2cm}
+
+{\Large Noura Lakrimdi\par}
+
+\vspace{2cm}
+
+A dissertation submitted to Middlesex University
+
+in partial fulfilment of the requirements for the degree of
+
+\vspace{0.8cm}
+
+{\Large Master of Science (MSc) in Data Science}
+
+\vspace{1.5cm}
+
+Department of Computer Science
+
+Middlesex University
+
+\vfill
+
+May 2026
+
+\end{titlepage}
+
+%====================================================
+% Front Matter
+%====================================================
+
+\pagenumbering{roman}
+
+\chapter*{Dissertation Coversheet}
+\addcontentsline{toc}{chapter}{Dissertation Coversheet}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{9cm}|}
+\hline
+Student ID Number & M00845271\\ \hline
+Student Name & Noura Lakrimdi \\ \hline
+Module Code & CST4990 \\ \hline
+Programme of Study & MSc Data Science \\ \hline
+Supervisor & Dr Giovanni Quattrone \\ \hline
+Dissertation Title & Does Where You Are Shape What You Get? Geographic Variation in Large Language Model Responses to Mental Health Queries \\ \hline
+Declared Word Count & ~8,300 (Introduction to Conclusion; appendices excluded) \\ \hline
+\end{tabular}
+\end{table}
+
+By submitting this dissertation, I confirm that I have read and understood the Middlesex University Declaration of Academic Integrity.
+
+\clearpage
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\input{Abstract}
+
+\clearpage
+
+\chapter*{Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+I hereby declare that this dissertation is entirely my own work. Where the work of others has been used, it has been appropriately acknowledged and referenced in accordance with academic conventions.
+
+I confirm that I have neither copied material from another source nor committed plagiarism. I further confirm that I have not commissioned, fabricated, falsified, or otherwise misrepresented any part of this work.
+
+I declare that this dissertation has not previously been submitted, in whole or in part, for the award of any degree or qualification at this or any other institution.
+
+\vspace{1.5cm}
+
+Signed:
+
+\vspace{1cm}
+
+Noura Lakrimdi
+
+\clearpage
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+I would like to express my sincere gratitude to my supervisor, Dr Giovanni Quattrone, for his guidance, constructive feedback, and continuous support throughout this dissertation.
+
+I would also like to thank Middlesex University and the Department of Computer Science for providing the opportunity and resources to undertake this research.
+
+Finally, I wish to thank my family and friends for their encouragement, patience, and support throughout my MSc studies.
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\listoftables
+\clearpage
+
+\listoffigures
+\clearpage
+
+%====================================================
+% Main Chapters
+%====================================================
+
+\pagenumbering{arabic}
+
+\chapter{Introduction}
+\input{introduction}
+\FloatBarrier
+
+\chapter{Literature Review}
+\input{literature_review}
+\FloatBarrier
+
+\chapter{Methodology}
+\input{methodology}
+\FloatBarrier
+
+\chapter{Results and Analysis}
+\input{results_and_analysis.tex}
+\FloatBarrier
+
+\chapter{Discussion}
+\input{discussion}
+\FloatBarrier
+
+\chapter{Conclusion and Future Work}
+\input{conclusion}
+\FloatBarrier
+
+%====================================================
+% References
+%====================================================
+
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{apalike}
+\bibliography{references}
+
+%====================================================
+% Appendices
+%====================================================
+\appendix
+
+\chapter{Prompt Dataset}
+\input{appendix_A}
+\FloatBarrier
+
+\chapter{Experimental Design}
+\input{appendix_B}
+\FloatBarrier
+
+\chapter{Additional Statistical Tables}
+\input{appendix_C}
+\FloatBarrier
+
+\chapter{Supplementary Results}
+\input{appendix_D}
+\FloatBarrier
+
+\chapter{Electronic Supplementary Material}
+\input{appendix_E}
+\FloatBarrier
+
+\chapter{Project Outline}
+\input{appendix_F}
+\FloatBarrier
+
+\chapter{Risk Assessment}
+\input{appendix_G}
+\FloatBarrier
+
+\end{document}

@@ -21,6 +21,7 @@ venv/
 *.out
 *.toc
 *.synctex.gz
+docs/latex_source/main.pdf
 
 # Editors and operating systems
 .DS_Store
@@ -38,4 +39,3 @@ models/*.pt
 models/*.pth
 models/*.safetensors
 models/*.pkl
-

@@ -1,0 +1,63 @@
+\section{RQ1: Why Does Actionability Increase with Income?}
+
+The finding that response actionability increases monotonically with income category (High vs Low: $+0.614$ on the 0--5 scale, $p < 0.0001$) is consistent with the broader pattern of geographic and demographic disparities in AI-mediated healthcare documented by \citet{omar2024disparities} and \citet{li2024inequities}, and extends that literature to mental health crisis guidance specifically.
+
+The association is not explained by observed response length and persists when each model is removed in turn. The component analysis, however, shows that it is concentrated in crisis-contact inclusion. A joint model including documented service availability attenuates the income coefficient, so training-data density is only one possible explanation and is not tested directly here.
+
+\textbf{Revised interpretation (sensitivity analysis):} A component-level analysis reveals that the income gradient in \texttt{actionability\_v2} is driven almost entirely by crisis-contact inclusion. When the crisis-contact component is excluded, the income gradient disappears (Kruskal-Wallis $p = 0.25$, non-significant). Furthermore, a joint model including both income category and documented service availability simultaneously shows that income becomes non-significant (High vs Low: $+0.233$, $p = 0.18$) while service availability remains significant (Established vs None: $+0.446$, $p = 0.012$). The more defensible claim is therefore that crisis-contact inclusion tracks the availability of a documented national crisis service, and that income correlates with service availability in this sample. The H1 result ($+0.614$) remains valid as a descriptive finding but should not be interpreted as a direct causal income effect.
+
+\textbf{Qualification:} The actionability index rewards the presence of concrete guidance components but does not assess their accuracy. A model that offers a crisis contact scores equally whether that contact is real or unverifiable. The unverified-contact finding (Section 4.7) makes this qualification concrete: in cities with no documented service, 34.4\% of offered contacts display suspicious digit patterns, meaning the actionability score in those cities partly reflects the appearance of actionability without its substance.
+
+\textbf{Limitation:} Without a no-location control condition, this study cannot separate ``models have less relevant training data for lower-income settings'' from ``stating a lower-income location actively changes what the model produces.'' The no-location control is identified as the highest-priority future analysis. The joint model result also indicates that income and service availability are partially collinear in this 20-city sample, limiting the power to separate the two predictors.
+
+\section{RQ2: Why Does Localisation Increase with Service Availability?}
+
+The localisation finding (Established: $+0.353$, $p < 0.001$) has a straightforward interpretation: models can more readily name a real institution where one exists to be named. Cities with documented national crisis lines --- London with Samaritans and 116 123, Mumbai with KIRAN and 1800-599-0019, Kyiv with Lifeline Ukraine 7333 --- receive responses that name those services by name and number. Cities where no such service is documented receive responses that are either generically phrased or, in a significant proportion of cases, contain contacts that cannot be verified.
+
+\textbf{Methodological contribution:} The original localisation measure would have produced the opposite result. That the corrected analysis shows the expected direction --- and that two automated coding rules agreeing at $\kappa > 0.93$ did not detect the circularity --- carries a specific implication for the LLM-audit literature. Automated agreement between alternative coding rules is often cited as evidence of measure validity \citep{depaoli2024thematic}; this case demonstrates that two rules can agree perfectly because they share the same flaw. Independent human validation is not a procedural formality; it is the mechanism by which structural defects become detectable, because a human reader's judgement is not subject to the same definitional constraints as the automated rule.
+
+\textbf{Sensitivity:} The surface versus verified analysis (Section 4.8) preserves the direction of the observed association after unverifiable contacts are denied verified-localisation credit. The verified model produces slightly smaller coefficients (+0.310 versus +0.353 for Established vs None). Because the verified measure has not passed independent human validation, this is sensitivity evidence only; it does not confirm RQ2 or establish robustness.
+
+\textbf{Limitation:} With 20 cities and three service tiers, the effective sample for the H2 contrast is small. Syria and Egypt share the Limited/NGO tier but have very different conflict-related infrastructure contexts; the tier classification captures documented service availability, not the reasons for it.
+
+\section{RQ3: Why Does Religious Framing Concentrate in AFR and EMR?}
+
+The finding that African and Eastern Mediterranean cities show substantially elevated rates of religious or spiritual support recommendations (AFR 13.8\%, EMR 17.9\% versus EUR 0.0\%, AMR 1.2\%) raises a more normatively complex question than H1 and H2. Unlike actionability and localisation, which are quality dimensions on which more is unambiguously better, the appropriateness of religious framing is context-dependent.
+
+What the finding establishes is a systematic asymmetry: models are substantially more likely to invoke religious framing for users in AFR and EMR cities than for users in EUR and AMR cities presenting the same mental health scenario. Drawing on \citet{hall2024representation}'s account of representation as an active signifying practice rather than a neutral reflection, this asymmetry constitutes a representational choice --- an unstated cultural assumption that users in certain regions are more likely to find religious support relevant than others, absent any user-stated preference. No prompt in this study mentioned religion.
+
+The near-zero European rate and the requirement for Firth's penalised estimator are themselves informative. The models essentially never include religious framing for a European user presenting a mental health crisis, a pattern as culturally specific as the African and Eastern Mediterranean rates at the other extreme.
+
+\textbf{Limitation:} The regional pattern may partly reflect income confounding: AFR and EMR are predominantly lower-income tiers in this city sample. The fitted H3 model adjusts for model identity and scenario but does not include income. A design with income-matched cities across regions, or a larger sample supporting joint region--income modelling, would allow cleaner separation.
+
+\section{The Safety-Relevant Finding: Visibly Suspicious Crisis Contacts}
+
+The crisis-contact audit is the study's most safety-relevant result. The rate of visibly suspicious patterns rises from 1.1\% in the established-service tier to 34.4\% in the no-documented-service tier. This pattern does not classify every unmatched number as wrong, nor does it establish why the gradient occurs.
+
+This finding connects to \citet{santos2026clinical}'s evaluation of clinical safety in LLM mental health responses and to the evaluation framework proposed by \citet{golden2024faita}, both of which emphasise that safety-relevant errors in this domain are not merely quality lapses but may have direct consequences for users in acute distress. A person in Antananarivo who dials \texttt{020 22 222 22} gets no answer. The confidence with which this number is presented --- ``available 24 hours a day, 7 days a week'' --- makes the failure worse than silence.
+
+\textbf{Limitation:} The visibly suspicious count is a lower bound on obvious pattern flags, not on all incorrect contacts. The 307 unverifiable numbers are the unresolved category: they could be real services missing from the reference sources or plausible-looking incorrect numbers. Establishing an incorrect-contact rate requires source-based adjudication for every extracted contact.
+
+\section{Methodological Contribution: When Automated Rules Agree on the Wrong Answer}
+
+This dissertation makes a methodological contribution independent of its substantive findings. The localisation circularity is a case study in a specific class of content-coding failure: a measure whose logic is internally consistent, whose outputs are highly reliable across two alternative coding rules ($\kappa > 0.93$), yet which measures something other than what it claims to measure --- in a direction detectable only by comparison with independently collected human labels.
+
+The practical implication for LLM-audit research is that inter-rule agreement is not a substitute for human validation. Two automated rules can agree perfectly because they implement the same flawed logic. This is not a novel theoretical observation \citep{depaoli2024thematic}, but this dissertation provides a concrete, quantified case in which it occurred, with the specific numerical evidence available for inspection in the supplementary notebook. The coefficients produced by the original, subsequently rejected measure ($+0.417$ for None documented, the highest-scoring tier) are reported here rather than silently discarded.
+
+The matched 40-response comparison extends this lesson beyond alternative rule sets. A prompted instruction-tuned transformer did not outperform the simpler rule-based pipeline: for actionability, quadratic-weighted $\kappa$ was 0.063 for Qwen and 0.520 for the rule-based method, while the two automated methods agreed poorly with each other. Qwen also produced 11 internal dependency contradictions. This does not establish that rule-based NLP is valid; it shows that replacing inspectable rules with a more complex model does not, by itself, improve construct measurement. Method choice materially changed the labels, so evidential status must be determined by independent validation rather than by the apparent sophistication of the method.
+
+\section{Limitations}
+
+\textbf{Language:} All queries are posed in English. \citet{jin2024english} document that LLMs perform measurably better on healthcare queries posed in English than in other languages. Users in non-Anglophone locations who query in a local language would likely receive responses showing wider gaps than those observed here; the true geographic gradient is probably larger than what this study measures.
+
+\textbf{No-location control:} The absence of a no-location baseline means this study cannot separate training-data-density effects from location-location-conditioned cultural framing effects. These are different explanations with different policy implications.
+
+\textbf{City count and confounding:} Twenty cities provide an effective geographic sample of 20. Income, WHO region, service availability and infrastructure are correlated, and the small number of cities prevents clean separation of their effects. Robustness checks reduce, but do not remove, this limitation. The estimates describe the selected cities and should not be generalised globally.
+
+\textbf{Single coder:} All human reference labels, including the development, H3 and fresh hold-out samples, are from a single coder. Inter-rater reliability between two independent coders was not computed; this is a standard requirement for content-analysis publication and is identified for future work.
+
+\textbf{Failed fresh hold-out validation:} The revised actionability and localisation measures were initially evaluated on the same 112 labels used to diagnose and repair the original rules, so those development scores were potentially optimistic. The subsequently frozen rules were tested on a fresh blinded 160-response hold-out and failed their pre-specified gates. These outcomes are therefore not independently validated and RQ1/RQ2 remain exploratory.
+
+\textbf{Alternative automated coder:} The Qwen comparison used only 40 matched responses and an operational single-coder reference. Its failure justifies rejecting that experimental coder, but the small matched sample cannot establish a universal advantage of rule-based NLP over transformer-based coding. The comparison is a method-development diagnostic, not a benchmark of model families.
+
+\textbf{Unresolved contacts:} The 16.1\% overall visibly suspicious rate is a lower-bound pattern count. The 307 unverifiable numbers could be real services absent from the reference database or plausible-looking incorrect contacts. The true incorrect-contact rate is unknown.
