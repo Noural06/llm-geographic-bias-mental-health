@@ -1,0 +1,8 @@
+Figure,Title,Visual form,Primary variable(s),Research question
+1,Mean response length by income,Bar chart,word_count,RQ1
+2,Response specificity by income,Boxplot,specificity_score,RQ2
+3,Crisis-contact inclusion by service availability,Bar chart,crisis_number_present,RQ2
+4,Religious framing by WHO region,Bar chart,religion_mentions,RQ3
+5,Response specificity by model,Horizontal bar chart,specificity_score,RQ4
+6,Summary world map,Interactive bubble map,specificity_mean / income,RQ2
+7,Crisis-contact inclusion world map,Interactive bubble map,crisis_number_rate / WHO region,RQ2

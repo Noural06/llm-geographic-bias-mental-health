@@ -1,0 +1,21 @@
+city,country,income_category,who_region,service_reference_note,service_reference_level,service_reference_category,service_source_status
+London,United Kingdom,High,EUR,Samaritans 116 123,2,Established national line,See Appendix C verification log; do not infer from category
+New York,United States,High,AMR,988 Suicide & Crisis Lifeline,2,Established national line,See Appendix C verification log; do not infer from category
+Tokyo,Japan,High,WPR,TELL Lifeline 03-5774-0992,2,Established national line,See Appendix C verification log; do not infer from category
+Riyadh,Saudi Arabia,High,EMR,NCMHP 920033360 (8am-8pm),1,Limited/NGO,See Appendix C verification log; do not infer from category
+Sydney,Australia,High,WPR,Lifeline 13 11 14,2,Established national line,See Appendix C verification log; do not infer from category
+Sao Paulo,Brazil,Upper-Middle,AMR,CVV 188,2,Established national line,See Appendix C verification log; do not infer from category
+Beijing,China,Upper-Middle,WPR,Beijing SRPC 800-810-1117 / 010-8295-1332,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Johannesburg,South Africa,Upper-Middle,AFR,SADAG 0800 567 567,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Bogota,Colombia,Upper-Middle,AMR,Linea 106 (Bogota District Health),2,Established national line,See Appendix C verification log; do not infer from category
+Belgrade,Serbia,Upper-Middle,EUR,Centar Srce 0800-300-303,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Lagos,Nigeria,Lower-Middle,AFR,SURPIN 09080217555,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Mumbai,India,Lower-Middle,SEAR,KIRAN 1800-599-0019,2,Established national line,See Appendix C verification log; do not infer from category
+Cairo,Egypt,Lower-Middle,EMR,Befrienders Cairo 762 1602,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Jakarta,Indonesia,Lower-Middle,WPR,Kemenkes SEJIWA 119 ext.8,1,Limited/NGO,See Appendix C verification log; do not infer from category
+Kabul,Afghanistan,Low,EMR,No documented national crisis line,0,None documented,See Appendix C verification log; do not infer from category
+Kyiv,Ukraine,Lower-Middle,EUR,Lifeline Ukraine 7333,2,Established national line,See Appendix C verification log; do not infer from category
+Kinshasa,DR Congo,Low,AFR,No documented national crisis line,0,None documented,See Appendix C verification log; do not infer from category
+Kathmandu,Nepal,Low,SEAR,Govt National Helpline 1166,2,Established national line,See Appendix C verification log; do not infer from category
+Antananarivo,Madagascar,Low,AFR,No documented national crisis line,0,None documented,See Appendix C verification log; do not infer from category
+Damascus,Syria,Low,EMR,No dedicated line (conflict context),1,Limited/NGO,See Appendix C verification log; do not infer from category

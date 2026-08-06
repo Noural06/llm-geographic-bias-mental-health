@@ -1,0 +1,12 @@
+hypothesis,spec,level,coef,se,p
+H1,MixedLM (city random intercept),Lower-Middle,0.325,0.089,0.0003
+H1,MixedLM (city random intercept),Upper-Middle,0.414,0.089,0.0
+H1,MixedLM (city random intercept),High,0.614,0.089,0.0
+H1,"OLS, city-clustered SE",Lower-Middle,0.325,0.09,0.0003
+H1,"OLS, city-clustered SE",Upper-Middle,0.414,0.082,0.0
+H1,"OLS, city-clustered SE",High,0.614,0.101,0.0
+H1,City means only (n=20),Lower-Middle,0.325,0.096,0.0038
+H1,City means only (n=20),Upper-Middle,0.414,0.096,0.0005
+H1,City means only (n=20),High,0.614,0.096,0.0
+H2,City means only (n=20),Limited/NGO,0.251,0.093,0.015
+H2,City means only (n=20),Established national line,0.353,0.092,0.0013

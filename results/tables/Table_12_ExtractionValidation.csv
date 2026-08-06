@@ -1,0 +1,4 @@
+outcome,n,spearman_rho,weighted_kappa,exact_agreement,binary_definition,precision,recall,f1,meets_threshold
+actionability,112,0.624,0.618,0.625,manual==2 vs auto>=3,0.895,0.548,0.68,False
+localisation,112,0.344,0.315,0.607,manual==2 vs auto==2,0.739,0.576,0.648,False
+support_orientation,112,,0.14,0.339,multi-class (macro-averaged),0.211,0.147,0.172,False

@@ -1,0 +1,4 @@
+service_reference_category,n,word_count_mean,specificity_mean,crisis_number_rate,fabrication_rate,religion_mean,family_mean,professional_mean,sentiment_mean
+None documented,168,551.518,0.661,0.19,0.024,1.042,1.506,2.268,0.816
+Limited/NGO,448,539.846,1.554,0.404,0.004,0.48,1.317,2.712,0.755
+Established national line,504,529.129,2.99,0.55,0.004,0.071,1.004,2.921,0.712
