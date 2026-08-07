@@ -208,7 +208,7 @@ This section answers the supervisor feedback dated **4 August 2026**. “Complet
 | Generate multiple responses per cell | Not completed. The study retains one generation per cell. Repeated generations are future work for testing stochastic stability. |
 | Add a second coder | Not possible within the project. The 40-response repeat-coding study evaluates intra-rater consistency only; it is not inter-rater validation. Independent coders are required in future work. |
 | Conduct a full qualitative study of religious-framing examples | Not completed. The dissertation reports the regional asymmetry and selected examples but does not infer user benefit, harm or stereotyping. Qualitative user research is required. |
-| Claim publication readiness | Not claimed. The project is complete as a dissertation, but the failed H1/H2 validation, single-coder reference, limited city sample and uneven contact verification prevent a publication-ready claim. |
+
 
 ## Main takeaway
 
