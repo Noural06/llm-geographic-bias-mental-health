@@ -102,7 +102,7 @@ The strongest contribution is methodological: reproducible automated measures ca
 - `data/raw/Fresh_Holdout_Validation_LABELLED.xlsx`: original frozen validation labels.
 - `data/raw/Second_Coder_Independent_Validation_40_COMPLETED.xlsx`: independent second-coder labels.
 - `tables/Table_16_IndependentCoderAgreement.csv`: pre-adjudication agreement results.
-- `docs/Do_LLMs_Provide_Reliable_Local_Mental_Health_Guidance_DISSERTATION_FINAL.pdf`: final dissertation.
+- `docs/Dissertation_Geographic_Variation_FINAL_METHODS_COMPARED.pdf`: current dissertation PDF in the repository; the final retitled submission PDF is maintained in the submission package.
 
 ## Reproduction order
 
