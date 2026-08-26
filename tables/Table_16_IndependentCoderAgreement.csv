@@ -1,0 +1,9 @@
+outcome,n,raw_agreement,cohen_kappa,kappa_type,meets_kappa_0_70,coder1_positive_or_high,coder2_positive_or_high
+actionability_overall,40,0.825,0.134,quadratic-weighted,False,32,39
+coping_step,40,0.650,0.041,unweighted,False,26,38
+professional_help,40,0.925,0.531,unweighted,False,36,37
+social_support,40,0.925,0.795,unweighted,True,29,32
+crisis_action,40,0.650,0.333,unweighted,False,10,22
+follow_up,40,0.825,0.000,unweighted,False,0,7
+surface_localisation,40,0.900,0.286,unweighted,False,36,38
+verified_localisation,40,0.775,0.548,unweighted,False,18,19
