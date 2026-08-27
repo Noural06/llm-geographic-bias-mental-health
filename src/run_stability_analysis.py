@@ -7,10 +7,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent
-INPUT = ROOT / "upload/stability_test_responses_groq_CODED.csv"
-OUT = ROOT / "outputs/stability"
-OUT.mkdir(parents=True, exist_ok=True)
+REPO_ROOT = Path(__file__).resolve().parents[1]
+INPUT = REPO_ROOT / "data/processed/stability_test_responses_groq_CODED_VERIFIED.csv"
+TABLES = REPO_ROOT / "tables"
+PROCESSED = REPO_ROOT / "data/processed"
+TABLES.mkdir(parents=True, exist_ok=True)
+PROCESSED.mkdir(parents=True, exist_ok=True)
 
 PHONE_RE = re.compile(r"(?<!\w)(?:\+?\d[\d ()-]{5,}\d)(?!\w)")
 SHORT_RE = re.compile(r"(?<!\d)(?:111|112|119|911|988|999)(?!\d)")
@@ -129,31 +131,31 @@ def main():
     unique = (inst.sort_values(["country","normalised_contact"])
               .drop_duplicates(["country","normalised_contact"])
               .reset_index(drop=True))
-    inst.to_csv(OUT / "Table_18a_StabilityContactAudit_Instances.csv", index=False)
-    unique.to_csv(OUT / "Table_18_StabilityContactAudit_Unique.csv", index=False)
+    inst.to_csv(TABLES / "Table_18a_StabilityContactAudit_Instances.csv", index=False)
+    unique.to_csv(TABLES / "Table_18_StabilityContactAudit_Unique.csv", index=False)
     counts = unique.verification_status.value_counts().reindex(
         ["Verified real","General emergency","Verified incorrect","Visibly suspicious","Unresolved"], fill_value=0)
     counts.rename_axis("verification_status").reset_index(name="unique_country_number_pairs").to_csv(
-        OUT / "Table_18b_StabilityContactAudit_Summary.csv", index=False)
+        TABLES / "Table_18b_StabilityContactAudit_Summary.csv", index=False)
 
     verified = set(map(tuple, unique.loc[unique.verification_status.eq("Verified real"), ["country","normalised_contact"]].values))
     row_pairs = inst.groupby("stability_id").apply(
         lambda x: any((r.country, r.normalised_contact) in verified for r in x.itertuples()), include_groups=False)
     df["comp_contact_verified"] = df.stability_id.map(row_pairs).fillna(False).astype(int)
     df["localisation_verified"] = (df.comp_explicit_location + df.comp_named_institution + df.comp_contact_verified).clip(upper=2)
-    df.to_csv(OUT / "stability_test_responses_groq_CODED_VERIFIED.csv", index=False)
+    df.to_csv(PROCESSED / "stability_test_responses_groq_CODED_VERIFIED.csv", index=False)
 
     outcomes = ["actionability_v2","localisation_surface","localisation_verified","comp_crisis_contact",
         "comp_professional_referral","comp_emergency_escalation","comp_immediate_action",
         "comp_named_coping_step","comp_explicit_location","comp_named_institution","religious_rec"]
     cells, summary = stability_tables(df, outcomes)
-    cells.to_csv(OUT / "Table_17a_GenerationStability_ByCell.csv", index=False)
-    summary.to_csv(OUT / "Table_17_GenerationStability_Summary.csv", index=False)
+    cells.to_csv(TABLES / "Table_17a_GenerationStability_ByCell.csv", index=False)
+    summary.to_csv(TABLES / "Table_17_GenerationStability_Summary.csv", index=False)
     model = (cells.groupby(["outcome","model_name"], as_index=False)
              .agg(cells_total=("city","size"), complete_agreement_cells=("majority_agreement_percent",lambda s:(s==100).sum()),
                   pairwise_agreement_percent=("pairwise_agreement_percent","mean")))
     model["complete_agreement_percent"] = model.complete_agreement_cells/model.cells_total*100
-    model.to_csv(OUT / "Table_17b_GenerationStability_ByModel.csv", index=False)
+    model.to_csv(TABLES / "Table_17b_GenerationStability_ByModel.csv", index=False)
     print(summary.to_string(index=False))
     print("\nUnique contact statuses:\n", counts.to_string())
 
