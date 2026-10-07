@@ -126,3 +126,13 @@ The separate stability-sample contact audit found 19 unique country–number pai
 ## Ethical scope
 
 All prompts are synthetic. No patients or service users participated. Model outputs must not be treated as medical advice or as a verified crisis-service directory.
+
+## How to cite
+
+If you use this project's code, analysis, figures or findings in your work, please cite:
+
+```text
+Lakrimdi, N. (2026). Do LLMs Provide Reliable Local Mental-Health Guidance? Evaluating Geographic Variation and Crisis Contacts [Research project repository]. GitHub. https://github.com/Noural06/llm-geographic-bias-mental-health
+```
+
+For reproducibility, also record the commit SHA or release used and your access date. Cite any original third-party sources separately.
