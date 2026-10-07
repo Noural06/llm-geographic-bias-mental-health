@@ -1,5 +1,7 @@
 # Do LLMs Provide Reliable Local Mental-Health Guidance?
 
+**Author:** Noura Lakrimdi
+
 ## Evaluating Geographic Variation and Crisis Contacts
 
 MSc Data Science dissertation project, Middlesex University, London, 2026.
